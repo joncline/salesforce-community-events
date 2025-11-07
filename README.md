@@ -166,6 +166,41 @@ Please provide:
 - Location
 - Official website URL (if available)
 
+## 🤖 Advanced: Customize Events with AI
+
+Want to modify the calendar before importing? You can use AI tools to customize which events to include or modify event details.
+
+### Using Cline.bot or Salesforce Vibes:
+
+1. **Download the calendar file:**
+   - Click on `salesforce_dreamin_events_2025.ics` above
+   - Click "Download" to save it to your computer
+
+2. **Open in your AI tool:**
+   - **Cline.bot:** Open the file in VS Code with Cline extension
+   - **Salesforce Vibes:** Upload the file to the AI assistant
+
+3. **Customize as needed:**
+   - Ask the AI to remove specific events you don't want
+   - Modify event times or descriptions
+   - Add your own custom events
+   - Filter to only certain regions or event types
+
+4. **Example prompts:**
+   ```
+   "Remove all events outside of North America"
+   "Keep only the Dreamin' events, remove Dreamforce and TrailblazerDX"
+   "Change all event times to start at 9:00 AM"
+   "Add a reminder 1 week before each event"
+   "Remove tentative events and keep only confirmed ones"
+   ```
+
+5. **Save and import:**
+   - Save the modified .ics file
+   - Import it to your calendar using the instructions above
+
+This approach gives you complete control over which events appear in your calendar without having to manually edit the file or deal with duplicates!
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
