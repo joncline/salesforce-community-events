@@ -1,0 +1,150 @@
+# Salesforce Community Events 2026 Calendar
+
+A comprehensive calendar of Salesforce community events, conferences, and Dreamin' events for 2026. Import this calendar to stay up-to-date with the global Salesforce community!
+
+## 📅 What's Included
+
+This calendar includes **18 Salesforce community events** for 2026:
+
+### Confirmed Events (16)
+- **Architect Dreamin' US** - January 21-22 | Scottsdale, AZ
+- **Cactusforce** - January 22-23 | Scottsdale, AZ
+- **Bharat Dreamin'** - January 24 | Jaipur, India
+- **Cairo Dreamin'** - January 31 | Cairo, Egypt
+- **Polish Dreamin'** - March 20 | Wrocław, Poland
+- **dreamOlé** - March 27 | Valencia, Spain
+- **TrailblazerDX 2026** - April 15-16 | San Francisco, CA
+- **Albania Dreamin'** - April 25 | Tirana, Albania
+- **True North Dreamin'** - May 11-12 | Toronto, Canada
+- **CzechDreamin** - May 29 | Prague, Czech Republic
+- **London's Calling** - June 5 | London, UK
+- **Portugal Dreamin'** - June 19 | Lisbon, Portugal
+- **Buckeye Dreamin'** - July 28-30 | Columbus, OH
+- **Forcelandia** - July 29-30 | Portland, OR
+- **Mile High Dreamin'** - August 26-27 | Denver, CO
+- **Dreamforce 2026** - September 15-17 | San Francisco, CA
+
+### Tentative Events (2)
+- **London Architect Dreamin'** - Estimated February | London, UK
+- **Yeur Architect Dreamin'** - Estimated June | Europe
+
+## 📥 How to Import
+
+### Google Calendar
+
+1. **Download the calendar file:**
+   - Click on `salesforce_dreamin_events_2025.ics` above
+   - Click the "Download" button (or right-click "Raw" and select "Save Link As...")
+
+2. **Import to Google Calendar:**
+   - Open [Google Calendar](https://calendar.google.com)
+   - Click the **Settings gear** icon (top right) → **Settings**
+   - In the left sidebar, click **Import & Export**
+   - Click **Select file from your computer**
+   - Choose the downloaded `.ics` file
+   - Select which calendar to add the events to
+   - Click **Import**
+
+3. **Done!** All 18 events will appear on your calendar marked as "busy"
+
+### Microsoft Office 365 / Outlook Web
+
+1. **Download the calendar file:**
+   - Click on `salesforce_dreamin_events_2025.ics` above
+   - Click the "Download" button
+
+2. **Import to Outlook Web:**
+   - Open [Outlook Calendar](https://outlook.office.com/calendar)
+   - Click **Add calendar** (left sidebar)
+   - Select **Upload from file**
+   - Click **Browse** and select the downloaded `.ics` file
+   - Choose which calendar to import into
+   - Click **Import**
+
+3. **Done!** Events will appear in your Outlook calendar
+
+### Microsoft Outlook Desktop
+
+1. **Download the calendar file:**
+   - Click on `salesforce_dreamin_events_2025.ics` above
+   - Click the "Download" button
+
+2. **Import to Outlook Desktop:**
+   - Open **Outlook**
+   - Go to **File** → **Open & Export** → **Import/Export**
+   - Select **Import an iCalendar (.ics) or vCalendar file (.vcs)**
+   - Click **Next**
+   - Browse to the downloaded `.ics` file
+   - Click **OK**
+   - Choose **Import** (to add to your calendar) or **Open as New** (to create a separate calendar)
+
+3. **Done!** Events will appear in your Outlook calendar
+
+### Apple Calendar (macOS/iOS)
+
+#### On Mac:
+1. **Download the calendar file:**
+   - Click on `salesforce_dreamin_events_2025.ics` above
+   - Click the "Download" button
+
+2. **Import to Apple Calendar:**
+   - Double-click the downloaded `.ics` file
+   - Calendar will open automatically
+   - Choose which calendar to add the events to
+   - Click **OK**
+
+#### On iPhone/iPad:
+1. **Download the calendar file:**
+   - Open this GitHub page in Safari
+   - Tap on `salesforce_dreamin_events_2025.ics`
+   - Tap "Download" or "Raw"
+
+2. **Import:**
+   - Tap **Add All** when prompted
+   - Events will be added to your default calendar
+
+3. **Done!** Events will sync across all your Apple devices via iCloud
+
+## 🔄 Alternative Method: Direct URL Import
+
+Some calendar applications support importing via URL. You can use this direct link:
+
+```
+https://raw.githubusercontent.com/joncline/salesforce-community-events/main/salesforce_dreamin_events_2025.ics
+```
+
+**Note:** This creates a one-time import. The calendar won't auto-update if changes are made to the file.
+
+## ✨ Features
+
+- ✅ All events marked as "busy" on your calendar
+- ✅ Complete event descriptions with website URLs
+- ✅ Location information for each event
+- ✅ Multi-day events properly configured
+- ✅ Compatible with all major calendar applications
+
+## 📝 Request New Events
+
+Know of a Salesforce community event that should be included? 
+
+**Contact:** Jon Cline  
+**LinkedIn:** [linkedin.com/in/joncline](https://www.linkedin.com/in/joncline)  
+**Website:** [joncline.com](https://www.joncline.com)
+
+Please provide:
+- Event name
+- Date(s)
+- Location
+- Official website URL (if available)
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+Thanks to all the amazing Salesforce community organizers who make these events possible! Special thanks to the Dreamin' event organizers worldwide for building such an incredible global community.
+
+---
+
+**Maintained by:** Jon Cline | [joncline.com](https://www.joncline.com) | [LinkedIn](https://www.linkedin.com/in/joncline)
