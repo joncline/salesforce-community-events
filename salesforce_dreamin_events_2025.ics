@@ -73,6 +73,19 @@ SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
+DTSTART:20260319T100000
+DTEND:20260319T213000
+DTSTAMP:20251107T175400Z
+UID:irish-dreamin-2026@salesforce-events
+SUMMARY:Irish Dreamin'
+LOCATION:Dublin, Ireland
+DESCRIPTION:Irish Dreamin' - Ireland's community-led Salesforce conference bringing together admins, architects, consultants, developers, marketers, and partners for a dynamic day of learning, innovation, and networking.\n\nWebsite: https://www.irishdreamin.ie\n\nMarch 19, 2026 at The Royal Marine Hotel, Dublin, Ireland
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
 DTSTART:20260320T080000
 DTEND:20260320T180000
 DTSTAMP:20251107T175400Z
