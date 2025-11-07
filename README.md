@@ -105,6 +105,35 @@ This calendar includes **18 Salesforce community events** for 2026:
 
 3. **Done!** Events will sync across all your Apple devices via iCloud
 
+## ⚠️ Important: Avoiding Duplicate Events
+
+**If you import this calendar file multiple times, it WILL create duplicate events.** Each import is treated as a new set of events.
+
+### How to Prevent Duplicates:
+
+1. **Before Re-importing:** Delete the previously imported events first
+2. **Use a Separate Calendar:** Import into a dedicated "Salesforce Events" calendar that you can easily delete and re-import
+3. **Check UIDs:** Each event has a unique identifier (UID), but most calendar apps don't automatically merge duplicates
+
+### Recommended Approach:
+
+**Create a dedicated calendar for these events:**
+
+- **Google Calendar:** Create a new calendar called "Salesforce Events 2026" and import there
+- **Outlook:** Import as a new calendar rather than adding to your main calendar
+- **Apple Calendar:** Create a new calendar specifically for Salesforce events
+
+This way, if you need to update events, you can simply:
+1. Delete the entire "Salesforce Events 2026" calendar
+2. Create a new one
+3. Re-import the updated file
+
+### If You Already Have Duplicates:
+
+- **Google Calendar:** Search for the event name, select all duplicates, and delete
+- **Outlook:** Use the search function to find duplicates and delete them
+- **Apple Calendar:** Search for the event and manually delete duplicates
+
 ## 🔄 Alternative Method: Direct URL Import
 
 Some calendar applications support importing via URL. You can use this direct link:
