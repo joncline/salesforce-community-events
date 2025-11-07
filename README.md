@@ -4,9 +4,9 @@ A comprehensive calendar of Salesforce community events, conferences, and Dreami
 
 ## 📅 What's Included
 
-This calendar includes **18 Salesforce community events** for 2026:
+This calendar includes **21 Salesforce community events** for 2026:
 
-### Confirmed Events (16)
+### Confirmed Events (17)
 - **Architect Dreamin' US** - January 21-22 | Scottsdale, AZ
 - **Cactusforce** - January 22-23 | Scottsdale, AZ
 - **Bharat Dreamin'** - January 24 | Jaipur, India
@@ -19,14 +19,17 @@ This calendar includes **18 Salesforce community events** for 2026:
 - **CzechDreamin** - May 29 | Prague, Czech Republic
 - **London's Calling** - June 5 | London, UK
 - **Portugal Dreamin'** - June 19 | Lisbon, Portugal
+- **WITness Success** - July 22-24 | Indianapolis, IN
 - **Buckeye Dreamin'** - July 28-30 | Columbus, OH
 - **Forcelandia** - July 29-30 | Portland, OR
 - **Mile High Dreamin'** - August 26-27 | Denver, CO
 - **Dreamforce 2026** - September 15-17 | San Francisco, CA
 
-### Tentative Events (2)
+### Tentative Events (4)
 - **London Architect Dreamin'** - Estimated February | London, UK
 - **Yeur Architect Dreamin'** - Estimated June | Europe
+- **Dreamin in Data** - Estimated Fall | TBD
+- **Nonprofit Dreamin** - Estimated Fall | TBD
 
 ## 📥 How to Import
 
@@ -45,7 +48,7 @@ This calendar includes **18 Salesforce community events** for 2026:
    - Select which calendar to add the events to
    - Click **Import**
 
-3. **Done!** All 18 events will appear on your calendar marked as "busy"
+3. **Done!** All 21 events will appear on your calendar marked as "busy"
 
 ### Microsoft Office 365 / Outlook Web
 

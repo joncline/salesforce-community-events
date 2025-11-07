@@ -190,6 +190,19 @@ SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
+DTSTART:20260722T080000
+DTEND:20260724T180000
+DTSTAMP:20251107T175400Z
+UID:witness-success-2026@salesforce-events
+SUMMARY:WITness Success
+LOCATION:Indianapolis, Indiana, USA
+DESCRIPTION:WITness Success - A Salesforce community conference celebrating Women in Technology and fostering connections, learning, and empowerment.\n\nWebsite: https://witnesssuccess.com\n\nJuly 22-24, 2026 in Indianapolis, Indiana
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
 DTSTART:20260728T080000
 DTEND:20260730T180000
 DTSTAMP:20251107T175400Z
@@ -229,6 +242,19 @@ SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
+DTSTART:20260901T080000
+DTEND:20260901T180000
+DTSTAMP:20251107T175400Z
+UID:dreamin-data-2026@salesforce-events
+SUMMARY:Dreamin in Data (Date TBD)
+LOCATION:TBD
+DESCRIPTION:Dreamin in Data - A Salesforce community conference focused on data, analytics, and insights.\n\nNOTE: 2026 date and location not yet announced. This is a placeholder based on typical fall timing. Check Salesforce community event listings for confirmed dates.\n\nEstimated: Fall 2026
+STATUS:TENTATIVE
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
 DTSTART:20260915T080000
 DTEND:20260917T180000
 DTSTAMP:20251107T175400Z
@@ -237,6 +263,19 @@ SUMMARY:Dreamforce 2026
 LOCATION:San Francisco, California, USA
 DESCRIPTION:Dreamforce - The world's largest Salesforce conference bringing together Trailblazers, customers, partners, and industry leaders. Experience groundbreaking innovations, inspiring keynotes, 500+ sessions, hands-on training, and networking opportunities.\n\nWebsite: https://www.salesforce.com/dreamforce/\n\nSeptember 15-17, 2026 in San Francisco and on Salesforce+
 STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART:20261001T080000
+DTEND:20261001T180000
+DTSTAMP:20251107T175400Z
+UID:nonprofit-dreamin-2026@salesforce-events
+SUMMARY:Nonprofit Dreamin (Date TBD)
+LOCATION:TBD
+DESCRIPTION:Nonprofit Dreamin - A Salesforce community conference dedicated to nonprofit organizations, featuring sessions on fundraising, program management, and leveraging Salesforce for social impact.\n\nNOTE: 2026 date and location not yet announced. This is a placeholder based on typical fall timing. Check Salesforce community event listings for confirmed dates.\n\nEstimated: Fall 2026
+STATUS:TENTATIVE
 TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT
