@@ -7,24 +7,24 @@ A comprehensive calendar of Salesforce community events, conferences, and Dreami
 This calendar includes **22 Salesforce community events** for 2026:
 
 ### Confirmed Events (18)
-- **Architect Dreamin' US** - January 21-22 | Scottsdale, AZ
-- **Cactusforce** - January 22-23 | Scottsdale, AZ
-- **Bharat Dreamin'** - January 24 | Jaipur, India
-- **Cairo Dreamin'** - January 31 | Cairo, Egypt
-- **Irish Dreamin'** - March 19 | Dublin, Ireland
-- **Polish Dreamin'** - March 20 | Wrocław, Poland
-- **dreamOlé** - March 27 | Valencia, Spain
-- **TrailblazerDX 2026** - April 15-16 | San Francisco, CA
-- **Albania Dreamin'** - April 25 | Tirana, Albania
-- **True North Dreamin'** - May 11-12 | Toronto, Canada
-- **CzechDreamin** - May 29 | Prague, Czech Republic
-- **London's Calling** - June 5 | London, UK
-- **Portugal Dreamin'** - June 19 | Lisbon, Portugal
-- **WITness Success** - July 22-24 | Indianapolis, IN
-- **Buckeye Dreamin'** - July 28-30 | Columbus, OH
-- **Forcelandia** - July 29-30 | Portland, OR
-- **Mile High Dreamin'** - August 26-27 | Denver, CO
-- **Dreamforce 2026** - September 15-17 | San Francisco, CA
+- **Architect Dreamin' US** - January 21-22 | Scottsdale, AZ | CFP: TBD
+- **Cactusforce** - January 22-23 | Scottsdale, AZ | CFP: TBD
+- **Bharat Dreamin'** - January 24 | Jaipur, India | CFP: TBD
+- **Cairo Dreamin'** - January 31 | Cairo, Egypt | CFP: [OPEN](https://www.cairodreamin.com/speakers/)
+- **Irish Dreamin'** - March 19 | Dublin, Ireland | CFP: [OPEN](https://irishdreamin.ie/call-for-speakers/)
+- **Polish Dreamin'** - March 20 | Wrocław, Poland | CFP: [OPEN](https://dreamin.coffeeforce.pl#speakers)
+- **dreamOlé** - March 27 | Valencia, Spain | CFP: TBD
+- **TrailblazerDX 2026** - April 15-16 | San Francisco, CA | CFP: TBD
+- **Albania Dreamin'** - April 25 | Tirana, Albania | CFP: TBD
+- **True North Dreamin'** - May 11-12 | Toronto, Canada | CFP: [OPEN](https://truenorthdreamin.com/call-for-speakers)
+- **CzechDreamin** - May 29 | Prague, Czech Republic | CFP: TBD
+- **London's Calling** - June 5 | London, UK | CFP: TBD
+- **Portugal Dreamin'** - June 19 | Lisbon, Portugal | CFP: TBD
+- **WITness Success** - July 22-24 | Indianapolis, IN | CFP: TBD
+- **Buckeye Dreamin'** - July 28-30 | Columbus, OH | CFP: TBD
+- **Forcelandia** - July 29-30 | Portland, OR | CFP: TBD
+- **Mile High Dreamin'** - August 26-27 | Denver, CO | CFP: TBD
+- **Dreamforce 2026** - September 15-17 | San Francisco, CA | CFP: TBD
 
 ### Tentative Events (4)
 - **London Architect Dreamin'** - Estimated February | London, UK
@@ -194,47 +194,7 @@ This way, if you need to update events, you can simply:
 - ✅ Multi-day events properly configured
 - ✅ Compatible with all major calendar applications
 
-## 📢 Call for Presenters/Speakers Status {#cfp}
-
-Last updated: November 17, 2025
-
-### ✅ Call for Speakers OPEN:
-
-1. **Cairo Dreamin'** (January 31, 2026)
-   - 🔗 [Submit Your Session](https://www.cairodreamin.com/speakers/)
-
-2. **Irish Dreamin'** (March 19, 2026)
-   - 🔗 [Submit Your Session](https://irishdreamin.ie/call-for-speakers/)
-
-3. **Polish Dreamin'** (March 20, 2026)
-   - 🔗 [Submit Your Session](https://dreamin.coffeeforce.pl#speakers)
-
-4. **True North Dreamin'** (May 11-12, 2026)
-   - 🔗 [Submit Your Session](https://truenorthdreamin.com/call-for-speakers)
-
-### 🔜 Coming Soon (Websites Active, No CFP Yet):
-
-- **Architect Dreamin' US** (January 21-22, 2026) - [Website](https://architectdreamin.com)
-- **Cactusforce** (January 22-23, 2026) - [Website](https://cactusforce.com)
-- **Bharat Dreamin'** (January 24, 2026) - [Website](https://bharatdreamin.com)
-- **dreamOlé** (March 27, 2026) - [Website](https://dreamole.es)
-- **TrailblazerDX 2026** (April 15-16, 2026) - [Website](https://www.salesforce.com/trailblazerdx)
-- **CzechDreamin** (May 29, 2026) - [Website](https://czechdreamin.com)
-- **London's Calling** (June 5, 2026) - [Website](https://londonscalling.net)
-- **WITness Success** (July 22-24, 2026) - [Website](https://witnesssuccess.com)
-- **Buckeye Dreamin'** (July 28-30, 2026) - [Website](https://buckeyedreamin.com)
-- **Forcelandia** (July 29-30, 2026) - [Website](https://forcelandia.com)
-- **Mile High Dreamin'** (August 26-27, 2026) - [Website](https://milehighdreamin.com)
-- **Dreamforce 2026** (September 15-17, 2026) - [Website](https://www.salesforce.com/dreamforce)
-
-### ⚠️ No Active Website Yet:
-
-- **Albania Dreamin'** (April 25, 2026)
-- **Portugal Dreamin'** (June 19, 2026)
-
-> **Note:** This information is automatically updated weekly. Check back regularly for the latest CFP opportunities!
-
-## 📝 Request New Events
+## � Request New Events
 
 Know of a Salesforce community event that should be included? 
 
