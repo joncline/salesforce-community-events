@@ -1,12 +1,12 @@
-# Salesforce Community Events 2026 Calendar
+# Salesforce Community Events 2026-2027 Calendar
 
-A comprehensive calendar of Salesforce community events, conferences, and Dreamin' events for 2026. Import this calendar to stay up-to-date with the global Salesforce community!
+A comprehensive calendar of Salesforce community events, conferences, and Dreamin' events for 2026-2027. Import this calendar to stay up-to-date with the global Salesforce community!
 
 ## 📅 What's Included
 
-This calendar includes **22 Salesforce community events** for 2026:
+This calendar includes **23 Salesforce community events** for 2026-2027:
 
-### Confirmed Events (18)
+### Confirmed Events (19)
 - **Architect Dreamin' US** - January 21-22 | Scottsdale, AZ | CFP: TBD
 - **Cactusforce** - January 22-23 | Scottsdale, AZ | CFP: TBD
 - **Bharat Dreamin'** - January 24 | Jaipur, India | CFP: TBD
@@ -25,6 +25,7 @@ This calendar includes **22 Salesforce community events** for 2026:
 - **Forcelandia** - July 29-30 | Portland, OR | CFP: TBD
 - **Mile High Dreamin'** - August 26-27 | Denver, CO | CFP: TBD
 - **Dreamforce 2026** - September 15-17 | San Francisco, CA | CFP: TBD
+- **Biggest Little Dreamin' 2027** - January 28-29 | Reno, NV | CFP: TBD
 
 ### Tentative Events (4)
 - **London Architect Dreamin'** - Estimated February | London, UK
@@ -95,7 +96,7 @@ If you prefer a one-time import (no automatic updates), download and import the 
    - Select which calendar to add the events to
    - Click **Import**
 
-3. **Done!** All 22 events will appear on your calendar marked as "busy"
+3. **Done!** All 23 events will appear on your calendar marked as "busy"
 
 #### Microsoft Office 365 / Outlook Web
 
