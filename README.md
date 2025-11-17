@@ -194,7 +194,7 @@ This way, if you need to update events, you can simply:
 - ✅ Multi-day events properly configured
 - ✅ Compatible with all major calendar applications
 
-## 📢 Call for Presenters/Speakers Status
+## 📢 Call for Presenters/Speakers Status {#cfp}
 
 Last updated: November 17, 2025
 
