@@ -32,9 +32,55 @@ This calendar includes **22 Salesforce community events** for 2026:
 - **Dreamin in Data** - Estimated Fall | TBD
 - **Nonprofit Dreamin** - Estimated Fall | TBD
 
-## 📥 How to Import
+## 📅 How to Add to Your Calendar
 
-### Google Calendar
+### ⭐ Option 1: Auto-Updating Subscription (RECOMMENDED)
+
+For **automatic updates** when new events are added or existing events are modified, subscribe to the calendar:
+
+**Subscription URL:**
+```
+https://joncline.github.io/salesforce-community-events/salesforce_dreamin_events_2025.ics
+```
+
+#### Google Calendar:
+1. Open [Google Calendar](https://calendar.google.com)
+2. Click the **+** next to "Add calendar" (left sidebar)
+3. Select **From URL**
+4. Paste the subscription URL above
+5. Click **Add calendar**
+
+#### Microsoft Outlook:
+1. Open [Outlook Calendar](https://outlook.office.com/calendar)
+2. Click **Add calendar** → **Subscribe from web**
+3. Paste the subscription URL above
+4. Click **Import**
+
+#### Apple Calendar (macOS):
+1. Open Calendar app
+2. Go to **File** → **New Calendar Subscription**
+3. Paste the subscription URL above
+4. Click **Subscribe**
+5. Choose update frequency (recommended: every 15 minutes)
+
+#### Apple Calendar (iOS):
+1. Open Settings → **Calendar** → **Accounts** → **Add Account**
+2. Select **Other** → **Add Subscribed Calendar**
+3. Paste the subscription URL above
+4. Tap **Next** then **Save**
+
+**Benefits:**
+- ✅ Automatic updates when new events are added
+- ✅ Real-time sync across all your devices
+- ✅ No manual re-importing required
+
+---
+
+### 📥 Option 2: One-Time Import
+
+If you prefer a one-time import (no automatic updates), download and import the calendar file:
+
+#### Google Calendar
 
 1. **Download the calendar file:**
    - Click on `salesforce_dreamin_events_2025.ics` above
@@ -51,7 +97,7 @@ This calendar includes **22 Salesforce community events** for 2026:
 
 3. **Done!** All 22 events will appear on your calendar marked as "busy"
 
-### Microsoft Office 365 / Outlook Web
+#### Microsoft Office 365 / Outlook Web
 
 1. **Download the calendar file:**
    - Click on `salesforce_dreamin_events_2025.ics` above
@@ -67,7 +113,7 @@ This calendar includes **22 Salesforce community events** for 2026:
 
 3. **Done!** Events will appear in your Outlook calendar
 
-### Microsoft Outlook Desktop
+#### Microsoft Outlook Desktop
 
 1. **Download the calendar file:**
    - Click on `salesforce_dreamin_events_2025.ics` above
@@ -84,9 +130,9 @@ This calendar includes **22 Salesforce community events** for 2026:
 
 3. **Done!** Events will appear in your Outlook calendar
 
-### Apple Calendar (macOS/iOS)
+#### Apple Calendar (macOS/iOS)
 
-#### On Mac:
+##### On Mac:
 1. **Download the calendar file:**
    - Click on `salesforce_dreamin_events_2025.ics` above
    - Click the "Download" button
@@ -97,7 +143,7 @@ This calendar includes **22 Salesforce community events** for 2026:
    - Choose which calendar to add the events to
    - Click **OK**
 
-#### On iPhone/iPad:
+##### On iPhone/iPad:
 1. **Download the calendar file:**
    - Open this GitHub page in Safari
    - Tap on `salesforce_dreamin_events_2025.ics`
@@ -138,15 +184,7 @@ This way, if you need to update events, you can simply:
 - **Outlook:** Use the search function to find duplicates and delete them
 - **Apple Calendar:** Search for the event and manually delete duplicates
 
-## 🔄 Alternative Method: Direct URL Import
 
-Some calendar applications support importing via URL. You can use this direct link:
-
-```
-https://raw.githubusercontent.com/joncline/salesforce-community-events/main/salesforce_dreamin_events_2025.ics
-```
-
-**Note:** This creates a one-time import. The calendar won't auto-update if changes are made to the file.
 
 ## ✨ Features
 
@@ -155,6 +193,46 @@ https://raw.githubusercontent.com/joncline/salesforce-community-events/main/sale
 - ✅ Location information for each event
 - ✅ Multi-day events properly configured
 - ✅ Compatible with all major calendar applications
+
+## 📢 Call for Presenters/Speakers Status
+
+Last updated: November 17, 2025
+
+### ✅ Call for Speakers OPEN:
+
+1. **Cairo Dreamin'** (January 31, 2026)
+   - 🔗 [Submit Your Session](https://www.cairodreamin.com/speakers/)
+
+2. **Irish Dreamin'** (March 19, 2026)
+   - 🔗 [Submit Your Session](https://irishdreamin.ie/call-for-speakers/)
+
+3. **Polish Dreamin'** (March 20, 2026)
+   - 🔗 [Submit Your Session](https://dreamin.coffeeforce.pl#speakers)
+
+4. **True North Dreamin'** (May 11-12, 2026)
+   - 🔗 [Submit Your Session](https://truenorthdreamin.com/call-for-speakers)
+
+### 🔜 Coming Soon (Websites Active, No CFP Yet):
+
+- **Architect Dreamin' US** (January 21-22, 2026) - [Website](https://architectdreamin.com)
+- **Cactusforce** (January 22-23, 2026) - [Website](https://cactusforce.com)
+- **Bharat Dreamin'** (January 24, 2026) - [Website](https://bharatdreamin.com)
+- **dreamOlé** (March 27, 2026) - [Website](https://dreamole.es)
+- **TrailblazerDX 2026** (April 15-16, 2026) - [Website](https://www.salesforce.com/trailblazerdx)
+- **CzechDreamin** (May 29, 2026) - [Website](https://czechdreamin.com)
+- **London's Calling** (June 5, 2026) - [Website](https://londonscalling.net)
+- **WITness Success** (July 22-24, 2026) - [Website](https://witnesssuccess.com)
+- **Buckeye Dreamin'** (July 28-30, 2026) - [Website](https://buckeyedreamin.com)
+- **Forcelandia** (July 29-30, 2026) - [Website](https://forcelandia.com)
+- **Mile High Dreamin'** (August 26-27, 2026) - [Website](https://milehighdreamin.com)
+- **Dreamforce 2026** (September 15-17, 2026) - [Website](https://www.salesforce.com/dreamforce)
+
+### ⚠️ No Active Website Yet:
+
+- **Albania Dreamin'** (April 25, 2026)
+- **Portugal Dreamin'** (June 19, 2026)
+
+> **Note:** This information is automatically updated weekly. Check back regularly for the latest CFP opportunities!
 
 ## 📝 Request New Events
 
