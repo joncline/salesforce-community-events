@@ -8,6 +8,45 @@ X-WR-TIMEZONE:America/Los_Angeles
 X-WR-CALDESC:Salesforce conferences and community events
 
 BEGIN:VEVENT
+DTSTART:20251010T080000
+DTEND:20251011T180000
+DTSTAMP:20251125T221500Z
+UID:texas-dreamin-2025@salesforce-events
+SUMMARY:Texas Dreamin'
+LOCATION:Austin, Texas, USA
+DESCRIPTION:Texas Dreamin' - Texas's Salesforce community conference.\n\nWebsite: https://www.texasdreamin.org/\n\nOctober 10-11, 2025 in Austin, Texas
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART:20251017T080000
+DTEND:20251018T180000
+DTSTAMP:20251125T221500Z
+UID:dreamin-in-data-2025@salesforce-events
+SUMMARY:Dreamin in Data
+LOCATION:Scottsdale, Arizona, USA
+DESCRIPTION:Dreamin in Data - A Salesforce community conference focused on data, analytics, and insights.\n\nWebsite: https://www.dreaminindata.org/\n\nOctober 17-18, 2025 in Scottsdale, Arizona
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART:20251202T090000
+DTEND:20251202T190000
+DTSTAMP:20251125T221500Z
+UID:french-touch-dreamin-2025@salesforce-events
+SUMMARY:French Touch Dreamin'
+LOCATION:Paris, France
+DESCRIPTION:French Touch Dreamin' - Salesforce community conference by the community in France.\n\nWebsite: https://frenchtouchdreamin.com/\n\nDecember 2, 2025 in Paris, France
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
 DTSTART:20260121T080000
 DTEND:20260122T180000
 DTSTAMP:20251107T175400Z
@@ -132,6 +171,19 @@ UID:albania-dreamin-2026@salesforce-events
 SUMMARY:Albania Dreamin'
 LOCATION:Tirana, Albania
 DESCRIPTION:Albania Dreamin' - Albania's Salesforce community conference.\n\nWebsite: https://dreamin.al/\n\nApril 25, 2026 in Tirana, Albania
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART:20260504T090000
+DTEND:20260504T180000
+DTSTAMP:20251125T221500Z
+UID:mid-atlantic-dreamin-2026@salesforce-events
+SUMMARY:Mid Atlantic Dreamin'
+LOCATION:Baltimore, Maryland, USA
+DESCRIPTION:Mid Atlantic Dreamin' - Salesforce community event in the Mid Atlantic region.\n\nWebsite: https://midatlanticdreamin.com/\n\nMay 4, 2026 in Baltimore, Maryland
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 SEQUENCE:0

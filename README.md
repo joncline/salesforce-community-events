@@ -1,12 +1,12 @@
-# Salesforce Community Events 2026-2027 Calendar
+# Salesforce Community Events 2025-2027 Calendar
 
-A comprehensive calendar of Salesforce community events, conferences, and Dreamin' events for 2026-2027. Import this calendar to stay up-to-date with the global Salesforce community!
+A comprehensive calendar of Salesforce community events, conferences, and Dreamin' events for 2025-2027. Import this calendar to stay up-to-date with the global Salesforce community!
 
 ## 📅 What's Included
 
-This calendar includes **24 Salesforce community events** for 2026-2027:
+This calendar includes **28 Salesforce community events** for 2025-2027:
 
-### Confirmed Events (19)
+### Confirmed Events (23)
 - **Architect Dreamin' US** - January 21-22 | Scottsdale, AZ | CFP: TBD
 - **Cactusforce** - January 22-23 | Scottsdale, AZ | CFP: TBD
 - **Bharat Dreamin'** - January 24 | Jaipur, India | CFP: TBD
@@ -16,6 +16,7 @@ This calendar includes **24 Salesforce community events** for 2026-2027:
 - **dreamOlé** - March 27 | Valencia, Spain | CFP: TBD
 - **TrailblazerDX 2026** - April 15-16 | San Francisco, CA | CFP: TBD
 - **Albania Dreamin'** - April 25 | Tirana, Albania | CFP: TBD
+- **Mid Atlantic Dreamin'** - May 4 | Baltimore, MD | CFP: TBD
 - **True North Dreamin'** - May 11-12 | Toronto, Canada | CFP: [OPEN](https://truenorthdreamin.com/call-for-speakers)
 - **CzechDreamin** - May 29 | Prague, Czech Republic | CFP: TBD
 - **London's Calling** - June 5 | London, UK | CFP: TBD
@@ -25,6 +26,9 @@ This calendar includes **24 Salesforce community events** for 2026-2027:
 - **Forcelandia** - July 29-30 | Portland, OR | CFP: TBD
 - **Mile High Dreamin'** - August 26-27 | Denver, CO | CFP: TBD
 - **Dreamforce 2026** - September 15-17 | San Francisco, CA | CFP: TBD
+- **Texas Dreamin'** - October 10-11 | Austin, TX | CFP: TBD
+- **Dreamin in Data** - October 17-18 | Scottsdale, AZ | CFP: TBD
+- **French Touch Dreamin'** - December 2 | Paris, France | CFP: TBD
 - **Biggest Little Dreamin' 2027** - January 28-29 | Reno, NV | CFP: TBD
 
 ### Tentative Events (5)
@@ -42,7 +46,7 @@ For **automatic updates** when new events are added or existing events are modif
 
 **Subscription URL:**
 ```
-https://joncline.github.io/salesforce-community-events/salesforce_dreamin_events_2025.ics
+https://joncline.github.io/salesforce-community-events/salesforce_dreamin_events_2026.ics
 ```
 
 #### Google Calendar:
@@ -85,7 +89,7 @@ If you prefer a one-time import (no automatic updates), download and import the 
 #### Google Calendar
 
 1. **Download the calendar file:**
-   - Click on `salesforce_dreamin_events_2025.ics` above
+   - Click on `salesforce_dreamin_events_2026.ics` above
    - Click the "Download" button (or right-click "Raw" and select "Save Link As...")
 
 2. **Import to Google Calendar:**
@@ -97,12 +101,12 @@ If you prefer a one-time import (no automatic updates), download and import the 
    - Select which calendar to add the events to
    - Click **Import**
 
-3. **Done!** All 24 events will appear on your calendar marked as "busy"
+3. **Done!** All 28 events will appear on your calendar marked as "busy"
 
 #### Microsoft Office 365 / Outlook Web
 
 1. **Download the calendar file:**
-   - Click on `salesforce_dreamin_events_2025.ics` above
+   - Click on `salesforce_dreamin_events_2026.ics` above
    - Click the "Download" button
 
 2. **Import to Outlook Web:**
@@ -118,7 +122,7 @@ If you prefer a one-time import (no automatic updates), download and import the 
 #### Microsoft Outlook Desktop
 
 1. **Download the calendar file:**
-   - Click on `salesforce_dreamin_events_2025.ics` above
+   - Click on `salesforce_dreamin_events_2026.ics` above
    - Click the "Download" button
 
 2. **Import to Outlook Desktop:**
@@ -136,7 +140,7 @@ If you prefer a one-time import (no automatic updates), download and import the 
 
 ##### On Mac:
 1. **Download the calendar file:**
-   - Click on `salesforce_dreamin_events_2025.ics` above
+   - Click on `salesforce_dreamin_events_2026.ics` above
    - Click the "Download" button
 
 2. **Import to Apple Calendar:**
@@ -148,7 +152,7 @@ If you prefer a one-time import (no automatic updates), download and import the 
 ##### On iPhone/iPad:
 1. **Download the calendar file:**
    - Open this GitHub page in Safari
-   - Tap on `salesforce_dreamin_events_2025.ics`
+   - Tap on `salesforce_dreamin_events_2026.ics`
    - Tap "Download" or "Raw"
 
 2. **Import:**
@@ -217,7 +221,7 @@ Want to modify the calendar before importing? You can use AI tools to customize 
 ### Using Cline.bot or Salesforce Vibes:
 
 1. **Download the calendar file:**
-   - Click on `salesforce_dreamin_events_2025.ics` above
+   - Click on `salesforce_dreamin_events_2026.ics` above
    - Click "Download" to save it to your computer
 
 2. **Open in your AI tool:**
