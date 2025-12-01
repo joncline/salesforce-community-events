@@ -200,6 +200,48 @@ This way, if you need to update events, you can simply:
 - ✅ Multi-day events properly configured
 - ✅ Compatible with all major calendar applications
 
+## 📢 Call for Presenters/Speakers Status
+
+Last updated: December 1, 2025
+
+### ✅ Call for Speakers OPEN:
+
+1. **Cairo Dreamin'** (January 31, 2026)
+   - 🔗 [Submit Your Session](https://www.cairodreamin.com/speakers/)
+
+2. **Irish Dreamin'** (March 19, 2026)
+   - 🔗 [Submit Your Session](https://irishdreamin.ie/call-for-speakers/)
+
+3. **Polish Dreamin'** (March 20, 2026)
+   - 🔗 [Submit Your Session](https://dreamin.coffeeforce.pl#speakers)
+
+4. **True North Dreamin'** (May 11-12, 2026)
+   - 🔗 [Submit Your Session](https://truenorthdreamin.com/call-for-speakers)
+
+### 🔜 Coming Soon (Websites Active, No CFP Yet):
+
+- **Architect Dreamin' US** (January 21-22, 2026) - [Website](https://architectdreamin.com)
+- **Cactusforce** (January 22-23, 2026) - [Website](https://cactusforce.com)
+- **Bharat Dreamin'** (January 24, 2026) - [Website](https://bharatdreamin.com)
+- **dreamOlé** (March 27, 2026) - [Website](https://dreamole.es)
+- **TrailblazerDX 2026** (April 15-16, 2026) - [Website](https://www.salesforce.com/trailblazerdx)
+- **Albania Dreamin'** (April 25, 2026) - [Website](https://dreamin.al)
+- **Mid Atlantic Dreamin'** (May 4, 2026) - [Website](https://midatlanticdreamin.com)
+- **CzechDreamin** (May 29, 2026) - [Website](https://czechdreamin.com)
+- **London's Calling** (June 5, 2026) - [Website](https://londonscalling.net)
+- **Portugal Dreamin'** (June 19, 2026) - [Website](https://www.portugaldreamin.com/en)
+- **WITness Success** (July 22-24, 2026) - [Website](https://witnesssuccess.com)
+- **Buckeye Dreamin'** (July 28-30, 2026) - [Website](https://buckeyedreamin.com)
+- **Forcelandia** (July 29-30, 2026) - [Website](https://forcelandia.com)
+- **Mile High Dreamin'** (August 26-27, 2026) - [Website](https://milehighdreamin.com)
+- **Dreamforce 2026** (September 15-17, 2026) - [Website](https://www.salesforce.com/dreamforce)
+- **Texas Dreamin'** (October 10-11, 2026) - [Website](https://texasdreamin.com)
+- **Dreamin in Data** (October 17-18, 2026) - [Website](https://dreamindata.com)
+- **French Touch Dreamin'** (December 2, 2026) - [Website](https://frenchtouchdreamin.com)
+- **Biggest Little Dreamin' 2027** (January 28-29, 2027) - [Website](https://biggestlittledreamin.com)
+
+> **Note:** This information is automatically updated weekly. Check back regularly for the latest CFP opportunities!
+
 ## 📧 Request New Events
 
 Know of a Salesforce community event that should be included? 

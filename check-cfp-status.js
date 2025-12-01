@@ -69,7 +69,13 @@ const EVENTS = [
     name: "Albania Dreamin'",
     date: "April 25, 2026",
     location: "Tirana, Albania",
-    url: "https://albaniadreamin.com"
+    url: "https://dreamin.al"
+  },
+  {
+    name: "Mid Atlantic Dreamin'",
+    date: "May 4, 2026",
+    location: "Baltimore, MD",
+    url: "https://midatlanticdreamin.com"
   },
   {
     name: "True North Dreamin'",
@@ -94,7 +100,7 @@ const EVENTS = [
     name: "Portugal Dreamin'",
     date: "June 19, 2026",
     location: "Lisbon, Portugal",
-    url: "https://portugaldreamin.com"
+    url: "https://www.portugaldreamin.com/en"
   },
   {
     name: "WITness Success",
@@ -125,6 +131,30 @@ const EVENTS = [
     date: "September 15-17, 2026",
     location: "San Francisco, CA",
     url: "https://www.salesforce.com/dreamforce"
+  },
+  {
+    name: "Texas Dreamin'",
+    date: "October 10-11, 2026",
+    location: "Austin, TX",
+    url: "https://texasdreamin.com"
+  },
+  {
+    name: "Dreamin in Data",
+    date: "October 17-18, 2026",
+    location: "Scottsdale, AZ",
+    url: "https://dreamindata.com"
+  },
+  {
+    name: "French Touch Dreamin'",
+    date: "December 2, 2026",
+    location: "Paris, France",
+    url: "https://frenchtouchdreamin.com"
+  },
+  {
+    name: "Biggest Little Dreamin' 2027",
+    date: "January 28-29, 2027",
+    location: "Reno, NV",
+    url: "https://biggestlittledreamin.com"
   }
 ];
 
@@ -247,15 +277,15 @@ function updateReadme(results) {
   cfpSection += `> **Note:** This information is automatically updated weekly. Check back regularly for the latest CFP opportunities!\n`;
   
   // Replace the CFP section in README
-  const cfpRegex = /## 📢 Call for Presenters\/Speakers Status[\s\S]*?(?=## 📝 Request New Events)/;
-  
+  const cfpRegex = /## 📢 Call for Presenters\/Speakers Status[\s\S]*?(?=## 📧 Request New Events)/;
+
   if (cfpRegex.test(readme)) {
     readme = readme.replace(cfpRegex, cfpSection + '\n');
   } else {
     // If section doesn't exist, add it before "Request New Events"
     readme = readme.replace(
-      /## 📝 Request New Events/,
-      cfpSection + '\n## 📝 Request New Events'
+      /## 📧 Request New Events/,
+      cfpSection + '\n## 📧 Request New Events'
     );
   }
   
