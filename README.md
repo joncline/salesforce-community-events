@@ -6,30 +6,33 @@ A comprehensive calendar of Salesforce community events, conferences, and Dreami
 
 This calendar includes **28 Salesforce community events** for 2025-2027:
 
-### Confirmed Events (23)
-- **Architect Dreamin' US** - January 21-22 | Scottsdale, AZ | CFP: TBD
-- **Cactusforce** - January 22-23 | Scottsdale, AZ | CFP: TBD
-- **Bharat Dreamin'** - January 24 | Jaipur, India | CFP: TBD
-- **Cairo Dreamin'** - January 31 | Cairo, Egypt | CFP: [OPEN](https://www.cairodreamin.com/speakers/)
-- **Irish Dreamin'** - March 19 | Dublin, Ireland | CFP: [OPEN](https://irishdreamin.ie/call-for-speakers/)
-- **Polish Dreamin'** - March 20 | Wrocław, Poland | CFP: [OPEN](https://dreamin.coffeeforce.pl#speakers)
-- **dreamOlé** - March 27 | Valencia, Spain | CFP: TBD
-- **TrailblazerDX 2026** - April 15-16 | San Francisco, CA | CFP: TBD
-- **Albania Dreamin'** - April 25 | Tirana, Albania | CFP: TBD
-- **Mid Atlantic Dreamin'** - May 4 | Baltimore, MD | CFP: TBD
-- **True North Dreamin'** - May 11-12 | Toronto, Canada | CFP: [OPEN](https://truenorthdreamin.com/call-for-speakers)
-- **CzechDreamin** - May 29 | Prague, Czech Republic | CFP: TBD
-- **London's Calling** - June 5 | London, UK | CFP: TBD
-- **Portugal Dreamin'** - June 19 | Lisbon, Portugal | CFP: TBD
-- **WITness Success** - July 22-24 | Indianapolis, IN | CFP: TBD
-- **Buckeye Dreamin'** - July 28-30 | Columbus, OH | CFP: TBD
-- **Forcelandia** - July 29-30 | Portland, OR | CFP: TBD
-- **Mile High Dreamin'** - August 26-27 | Denver, CO | CFP: TBD
-- **Dreamforce 2026** - September 15-17 | San Francisco, CA | CFP: TBD
-- **Texas Dreamin'** - October 10-11 | Austin, TX | CFP: TBD
-- **Dreamin in Data** - October 17-18 | Scottsdale, AZ | CFP: TBD
-- **French Touch Dreamin'** - December 2 | Paris, France | CFP: TBD
-- **Biggest Little Dreamin' 2027** - January 28-29 | Reno, NV | CFP: TBD
+### Events Overview Table
+
+| Event | Date | Location | Website | CFP Status | Ticket Sales |
+|-------|------|----------|---------|------------|--------------|
+| Architect Dreamin' US | January 21-22 | Scottsdale, AZ | [Website](https://architectdreamin.com) | TBD | TBD |
+| Cactusforce | January 22-23 | Scottsdale, AZ | [Website](https://cactusforce.com) | TBD | TBD |
+| Bharat Dreamin' | January 24 | Jaipur, India | [Website](https://bharatdreamin.com) | TBD | TBD |
+| Cairo Dreamin' | January 31 | Cairo, Egypt | [Website](https://www.cairodreamin.com) | [OPEN](https://www.cairodreamin.com/speakers/) | TBD |
+| Irish Dreamin' | March 19 | Dublin, Ireland | [Website](https://irishdreamin.ie) | [OPEN](https://irishdreamin.ie/call-for-speakers/) | TBD |
+| Polish Dreamin' | March 20 | Wrocław, Poland | [Website](https://dreamin.coffeeforce.pl) | [OPEN](https://dreamin.coffeeforce.pl#speakers) | TBD |
+| dreamOlé | March 27 | Valencia, Spain | [Website](https://dreamole.es) | TBD | TBD |
+| TrailblazerDX 2026 | April 15-16 | San Francisco, CA | [Website](https://www.salesforce.com/trailblazerdx) | TBD | TBD |
+| Albania Dreamin' | April 25 | Tirana, Albania | [Website](https://dreamin.al) | TBD | TBD |
+| Mid Atlantic Dreamin' | May 4 | Baltimore, MD | [Website](https://midatlanticdreamin.com) | TBD | TBD |
+| True North Dreamin' | May 11-12 | Toronto, Canada | [Website](https://truenorthdreamin.com) | [OPEN](https://truenorthdreamin.com/call-for-speakers) | TBD |
+| CzechDreamin | May 29 | Prague, Czech Republic | [Website](https://czechdreamin.com) | TBD | TBD |
+| London's Calling | June 5 | London, UK | [Website](https://londonscalling.net) | TBD | TBD |
+| Portugal Dreamin' | June 19 | Lisbon, Portugal | [Website](https://www.portugaldreamin.com/en) | TBD | TBD |
+| WITness Success | July 22-24 | Indianapolis, IN | [Website](https://witnesssuccess.com) | TBD | TBD |
+| Buckeye Dreamin' | July 28-30 | Columbus, OH | [Website](https://buckeyedreamin.com) | TBD | TBD |
+| Forcelandia | July 29-30 | Portland, OR | [Website](https://forcelandia.com) | TBD | TBD |
+| Mile High Dreamin' | August 26-27 | Denver, CO | [Website](https://milehighdreamin.com) | TBD | TBD |
+| Dreamforce 2026 | September 15-17 | San Francisco, CA | [Website](https://www.salesforce.com/dreamforce) | TBD | TBD |
+| Texas Dreamin' | October 10-11 | Austin, TX | [Website](https://texasdreamin.com) | TBD | TBD |
+| Dreamin in Data | October 17-18 | Scottsdale, AZ | [Website](https://dreamindata.com) | TBD | TBD |
+| French Touch Dreamin' | December 2 | Paris, France | [Website](https://frenchtouchdreamin.com) | TBD | TBD |
+| Biggest Little Dreamin' 2027 | January 28-29 | Reno, NV | [Website](https://biggestlittledreamin.com) | TBD | TBD |
 
 ### Tentative Events (5)
 - **London Architect Dreamin'** - Estimated February | London, UK
@@ -200,49 +203,9 @@ This way, if you need to update events, you can simply:
 - ✅ Multi-day events properly configured
 - ✅ Compatible with all major calendar applications
 
-## 📢 Call for Presenters/Speakers Status
 
-Last updated: December 5, 2025
 
-### ✅ Call for Speakers OPEN:
-
-1. **Cairo Dreamin'** (January 31, 2026)
-   - 🔗 [Submit Your Session](https://www.cairodreamin.com/speakers/)
-
-2. **Irish Dreamin'** (March 19, 2026)
-   - 🔗 [Submit Your Session](https://irishdreamin.ie/call-for-speakers/)
-
-3. **Polish Dreamin'** (March 20, 2026)
-   - 🔗 [Submit Your Session](https://dreamin.coffeeforce.pl#speakers)
-
-4. **True North Dreamin'** (May 11-12, 2026)
-   - 🔗 [Submit Your Session](https://truenorthdreamin.com/call-for-speakers)
-
-### 🔜 Coming Soon (Websites Active, No CFP Yet):
-
-- **Architect Dreamin' US** (January 21-22, 2026) - [Website](https://architectdreamin.com)
-- **Cactusforce** (January 22-23, 2026) - [Website](https://cactusforce.com)
-- **Bharat Dreamin'** (January 24, 2026) - [Website](https://bharatdreamin.com)
-- **dreamOlé** (March 27, 2026) - [Website](https://dreamole.es)
-- **TrailblazerDX 2026** (April 15-16, 2026) - [Website](https://www.salesforce.com/trailblazerdx)
-- **Albania Dreamin'** (April 25, 2026) - [Website](https://dreamin.al)
-- **Mid Atlantic Dreamin'** (May 4, 2026) - [Website](https://midatlanticdreamin.com)
-- **CzechDreamin** (May 29, 2026) - [Website](https://czechdreamin.com)
-- **London's Calling** (June 5, 2026) - [Website](https://londonscalling.net)
-- **Portugal Dreamin'** (June 19, 2026) - [Website](https://www.portugaldreamin.com/en)
-- **WITness Success** (July 22-24, 2026) - [Website](https://witnesssuccess.com)
-- **Buckeye Dreamin'** (July 28-30, 2026) - [Website](https://buckeyedreamin.com)
-- **Forcelandia** (July 29-30, 2026) - [Website](https://forcelandia.com)
-- **Mile High Dreamin'** (August 26-27, 2026) - [Website](https://milehighdreamin.com)
-- **Dreamforce 2026** (September 15-17, 2026) - [Website](https://www.salesforce.com/dreamforce)
-- **Texas Dreamin'** (October 10-11, 2026) - [Website](https://texasdreamin.com)
-- **Dreamin in Data** (October 17-18, 2026) - [Website](https://dreamindata.com)
-- **French Touch Dreamin'** (December 2, 2026) - [Website](https://frenchtouchdreamin.com)
-- **Biggest Little Dreamin' 2027** (January 28-29, 2027) - [Website](https://biggestlittledreamin.com)
-
-> **Note:** This information is automatically updated weekly. Check back regularly for the latest CFP opportunities!
-
-## 📧 Request New Events
+## � Request New Events
 
 Know of a Salesforce community event that should be included? 
 
@@ -295,7 +258,7 @@ This approach gives you complete control over which events appear in your calend
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## � Acknowledgments
 
 Thanks to all the amazing Salesforce community organizers who make these events possible! Special thanks to the Dreamin' event organizers worldwide for building such an incredible global community.
 
