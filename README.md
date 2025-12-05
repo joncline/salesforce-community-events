@@ -202,7 +202,7 @@ This way, if you need to update events, you can simply:
 
 ## 📢 Call for Presenters/Speakers Status
 
-Last updated: December 1, 2025
+Last updated: December 5, 2025
 
 ### ✅ Call for Speakers OPEN:
 
