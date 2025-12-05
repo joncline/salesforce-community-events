@@ -33,7 +33,8 @@ const EVENTS = [
     name: "Bharat Dreamin'",
     date: "January 24, 2026",
     location: "Jaipur, India",
-    url: "https://bharatdreamin.com"
+    url: "https://bharatdreamin.com",
+    sponsorUrl: "https://docs.google.com/forms/d/e/1FAIpQLSeyry64v1swzQbeeUl8WVS370ALI3LY8mRtr3OKioj0qk9GtA/viewform"
   },
   {
     name: "Cairo Dreamin'",
@@ -271,6 +272,38 @@ async function checkEvent(event) {
       ticketStatus = `[Buy Tickets](${event.ticketUrl})`;
     }
 
+    // Search for sponsor keywords
+    const sponsorKeywords = event.sponsorKeywords || [
+      'sponsor',
+      'sponsorship',
+      'become a sponsor',
+      'sponsor us',
+      'partnership'
+    ];
+
+    const hasSponsor = sponsorKeywords.some(keyword => body.includes(keyword));
+
+    let sponsorStatus = 'TBD';
+    if (hasSponsor) {
+      // Try to extract sponsor link
+      const sponsorLinkMatch = body.match(/href=["']([^"']*(?:sponsor)[^"']*)["']/i);
+      if (sponsorLinkMatch) {
+        let sponsorLink = sponsorLinkMatch[1];
+        if (!sponsorLink.startsWith('http')) {
+          const baseUrl = new URL(event.url);
+          sponsorLink = `${baseUrl.protocol}//${baseUrl.host}${sponsorLink}`;
+        }
+        sponsorStatus = `[Become a Sponsor](${sponsorLink})`;
+      } else {
+        sponsorStatus = 'Available - check website';
+      }
+    }
+
+    // Override with known sponsor URL
+    if (event.sponsorUrl) {
+      sponsorStatus = `[Become a Sponsor](${event.sponsorUrl})`;
+    }
+
     let overallStatus = 'active';
     if (cfpStatus.startsWith('[OPEN]') || cfpLink) {
       overallStatus = 'cfp-open';
@@ -281,7 +314,8 @@ async function checkEvent(event) {
       status: overallStatus,
       cfpStatus,
       cfpLink,
-      ticketStatus
+      ticketStatus,
+      sponsorStatus
     };
   } catch (error) {
     return { ...event, status: 'error', error: error.message, cfpStatus: 'TBD', ticketStatus: 'TBD' };
@@ -309,7 +343,7 @@ function updateReadme(results) {
   // Build new table content
   let tableRows = '';
   results.forEach(event => {
-    tableRows += `| ${event.name} | ${event.date} | ${event.location} | [Website](${event.url}) | ${event.cfpStatus} | ${event.ticketStatus} |\n`;
+    tableRows += `| ${event.name} | ${event.date} | ${event.location} | [Website](${event.url}) | ${event.cfpStatus} | ${event.ticketStatus} | ${event.sponsorStatus} |\n`;
   });
 
   // Replace the table rows in README
@@ -317,8 +351,8 @@ function updateReadme(results) {
 
   const newTable = `### Events Overview Table
 
-| Event | Date | Location | Website | CFP Status | Ticket Sales |
-|-------|------|----------|---------|------------|--------------|
+| Event | Date | Location | Website | CFP Status | Ticket Sales | Sponsor |
+|-------|------|----------|---------|------------|--------------|---------|
 ${tableRows}
 ### Tentative Events`;
 
@@ -348,7 +382,7 @@ async function main() {
     };
     
     console.log(`${statusEmoji[result.status] || '❓'} ${result.status}`);
-    console.log(`   CFP: ${result.cfpStatus} | Ticket: ${result.ticketStatus}`);
+    console.log(`   CFP: ${result.cfpStatus} | Ticket: ${result.ticketStatus} | Sponsor: ${result.sponsorStatus}`);
     
     // Be nice to servers - wait 500ms between requests
     await new Promise(resolve => setTimeout(resolve, 500));
