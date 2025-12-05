@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
 /**
- * Salesforce Community Events - Call for Presenters Status Checker
- * 
- * This script checks the status of Call for Presenters/Speakers for all
- * Salesforce community events and updates the README.md file.
- * 
+ * Salesforce Community Events - CFP and Ticket Sales Status Checker
+ *
+ * This script checks the status of Call for Presenters/Speakers and ticket sales
+ * for all Salesforce community events and updates the Events Overview Table in README.md file.
+ *
  * Run: node check-cfp-status.js
  */
 
@@ -20,7 +20,8 @@ const EVENTS = [
     name: "Architect Dreamin' US",
     date: "January 21-22, 2026",
     location: "Scottsdale, AZ",
-    url: "https://architectdreamin.com"
+    url: "https://architectdreamin.com",
+    ticketUrl: "https://e.runevents.net/architect-dreamin-2026/checkout"
   },
   {
     name: "Cactusforce",
@@ -180,51 +181,104 @@ function fetchUrl(url) {
   });
 }
 
-// Check if website is active and look for CFP links
+// Check if website is active and look for CFP and ticket sales links
 async function checkEvent(event) {
   try {
     const result = await fetchUrl(event.url);
-    
+
     if (result.statusCode !== 200) {
       return { ...event, status: 'inactive', statusCode: result.statusCode };
     }
-    
+
     const body = result.body.toLowerCase();
-    
+
     // Check for known CFP URL
+    let cfpStatus = 'TBD';
+    let cfpLink = null;
     if (event.cfpUrl) {
-      return { ...event, status: 'cfp-open', cfpLink: event.cfpUrl };
-    }
-    
-    // Search for CFP keywords
-    const cfpKeywords = event.cfpKeywords || [
-      'call for speakers',
-      'call for presenters',
-      'submit a session',
-      'speaker submission',
-      'cfp',
-      'call-for-speakers'
-    ];
-    
-    const hasCFP = cfpKeywords.some(keyword => body.includes(keyword));
-    
-    if (hasCFP) {
-      // Try to extract CFP link
-      const cfpLinkMatch = body.match(/href=["']([^"']*(?:call-for-speakers|speaker|submit|cfp)[^"']*)["']/i);
-      if (cfpLinkMatch) {
-        let cfpLink = cfpLinkMatch[1];
-        if (!cfpLink.startsWith('http')) {
-          const baseUrl = new URL(event.url);
-          cfpLink = `${baseUrl.protocol}//${baseUrl.host}${cfpLink}`;
+      cfpStatus = `[OPEN](${event.cfpUrl})`;
+      cfpLink = event.cfpUrl;
+    } else {
+      // Search for CFP keywords
+      const cfpKeywords = event.cfpKeywords || [
+        'call for speakers',
+        'call for presenters',
+        'submit a session',
+        'speaker submission',
+        'cfp',
+        'call-for-speakers'
+      ];
+
+      const hasCFP = cfpKeywords.some(keyword => body.includes(keyword));
+
+      if (hasCFP) {
+        // Try to extract CFP link
+        const cfpLinkMatch = body.match(/href=["']([^"']*(?:call-for-speakers|speaker|submit|cfp)[^"']*)["']/i);
+        if (cfpLinkMatch) {
+          let extractedCfpLink = cfpLinkMatch[1];
+          if (!extractedCfpLink.startsWith('http')) {
+            const baseUrl = new URL(event.url);
+            extractedCfpLink = `${baseUrl.protocol}//${baseUrl.host}${extractedCfpLink}`;
+          }
+          cfpStatus = `[OPEN](${extractedCfpLink})`;
+          cfpLink = extractedCfpLink;
+        } else {
+          cfpStatus = 'Mentioned - check website';
         }
-        return { ...event, status: 'cfp-open', cfpLink };
       }
-      return { ...event, status: 'cfp-mentioned' };
     }
-    
-    return { ...event, status: 'active' };
+
+    // Search for ticket sales keywords
+    const ticketKeywords = event.ticketKeywords || [
+      'tickets',
+      'register',
+      'buy tickets',
+      'ticket sales',
+      'purchase',
+      'get tickets',
+      'registration',
+      'register now',
+      'sign up',
+      'signup'
+    ];
+
+    const hasTickets = ticketKeywords.some(keyword => body.includes(keyword));
+
+    let ticketStatus = 'TBD';
+    if (hasTickets) {
+      // Try to extract ticket link
+      const ticketLinkMatch = body.match(/href=["']([^"']*(?:ticket|register|buy)[^"']*)["']/i);
+      if (ticketLinkMatch) {
+        let ticketLink = ticketLinkMatch[1];
+        if (!ticketLink.startsWith('http')) {
+          const baseUrl = new URL(event.url);
+          ticketLink = `${baseUrl.protocol}//${baseUrl.host}${ticketLink}`;
+        }
+        ticketStatus = `[Buy Tickets](${ticketLink})`;
+      } else {
+        ticketStatus = 'Available - check website';
+      }
+    }
+
+    // Override with known ticket URL
+    if (event.ticketUrl) {
+      ticketStatus = `[Buy Tickets](${event.ticketUrl})`;
+    }
+
+    let overallStatus = 'active';
+    if (cfpStatus.startsWith('[OPEN]') || cfpLink) {
+      overallStatus = 'cfp-open';
+    }
+
+    return {
+      ...event,
+      status: overallStatus,
+      cfpStatus,
+      cfpLink,
+      ticketStatus
+    };
   } catch (error) {
-    return { ...event, status: 'error', error: error.message };
+    return { ...event, status: 'error', error: error.message, cfpStatus: 'TBD', ticketStatus: 'TBD' };
   }
 }
 
@@ -232,70 +286,45 @@ async function checkEvent(event) {
 function updateReadme(results) {
   const readmePath = path.join(__dirname, 'README.md');
   let readme = fs.readFileSync(readmePath, 'utf8');
-  
-  const today = new Date().toLocaleDateString('en-US', { 
-    year: 'numeric', 
-    month: 'long', 
-    day: 'numeric' 
-  });
-  
-  // Categorize results
-  const cfpOpen = results.filter(r => r.status === 'cfp-open');
-  const active = results.filter(r => r.status === 'active' || r.status === 'cfp-mentioned');
-  const inactive = results.filter(r => r.status === 'inactive' || r.status === 'error');
-  
-  // Build new CFP section
-  let cfpSection = `## 📢 Call for Presenters/Speakers Status\n\nLast updated: ${today}\n\n`;
-  
-  if (cfpOpen.length > 0) {
-    cfpSection += `### ✅ Call for Speakers OPEN:\n\n`;
-    cfpOpen.forEach((event, index) => {
-      cfpSection += `${index + 1}. **${event.name}** (${event.date})\n`;
-      if (event.cfpLink) {
-        cfpSection += `   - 🔗 [Submit Your Session](${event.cfpLink})\n`;
-      }
-      cfpSection += `\n`;
-    });
-  }
-  
-  if (active.length > 0) {
-    cfpSection += `### 🔜 Coming Soon (Websites Active, No CFP Yet):\n\n`;
-    active.forEach(event => {
-      cfpSection += `- **${event.name}** (${event.date}) - [Website](${event.url})\n`;
-    });
-    cfpSection += `\n`;
-  }
-  
-  if (inactive.length > 0) {
-    cfpSection += `### ⚠️ No Active Website Yet:\n\n`;
-    inactive.forEach(event => {
-      cfpSection += `- **${event.name}** (${event.date})\n`;
-    });
-    cfpSection += `\n`;
-  }
-  
-  cfpSection += `> **Note:** This information is automatically updated weekly. Check back regularly for the latest CFP opportunities!\n`;
-  
-  // Replace the CFP section in README
-  const cfpRegex = /## 📢 Call for Presenters\/Speakers Status[\s\S]*?(?=## 📧 Request New Events)/;
 
-  if (cfpRegex.test(readme)) {
-    readme = readme.replace(cfpRegex, cfpSection + '\n');
-  } else {
-    // If section doesn't exist, add it before "Request New Events"
-    readme = readme.replace(
-      /## 📧 Request New Events/,
-      cfpSection + '\n## 📧 Request New Events'
-    );
-  }
-  
+  const today = new Date().toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+
+  // Sort results to match the order in EVENTS
+  results.sort((a, b) => {
+    const indexA = EVENTS.findIndex(e => e.name === a.name);
+    const indexB = EVENTS.findIndex(e => e.name === b.name);
+    return indexA - indexB;
+  });
+
+  // Build new table content
+  let tableRows = '';
+  results.forEach(event => {
+    tableRows += `| ${event.name} | ${event.date} | ${event.location} | [Website](${event.url}) | ${event.cfpStatus} | ${event.ticketStatus} |\n`;
+  });
+
+  // Replace the table rows in README
+  const tableRegex = /### Events Overview Table[\s\S]*?### Tentative Events/;
+
+  const newTable = `### Events Overview Table
+
+| Event | Date | Location | Website | CFP Status | Ticket Sales |
+|-------|------|----------|---------|------------|--------------|
+${tableRows}
+### Tentative Events`;
+
+  readme = readme.replace(tableRegex, newTable);
+
   fs.writeFileSync(readmePath, readme, 'utf8');
-  console.log('✅ README.md updated successfully!');
+  console.log('✅ README.md Events Overview Table updated successfully!');
 }
 
 // Main execution
 async function main() {
-  console.log('🔍 Checking Call for Presenters status for all events...\n');
+  console.log('🔍 Checking Call for Presenters and Ticket Sales status for all events...\n');
   
   const results = [];
   
@@ -313,6 +342,7 @@ async function main() {
     };
     
     console.log(`${statusEmoji[result.status] || '❓'} ${result.status}`);
+    console.log(`   CFP: ${result.cfpStatus} | Ticket: ${result.ticketStatus}`);
     
     // Be nice to servers - wait 500ms between requests
     await new Promise(resolve => setTimeout(resolve, 500));
