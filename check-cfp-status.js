@@ -254,7 +254,13 @@ async function checkEvent(event) {
           const baseUrl = new URL(event.url);
           ticketLink = `${baseUrl.protocol}//${baseUrl.host}${ticketLink}`;
         }
-        ticketStatus = `[Buy Tickets](${ticketLink})`;
+        // Check if the link is for the correct year (2026)
+        const yearMatch = ticketLink.match(/20([0-9]{2})/);
+        if (yearMatch && yearMatch[1] !== '26') {
+          ticketStatus = 'Available - check for 2026';
+        } else {
+          ticketStatus = `[Buy Tickets](${ticketLink})`;
+        }
       } else {
         ticketStatus = 'Available - check website';
       }

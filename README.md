@@ -13,20 +13,20 @@ This calendar includes **28 Salesforce community events** for 2025-2027:
 | Architect Dreamin' US | January 21-22, 2026 | Scottsdale, AZ | [Website](https://architectdreamin.com) | TBD | [Buy Tickets](https://e.runevents.net/architect-dreamin-2026/checkout) |
 | Cactusforce | January 22-23, 2026 | Scottsdale, AZ | [Website](https://cactusforce.com) | TBD | [Buy Tickets](https://cactusforce.com/register) |
 | Bharat Dreamin' | January 24, 2026 | Jaipur, India | [Website](https://bharatdreamin.com) | TBD | Available - check website |
-| Cairo Dreamin' | January 31, 2026 | Cairo, Egypt | [Website](https://cairodreamin.com) | [OPEN](https://www.cairodreamin.com/speakers/) | [Buy Tickets](https://www.eventbrite.com/e/cairo-dreamin-2024-tickets-705372236347?utm-campaign=social&#038;utm-content=attendeeshare&#038;utm-medium=discovery&#038;utm-term=listing&#038;utm-source=cp&#038;aff=ebdsshcopyurl) |
+| Cairo Dreamin' | January 31, 2026 | Cairo, Egypt | [Website](https://cairodreamin.com) | [OPEN](https://www.cairodreamin.com/speakers/) | Available - check for 2026 |
 | Irish Dreamin' | March 19, 2026 | Dublin, Ireland | [Website](https://irishdreamin.ie) | [OPEN](https://irishdreamin.ie/call-for-speakers/) | [Buy Tickets](https://irishdreamin.ie/book-tickets/) |
 | Polish Dreamin' | March 20, 2026 | Wrocław, Poland | [Website](https://dreamin.coffeeforce.pl) | [OPEN](https://dreamin.coffeeforce.pl#speakers) | [Buy Tickets](https://dreamin.coffeeforce.pl#tickets) |
 | dreamOlé | March 27, 2026 | Valencia, Spain | [Website](https://dreamole.es) | TBD | TBD |
 | TrailblazerDX 2026 | April 15-16, 2026 | San Francisco, CA | [Website](https://www.salesforce.com/trailblazerdx) | Mentioned - check website | [Buy Tickets](https://www.salesforce.com/dreamforce/register/) |
-| Albania Dreamin' | April 25, 2026 | Tirana, Albania | [Website](https://dreamin.al) | TBD | [Buy Tickets](https://www.eventbrite.co.uk/e/albanian-dreamin-2025-the-salesforce-balkan-community-conference-tickets-999991951847?aff=oddtdtcreator) |
-| Mid Atlantic Dreamin' | May 4, 2026 | Baltimore, MD | [Website](https://midatlanticdreamin.com) | TBD | [Buy Tickets](http://midatlanticdreamin.ticketleap.com/mad-2025/) |
+| Albania Dreamin' | April 25, 2026 | Tirana, Albania | [Website](https://dreamin.al) | TBD | Available - check for 2026 |
+| Mid Atlantic Dreamin' | May 4, 2026 | Baltimore, MD | [Website](https://midatlanticdreamin.com) | TBD | Available - check for 2026 |
 | True North Dreamin' | May 11-12, 2026 | Toronto, Canada | [Website](https://truenorthdreamin.com) | [OPEN](https://truenorthdreamin.com/call-for-speakers) | [Buy Tickets](https://truenorthdreamin.com/tnd26-tickets) |
 | CzechDreamin | May 29, 2026 | Prague, Czech Republic | [Website](https://czechdreamin.com) | TBD | [Buy Tickets](https://www.eventbrite.com/e/czechdreamin-2026-tickets-1430906181909?aff=oddtdtcreator) |
 | London's Calling | June 5, 2026 | London, UK | [Website](https://londonscalling.net) | TBD | [Buy Tickets](https://www.eventbrite.com/e/londons-calling-2026-the-largest-european-salesforce-community-event-tickets-1857045215229) |
 | Portugal Dreamin' | June 19, 2026 | Lisbon, Portugal | [Website](https://www.portugaldreamin.com/en) | TBD | [Buy Tickets](https://www.portugaldreamin.com/en/register) |
 | WITness Success | July 22-24, 2026 | Indianapolis, IN | [Website](https://witnesssuccess.com) | TBD | TBD |
-| Buckeye Dreamin' | July 28-30, 2026 | Columbus, OH | [Website](https://buckeyedreamin.com) | TBD | [Buy Tickets](https://www.buckeyedreamin.com/2025-register) |
-| Forcelandia | July 29-30, 2026 | Portland, OR | [Website](https://forcelandia.com) | TBD | [Buy Tickets](https://www.eventbrite.com/e/forcelandia-2025-tickets-1309077298439) |
+| Buckeye Dreamin' | July 28-30, 2026 | Columbus, OH | [Website](https://buckeyedreamin.com) | TBD | Available - check for 2026 |
+| Forcelandia | July 29-30, 2026 | Portland, OR | [Website](https://forcelandia.com) | TBD | Available - check for 2026 |
 | Mile High Dreamin' | August 26-27, 2026 | Denver, CO | [Website](https://milehighdreamin.com) | Mentioned - check website | Available - check website |
 | Dreamforce 2026 | September 15-17, 2026 | San Francisco, CA | [Website](https://www.salesforce.com/dreamforce) | Mentioned - check website | Available - check website |
 | Texas Dreamin' | October 10-11, 2026 | Austin, TX | [Website](https://texasdreamin.com) | TBD | TBD |
