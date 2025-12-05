@@ -2,6 +2,8 @@
 
 A comprehensive calendar of Salesforce community events, conferences, and Dreamin' events for 2025-2027. Import this calendar to stay up-to-date with the global Salesforce community!
 
+> ⭐ **Like this resource?** Please star this repository to help increase visibility and help other Trailblazers discover it!
+
 ## 📅 What's Included
 
 This calendar includes **35 Salesforce community events** for 2025-2027:
@@ -209,6 +211,13 @@ This way, if you need to update events, you can simply:
 - ✅ Compatible with all major calendar applications
 
 
+
+## 📚 Sources
+
+This calendar is maintained using information from:
+- [Salesforce Trailhead Community Conferences](https://trailhead.salesforce.com/community/conferences/) - Official Salesforce community conference listings
+- Individual event websites and organizers
+- Community submissions and updates
 
 ## � Request New Events
 
