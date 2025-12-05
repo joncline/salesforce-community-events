@@ -138,7 +138,7 @@ const EVENTS = [
     name: "Texas Dreamin'",
     date: "October 10-11, 2026",
     location: "Austin, TX",
-    url: "https://texasdreamin.com"
+    url: "https://www.texasdreamin.org"
   },
   {
     name: "Dreamin in Data",
@@ -258,7 +258,7 @@ async function checkEvent(event) {
         // Check if the link is for the correct year (2026)
         const yearMatch = ticketLink.match(/20([0-9]{2})/);
         if (yearMatch && yearMatch[1] !== '26') {
-          ticketStatus = 'Available - check for 2026';
+          ticketStatus = 'TBD';
         } else {
           ticketStatus = `[Buy Tickets](${ticketLink})`;
         }
@@ -295,7 +295,7 @@ async function checkEvent(event) {
         }
         sponsorStatus = `[Become a Sponsor](${sponsorLink})`;
       } else {
-        sponsorStatus = 'Available - check website';
+        sponsorStatus = 'TBD';
       }
     }
 
