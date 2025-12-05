@@ -126,7 +126,8 @@ const EVENTS = [
     name: "Mile High Dreamin'",
     date: "August 26-27, 2026",
     location: "Denver, CO",
-    url: "https://milehighdreamin.com"
+    url: "https://milehighdreamin.com",
+    sponsorUrl: "https://www.milehighdreamin.com/sponsors"
   },
   {
     name: "Dreamforce 2026",
@@ -224,7 +225,7 @@ async function checkEvent(event) {
           cfpStatus = `[OPEN](${extractedCfpLink})`;
           cfpLink = extractedCfpLink;
         } else {
-          cfpStatus = 'Mentioned - check website';
+          cfpStatus = 'TBD';
         }
       }
     }
@@ -263,7 +264,7 @@ async function checkEvent(event) {
           ticketStatus = `[Buy Tickets](${ticketLink})`;
         }
       } else {
-        ticketStatus = 'Available - check website';
+        ticketStatus = 'TBD';
       }
     }
 
