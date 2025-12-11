@@ -14,20 +14,35 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-// Event configuration
+// Event configuration - Updated with all 35 events
 const EVENTS = [
   {
     name: "Architect Dreamin' US",
     date: "January 21-22, 2026",
     location: "Scottsdale, AZ",
     url: "https://architectdreamin.com",
-    ticketUrl: "https://e.runevents.net/architect-dreamin-2026/checkout"
+    ticketUrl: "https://e.runevents.net/architect-dreamin-2026/checkout",
+    sponsorUrl: "https://architectdreamin.us/sponsors"
   },
   {
     name: "Cactusforce",
     date: "January 22-23, 2026",
     location: "Scottsdale, AZ",
-    url: "https://cactusforce.com"
+    url: "https://cactusforce.com",
+    ticketUrl: "https://cactusforce.com/register",
+    sponsorUrl: "https://cactusforce.com/sponsor"
+  },
+  {
+    name: "Philippines Dreamin'",
+    date: "January 22-23, 2026",
+    location: "Mandaluyong City, Philippines",
+    url: "https://phdreamin.com"
+  },
+  {
+    name: "Japan Dreamin'",
+    date: "January 23, 2026",
+    location: "Tokyo, Japan",
+    url: "https://www.japandreamin.com"
   },
   {
     name: "Bharat Dreamin'",
@@ -41,19 +56,31 @@ const EVENTS = [
     date: "January 31, 2026",
     location: "Cairo, Egypt",
     url: "https://cairodreamin.com",
-    cfpKeywords: ["call for speakers", "submit", "speaker"]
+    cfpUrl: "https://www.cairodreamin.com/speakers/",
+    sponsorUrl: "https://www.cairodreamin.com/sponsors/"
   },
   {
     name: "Irish Dreamin'",
     date: "March 19, 2026",
     location: "Dublin, Ireland",
-    url: "https://irishdreamin.ie"
+    url: "https://irishdreamin.ie",
+    cfpUrl: "https://irishdreamin.ie/call-for-speakers/",
+    ticketUrl: "https://irishdreamin.ie/book-tickets/",
+    sponsorUrl: "https://irishdreamin.ie/sponsor-interest/"
   },
   {
     name: "Polish Dreamin'",
     date: "March 20, 2026",
     location: "Wrocław, Poland",
-    url: "https://dreamin.coffeeforce.pl"
+    url: "https://dreamin.coffeeforce.pl",
+    cfpUrl: "https://dreamin.coffeeforce.pl#speakers",
+    ticketUrl: "https://dreamin.coffeeforce.pl#tickets"
+  },
+  {
+    name: "Nonprofit Dreamin'",
+    date: "March 25-27, 2026",
+    location: "Charlotte, NC",
+    url: "https://www.nonprofitdreamin.org"
   },
   {
     name: "dreamOlé",
@@ -65,62 +92,103 @@ const EVENTS = [
     name: "TrailblazerDX 2026",
     date: "April 15-16, 2026",
     location: "San Francisco, CA",
-    url: "https://www.salesforce.com/trailblazerdx"
+    url: "https://www.salesforce.com/trailblazerdx",
+    cfpUrl: "https://reg.salesforce.com/flow/plus/tdx26/sessionproposal/cfphome",
+    ticketUrl: "https://www.salesforce.com/dreamforce/register/"
   },
   {
     name: "Albania Dreamin'",
     date: "April 25, 2026",
     location: "Tirana, Albania",
-    url: "https://dreamin.al"
+    url: "https://dreamin.al",
+    sponsorUrl: "https://dreamin.al/wp-content/uploads/2024/12/ad2025-sponsorship-prospectus.pdf"
   },
   {
     name: "Mid Atlantic Dreamin'",
     date: "May 4, 2026",
-    location: "Baltimore, MD",
-    url: "https://midatlanticdreamin.com"
+    location: "Philadelphia, PA",
+    url: "https://midatlanticdreamin.com",
+    sponsorUrl: "https://midatlanticdreamin.com/2024-sponsors.html"
+  },
+  {
+    name: "Wir sind Ohana",
+    date: "May 8, 2026",
+    location: "Berlin, Germany",
+    url: "https://wirsindohana.wordpress.com"
   },
   {
     name: "True North Dreamin'",
     date: "May 11-12, 2026",
     location: "Toronto, Canada",
     url: "https://truenorthdreamin.com",
-    cfpUrl: "https://truenorthdreamin.com/call-for-speakers"
+    cfpUrl: "https://truenorthdreamin.com/call-for-speakers",
+    ticketUrl: "https://truenorthdreamin.com/tnd26-tickets",
+    sponsorUrl: "https://truenorthdreamin.com/sponsors-2026"
+  },
+  {
+    name: "Dreamin' in Data",
+    date: "May 19-20, 2026",
+    location: "Chicago, IL",
+    url: "https://www.dreaminindata.org"
   },
   {
     name: "CzechDreamin",
     date: "May 29, 2026",
     location: "Prague, Czech Republic",
-    url: "https://czechdreamin.com"
+    url: "https://czechdreamin.com",
+    ticketUrl: "https://www.eventbrite.com/e/czechdreamin-2026-tickets-1430906181909?aff=oddtdtcreator",
+    sponsorUrl: "https://czechdreamin.com/call-for-sponsors/"
   },
   {
     name: "London's Calling",
     date: "June 5, 2026",
     location: "London, UK",
-    url: "https://londonscalling.net"
+    url: "https://londonscalling.net",
+    cfpUrl: "https://www.londonscalling.net/cfp/",
+    ticketUrl: "https://www.eventbrite.com/e/londons-calling-2026-the-largest-european-salesforce-community-event-tickets-1857045215229",
+    sponsorUrl: "https://www.londonscalling.net/sponsor-interest/"
   },
   {
     name: "Portugal Dreamin'",
     date: "June 19, 2026",
     location: "Lisbon, Portugal",
-    url: "https://www.portugaldreamin.com/en"
+    url: "https://www.portugaldreamin.com/en",
+    ticketUrl: "https://www.portugaldreamin.com/en/register",
+    sponsorUrl: "https://www.portugaldreamin.com/en/sponsors"
+  },
+  {
+    name: "Texas Dreamin'",
+    date: "July 9-10, 2026",
+    location: "Austin, TX",
+    url: "https://www.texasdreamin.org",
+    sponsorUrl: "https://www.texasdreamin.org/sponsorship"
   },
   {
     name: "WITness Success",
     date: "July 22-24, 2026",
     location: "Indianapolis, IN",
-    url: "https://witnesssuccess.com"
+    url: "https://witnesssuccess.com",
+    sponsorUrl: "https://witnesssuccess.com/sponsors/"
   },
   {
     name: "Buckeye Dreamin'",
     date: "July 28-30, 2026",
     location: "Columbus, OH",
-    url: "https://buckeyedreamin.com"
+    url: "https://buckeyedreamin.com",
+    sponsorUrl: "https://www.buckeyedreamin.com/sponsorship"
   },
   {
     name: "Forcelandia",
     date: "July 29-30, 2026",
     location: "Portland, OR",
-    url: "https://forcelandia.com"
+    url: "https://forcelandia.com",
+    sponsorUrl: "https://forcelandia.com/2026-sponsors/"
+  },
+  {
+    name: "SoCal Dreamin'",
+    date: "August 20, 2026",
+    location: "Newport Beach, CA",
+    url: "https://www.roadmapsolutions.org/socal-dreamin"
   },
   {
     name: "Mile High Dreamin'",
@@ -136,22 +204,23 @@ const EVENTS = [
     url: "https://www.salesforce.com/dreamforce"
   },
   {
-    name: "Texas Dreamin'",
-    date: "October 10-11, 2026",
-    location: "Austin, TX",
-    url: "https://www.texasdreamin.org"
+    name: "Northeast Dreamin'",
+    date: "October 29-30, 2026",
+    location: "Concord, NH",
+    url: "https://northeastdreamin.com"
   },
   {
-    name: "Dreamin in Data",
-    date: "October 17-18, 2026",
-    location: "Scottsdale, AZ",
-    url: "https://dreamindata.com"
+    name: "Dubai Dreamin'",
+    date: "November 14, 2026",
+    location: "Dubai, UAE",
+    url: "https://www.dubaidreamin.com"
   },
   {
     name: "French Touch Dreamin'",
     date: "December 2, 2026",
     location: "Paris, France",
-    url: "https://frenchtouchdreamin.com"
+    url: "https://frenchtouchdreamin.com",
+    sponsorUrl: "https://frenchtouchdreamin.com/index.php/sponsors/"
   },
   {
     name: "Biggest Little Dreamin' 2027",
@@ -202,7 +271,7 @@ async function checkEvent(event) {
       cfpLink = event.cfpUrl;
     } else {
       // Search for CFP keywords
-      const cfpKeywords = event.cfpKeywords || [
+      const cfpKeywords = [
         'call for speakers',
         'call for presenters',
         'submit a session',
@@ -231,7 +300,7 @@ async function checkEvent(event) {
     }
 
     // Search for ticket sales keywords
-    const ticketKeywords = event.ticketKeywords || [
+    const ticketKeywords = [
       'tickets',
       'register',
       'buy tickets',
@@ -274,7 +343,7 @@ async function checkEvent(event) {
     }
 
     // Search for sponsor keywords
-    const sponsorKeywords = event.sponsorKeywords || [
+    const sponsorKeywords = [
       'sponsor',
       'sponsorship',
       'become a sponsor',
