@@ -12,7 +12,7 @@ This calendar includes **35 Salesforce community events** for 2025-2027:
 
 | Event | Date | Location | Website | CFP Status | Ticket Sales | Sponsor |
 |-------|------|----------|---------|------------|--------------|---------|
-| Architect Dreamin' US | January 21-22, 2026 | Scottsdale, AZ | [Website](https://architectdreamin.com) | TBD | [Buy Tickets](https://e.runevents.net/architect-dreamin-2026/checkout) | TBD |
+| Architect Dreamin' US | January 21-22, 2026 | Scottsdale, AZ | [Website](https://architectdreamin.com) | TBD | [Buy Tickets](https://e.runevents.net/architect-dreamin-2026/checkout) | [Become a Sponsor](https://architectdreamin.us/sponsors) |
 | Cactusforce | January 22-23, 2026 | Scottsdale, AZ | [Website](https://cactusforce.com) | TBD | [Buy Tickets](https://cactusforce.com/register) | [Become a Sponsor](https://cactusforce.com/sponsor) |
 | Philippines Dreamin' | January 22-23, 2026 | Mandaluyong City, Philippines | [Website](https://phdreamin.com) | TBD | TBD | TBD |
 | Japan Dreamin' | January 23, 2026 | Tokyo, Japan | [Website](https://www.japandreamin.com) | TBD | TBD | TBD |
@@ -27,8 +27,8 @@ This calendar includes **35 Salesforce community events** for 2025-2027:
 | Mid Atlantic Dreamin' | May 4, 2026 | Philadelphia, PA | [Website](https://midatlanticdreamin.com) | TBD | TBD | [Become a Sponsor](https://midatlanticdreamin.com/2024-sponsors.html) |
 | Wir sind Ohana | May 8, 2026 | Berlin, Germany | [Website](https://wirsindohana.wordpress.com) | [OPEN](https://wirsindohana.de/speakers/) | [Buy Tickets](https://wirsindohana.de/get-your-ticket/) | [Become a Sponsor](https://wirsindohana.de/call-for-sponsors/) |
 | True North Dreamin' | May 11-12, 2026 | Toronto, Canada | [Website](https://truenorthdreamin.com) | [OPEN](https://truenorthdreamin.com/call-for-speakers) | [Buy Tickets](https://truenorthdreamin.com/tnd26-tickets) | [Become a Sponsor](https://truenorthdreamin.com/sponsors-2026) |
-| Dreamin' in Data | May 19-20, 2026 | Chicago, IL | [Website](https://www.dreaminindata.org) | TBD | TBD | [Become a Sponsor](https://www.dreaminindata.org/wp-content/uploads/2025/11/dreamin-in-data-sponsor-prospectus-2026.pdf) |
-| CzechDreamin | May 29, 2026 | Prague, Czech Republic | [Website](https://czechdreamin.com) | TBD | TBD | undefined |
+| Dreamin' in Data | May 19-20, 2026 | Chicago, IL | [Website](https://www.dreaminindata.org) | TBD | TBD | [Become a Sponsor](http://sponsors) |
+| CzechDreamin | May 29, 2026 | Prague, Czech Republic | [Website](https://czechdreamin.com) | TBD | [Buy Tickets](https://www.eventbrite.com/e/czechdreamin-2026-tickets-1430906181909?aff=oddtdtcreator) | [Become a Sponsor](https://czechdreamin.com/call-for-sponsors/) |
 | London's Calling | June 5, 2026 | London, UK | [Website](https://londonscalling.net) | [OPEN](https://www.londonscalling.net/cfp/) | [Buy Tickets](https://www.eventbrite.com/e/londons-calling-2026-the-largest-european-salesforce-community-event-tickets-1857045215229) | [Become a Sponsor](https://www.londonscalling.net/sponsor-interest/) |
 | Portugal Dreamin' | June 19, 2026 | Lisbon, Portugal | [Website](https://www.portugaldreamin.com/en) | TBD | [Buy Tickets](https://www.portugaldreamin.com/en/register) | [Become a Sponsor](https://www.portugaldreamin.com/en/sponsors) |
 | Texas Dreamin' | July 9-10, 2026 | Austin, TX | [Website](https://www.texasdreamin.org) | TBD | TBD | [Become a Sponsor](https://www.texasdreamin.org/sponsorship) |
