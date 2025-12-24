@@ -6,7 +6,7 @@ A comprehensive calendar of Salesforce community events, conferences, and Dreami
 
 ## 📅 What's Included
 
-This calendar includes **35 Salesforce community events** for 2025-2027:
+This calendar includes **33 Salesforce community events** for 2025-2027:
 
 ### Events Overview Table
 
@@ -38,14 +38,14 @@ This calendar includes **35 Salesforce community events** for 2025-2027:
 | SoCal Dreamin' | August 20, 2026 | Newport Beach, CA | [Website](https://www.roadmapsolutions.org/socal-dreamin) | TBD | [Buy Tickets](https://www.roadmapsolutions.org/socal-dreamin/register/) | [Become a Sponsor](https://www.roadmapsolutions.org/socal-dreamin/sponsors/) |
 | Mile High Dreamin' | August 26-27, 2026 | Denver, CO | [Website](https://milehighdreamin.com) | TBD | TBD | [Become a Sponsor](https://www.milehighdreamin.com/sponsors) |
 | Dreamforce 2026 | September 15-17, 2026 | San Francisco, CA | [Website](https://www.salesforce.com/dreamforce) | TBD | TBD | TBD |
-| Northeast Dreamin' | October 29-30, 2026 | Concord, NH | [Website](https://northeastdreamin.com) | [OPEN](https://northeastdreamin.com/call-for-proposals/) | [Buy Tickets](https://northeastdreamin.com/register/) | [Become a Sponsor](https://northeastdreamin.com/sponsors/) |
+| Northeast Dreamin' | October 29-30, 2026 | Concord, NH | [Website](https://northeastdreamin.com) | [OPEN](https://northeastdreamin.com/2025-speakers/) | [Buy Tickets](https://northeastdreamin.com/register/) | [Become a Sponsor](https://northeastdreamin.com/sponsors/) |
+| YeurDreamin' | October 29, 2026 | Amsterdam, Netherlands | [Website](https://www.yeurdreamin.eu) | TBD | TBD | TBD |
 | Dubai Dreamin' | November 14, 2026 | Dubai, UAE | [Website](https://www.dubaidreamin.com) | TBD | TBD | [Become a Sponsor](https://www.dubaidreamin.com/dubaidreamin/c/resource/dubaiimage/images/speakersponsor_bg.png) |
 | French Touch Dreamin' | December 2, 2026 | Paris, France | [Website](https://frenchtouchdreamin.com) | TBD | TBD | [Become a Sponsor](https://frenchtouchdreamin.com/index.php/sponsors/) |
 | Biggest Little Dreamin' 2027 | January 28-29, 2027 | Reno, NV | [Website](https://biggestlittledreamin.com) | TBD | TBD | TBD |
 
-### Tentative Events (3)
+### Tentative Events (2)
 - **London Architect Dreamin'** - Estimated February | London, UK
-- **Yeur Architect Dreamin'** - Estimated June | Europe
 - **DevOps Dreamin'** - Estimated November | London, UK
 
 ## 📅 How to Add to Your Calendar

@@ -242,14 +242,14 @@ SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
-DTSTART:20260601T080000
-DTEND:20260601T180000
+DTSTART:20261029T080000
+DTEND:20261029T180000
 DTSTAMP:20251205T205500Z
-UID:yeur-architect-dreamin-2026@salesforce-events
-SUMMARY:Yeur Architect Dreamin' (Date TBD)
-LOCATION:Europe (Location TBD)
-DESCRIPTION:Yeur Architect Dreamin' - European architecture-focused Salesforce event, part of the broader YeurDreamin' conference series.\n\nNOTE: 2026 date and location not yet announced. This is a placeholder based on typical June timing from previous years. Check official sources for confirmed dates:\n\nOfficial Website: https://www.yeurdreamin.eu/\nOfficial LinkedIn: https://nl.linkedin.com/company/yeurdreamin\nArchitect Dreamin' LinkedIn: https://www.linkedin.com/showcase/architectdreamin/\n\nEstimated: June 2026 in Europe
-STATUS:TENTATIVE
+UID:yeurdreamin-2026@salesforce-events
+SUMMARY:YeurDreamin'
+LOCATION:Amsterdam, Netherlands
+DESCRIPTION:YeurDreamin' - European Salesforce community conference bringing together Trailblazers from across Europe.\n\nWebsite: https://www.yeurdreamin.eu/\n\nOctober 29, 2026 in Amsterdam, Netherlands
+STATUS:CONFIRMED
 TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT
@@ -380,6 +380,19 @@ SUMMARY:Northeast Dreamin'
 LOCATION:Concord, New Hampshire, USA
 DESCRIPTION:Northeast Dreamin' - New England's Salesforce community conference bringing together Trailblazers from across the Northeast.\n\nWebsite: https://northeastdreamin.com/\nCall for Proposals: https://northeastdreamin.com/call-for-proposals/\n\nOctober 29-30, 2026 in Concord, New Hampshire
 STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART:20261101T080000
+DTEND:20261101T180000
+DTSTAMP:20251205T205500Z
+UID:devops-dreamin-2026@salesforce-events
+SUMMARY:DevOps Dreamin' (Date TBD)
+LOCATION:London, United Kingdom
+DESCRIPTION:DevOps Dreamin' - A Salesforce community conference focused on DevOps practices and tools for the Salesforce platform.\n\nNOTE: 2026 date not yet announced. This is a placeholder based on typical November timing. Check official sources for confirmed dates.\n\nEstimated: November 2026 in London, United Kingdom
+STATUS:TENTATIVE
 TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT

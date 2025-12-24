@@ -14,7 +14,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-// Event configuration - Updated with all 35 events
+// Event configuration - Updated with all 31 confirmed events
 const EVENTS = [
   {
     name: "Architect Dreamin' US",
@@ -80,7 +80,9 @@ const EVENTS = [
     name: "Nonprofit Dreamin'",
     date: "March 25-27, 2026",
     location: "Charlotte, NC",
-    url: "https://www.nonprofitdreamin.org"
+    url: "https://www.nonprofitdreamin.org",
+    cfpUrl: "https://www.nonprofitdreamin.org/speaker-submission",
+    sponsorUrl: "https://www.nonprofitdreamin.org/sponsorship"
   },
   {
     name: "dreamOlé",
@@ -114,7 +116,10 @@ const EVENTS = [
     name: "Wir sind Ohana",
     date: "May 8, 2026",
     location: "Berlin, Germany",
-    url: "https://wirsindohana.wordpress.com"
+    url: "https://wirsindohana.wordpress.com",
+    cfpUrl: "https://wirsindohana.de/speakers/",
+    ticketUrl: "https://wirsindohana.de/get-your-ticket/",
+    sponsorUrl: "https://wirsindohana.de/call-for-sponsors/"
   },
   {
     name: "True North Dreamin'",
@@ -129,7 +134,9 @@ const EVENTS = [
     name: "Dreamin' in Data",
     date: "May 19-20, 2026",
     location: "Chicago, IL",
-    url: "https://www.dreaminindata.org"
+    url: "https://www.dreaminindata.org",
+    cfpUrl: "https://www.dreaminindata.org/home/call-for-speakers/",
+    sponsorUrl: "https://www.dreaminindata.org/wp-content/uploads/2025/11/dreamin-in-data-sponsor-prospectus-2026.pdf"
   },
   {
     name: "CzechDreamin",
@@ -188,7 +195,9 @@ const EVENTS = [
     name: "SoCal Dreamin'",
     date: "August 20, 2026",
     location: "Newport Beach, CA",
-    url: "https://www.roadmapsolutions.org/socal-dreamin"
+    url: "https://www.roadmapsolutions.org/socal-dreamin",
+    ticketUrl: "https://www.roadmapsolutions.org/socal-dreamin/register/",
+    sponsorUrl: "https://www.roadmapsolutions.org/socal-dreamin/sponsors/"
   },
   {
     name: "Mile High Dreamin'",
@@ -207,13 +216,23 @@ const EVENTS = [
     name: "Northeast Dreamin'",
     date: "October 29-30, 2026",
     location: "Concord, NH",
-    url: "https://northeastdreamin.com"
+    url: "https://northeastdreamin.com",
+    cfpUrl: "https://northeastdreamin.com/2025-speakers/",
+    ticketUrl: "https://northeastdreamin.com/register/",
+    sponsorUrl: "https://northeastdreamin.com/sponsors/"
+  },
+  {
+    name: "YeurDreamin'",
+    date: "October 29, 2026",
+    location: "Amsterdam, Netherlands",
+    url: "https://www.yeurdreamin.eu"
   },
   {
     name: "Dubai Dreamin'",
     date: "November 14, 2026",
     location: "Dubai, UAE",
-    url: "https://www.dubaidreamin.com"
+    url: "https://www.dubaidreamin.com",
+    sponsorUrl: "https://www.dubaidreamin.com/dubaidreamin/c/resource/dubaiimage/images/speakersponsor_bg.png"
   },
   {
     name: "French Touch Dreamin'",
