@@ -42,7 +42,7 @@ This calendar includes **33 Salesforce community events** for 2025-2027:
 | YeurDreamin' | October 29, 2026 | Amsterdam, Netherlands | [Website](https://www.yeurdreamin.eu) | TBD | TBD | [Become a Sponsor](https://www.yeurdreamin.eu/sponsors/) |
 | Dubai Dreamin' | November 14, 2026 | Dubai, UAE | [Website](https://www.dubaidreamin.com) | TBD | TBD | [Become a Sponsor](https://www.dubaidreamin.com/dubaidreamin/c/resource/dubaiimage/images/speakersponsor_bg.png) |
 | French Touch Dreamin' | December 2, 2026 | Paris, France | [Website](https://frenchtouchdreamin.com) | TBD | TBD | [Become a Sponsor](https://frenchtouchdreamin.com/index.php/sponsors/) |
-| Biggest Little Dreamin' 2027 | January 28-29, 2027 | Reno, NV | [Website](https://biggestlittledreamin.com) | TBD | TBD | TBD |
+| Biggest Little Dreamin' 2027 | January 28-29, 2027 | Reno, NV | [Website](https://biggestlittledreamin.com) | TBD | [Buy Tickets](https://buy.stripe.com/5kq3cvbklbpp5emaqt7zu04) | TBD |
 
 ### Tentative Events (2)
 - **London Architect Dreamin'** - Estimated February | London, UK
