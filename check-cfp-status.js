@@ -103,6 +103,7 @@ const EVENTS = [
     date: "April 25, 2026",
     location: "Tirana, Albania",
     url: "https://dreamin.al",
+    cfpUrl: "https://forms.gle/m2nHXqJUshZHZMJd9",
     sponsorUrl: "https://dreamin.al/wp-content/uploads/2024/12/ad2025-sponsorship-prospectus.pdf"
   },
   {
@@ -143,6 +144,7 @@ const EVENTS = [
     date: "May 29, 2026",
     location: "Prague, Czech Republic",
     url: "https://czechdreamin.com",
+    cfpUrl: "https://sessionize.com/czechdreamin-2026",
     ticketUrl: "https://www.eventbrite.com/e/czechdreamin-2026-tickets-1430906181909?aff=oddtdtcreator",
     sponsorUrl: "https://czechdreamin.com/call-for-sponsors/"
   },
@@ -407,7 +409,31 @@ async function checkEvent(event) {
       sponsorStatus
     };
   } catch (error) {
-    return { ...event, status: 'error', error: error.message, cfpStatus: 'TBD', ticketStatus: 'TBD' };
+    // Preserve manually configured URLs even when there's an error
+    let cfpStatus = 'TBD';
+    let ticketStatus = 'TBD';
+    let sponsorStatus = 'TBD';
+
+    if (event.cfpUrl) {
+      cfpStatus = `[OPEN](${event.cfpUrl})`;
+    }
+
+    if (event.ticketUrl) {
+      ticketStatus = `[Buy Tickets](${event.ticketUrl})`;
+    }
+
+    if (event.sponsorUrl) {
+      sponsorStatus = `[Become a Sponsor](${event.sponsorUrl})`;
+    }
+
+    return {
+      ...event,
+      status: 'error',
+      error: error.message,
+      cfpStatus,
+      ticketStatus,
+      sponsorStatus
+    };
   }
 }
 
