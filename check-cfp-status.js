@@ -14,267 +14,259 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-// Event configuration - Updated with all 31 confirmed events
-const EVENTS = [
-  {
-    name: "Architect Dreamin' US",
-    date: "January 21-22, 2026",
-    location: "Scottsdale, AZ",
-    url: "https://architectdreamin.com",
-    ticketUrl: "https://e.runevents.net/architect-dreamin-2026/checkout",
-    sponsorUrl: "https://architectdreamin.us/sponsors"
-  },
-  {
-    name: "Cactusforce",
-    date: "January 22-23, 2026",
-    location: "Scottsdale, AZ",
-    url: "https://cactusforce.com",
-    ticketUrl: "https://cactusforce.com/register",
-    sponsorUrl: "https://cactusforce.com/sponsor"
-  },
-  {
-    name: "Philippines Dreamin'",
-    date: "January 22-23, 2026",
-    location: "Mandaluyong City, Philippines",
-    url: "https://phdreamin.com"
-  },
-  {
-    name: "Japan Dreamin'",
-    date: "January 23, 2026",
-    location: "Tokyo, Japan",
-    url: "https://www.japandreamin.com"
-  },
-  {
-    name: "Bharat Dreamin'",
-    date: "January 24, 2026",
-    location: "Jaipur, India",
-    url: "https://bharatdreamin.com",
-    sponsorUrl: "https://docs.google.com/forms/d/e/1FAIpQLSeyry64v1swzQbeeUl8WVS370ALI3LY8mRtr3OKioj0qk9GtA/viewform"
-  },
-  {
-    name: "Cairo Dreamin'",
-    date: "January 31, 2026",
-    location: "Cairo, Egypt",
-    url: "https://cairodreamin.com",
-    cfpUrl: "https://www.cairodreamin.com/speakers/",
-    sponsorUrl: "https://www.cairodreamin.com/sponsors/"
-  },
-  {
-    name: "Irish Dreamin'",
-    date: "March 19, 2026",
-    location: "Dublin, Ireland",
-    url: "https://irishdreamin.ie",
-    cfpUrl: "https://irishdreamin.ie/call-for-speakers/",
-    ticketUrl: "https://irishdreamin.ie/book-tickets/",
-    sponsorUrl: "https://irishdreamin.ie/sponsor-interest/"
-  },
-  {
-    name: "Polish Dreamin'",
-    date: "March 20, 2026",
-    location: "Wrocław, Poland",
-    url: "https://dreamin.coffeeforce.pl",
-    cfpUrl: "https://dreamin.coffeeforce.pl#speakers",
-    ticketUrl: "https://dreamin.coffeeforce.pl#tickets"
-  },
-  {
-    name: "Nonprofit Dreamin'",
-    date: "March 25-27, 2026",
-    location: "Charlotte, NC",
-    url: "https://www.nonprofitdreamin.org",
-    cfpUrl: "https://www.nonprofitdreamin.org/speaker-submission",
-    sponsorUrl: "https://www.nonprofitdreamin.org/sponsorship"
-  },
-  {
-    name: "dreamOlé",
-    date: "March 27, 2026",
-    location: "Valencia, Spain",
-    url: "https://dreamole.es"
-  },
-  {
-    name: "TrailblazerDX 2026",
-    date: "April 15-16, 2026",
-    location: "San Francisco, CA",
-    url: "https://www.salesforce.com/trailblazerdx",
-    cfpUrl: "https://reg.salesforce.com/flow/plus/tdx26/sessionproposal/cfphome",
-    ticketUrl: "https://www.salesforce.com/dreamforce/register/"
-  },
-  {
-    name: "Albania Dreamin'",
-    date: "April 25, 2026",
-    location: "Tirana, Albania",
-    url: "https://dreamin.al",
-    cfpUrl: "https://forms.gle/m2nHXqJUshZHZMJd9",
-    sponsorUrl: "https://dreamin.al/wp-content/uploads/2024/12/ad2025-sponsorship-prospectus.pdf"
-  },
-  {
-    name: "Mid Atlantic Dreamin'",
-    date: "May 4, 2026",
-    location: "Philadelphia, PA",
-    url: "https://midatlanticdreamin.com",
-    sponsorUrl: "https://midatlanticdreamin.com/2024-sponsors.html"
-  },
-  {
-    name: "Wir sind Ohana",
-    date: "May 8, 2026",
-    location: "Berlin, Germany",
-    url: "https://wirsindohana.wordpress.com",
-    cfpUrl: "https://wirsindohana.de/speakers/",
-    ticketUrl: "https://wirsindohana.de/get-your-ticket/",
-    sponsorUrl: "https://wirsindohana.de/call-for-sponsors/"
-  },
-  {
-    name: "True North Dreamin'",
-    date: "May 11-12, 2026",
-    location: "Toronto, Canada",
-    url: "https://truenorthdreamin.com",
-    cfpUrl: "https://truenorthdreamin.com/call-for-speakers",
-    ticketUrl: "https://truenorthdreamin.com/tnd26-tickets",
-    sponsorUrl: "https://truenorthdreamin.com/sponsors-2026"
-  },
-  {
-    name: "Dreamin' in Data",
-    date: "May 19-20, 2026",
-    location: "Chicago, IL",
-    url: "https://www.dreaminindata.org",
-    cfpUrl: "https://www.dreaminindata.org/home/call-for-speakers/",
-    sponsorUrl: "https://www.dreaminindata.org/wp-content/uploads/2025/11/dreamin-in-data-sponsor-prospectus-2026.pdf"
-  },
-  {
-    name: "CzechDreamin",
-    date: "May 29, 2026",
-    location: "Prague, Czech Republic",
-    url: "https://czechdreamin.com",
-    cfpUrl: "https://sessionize.com/czechdreamin-2026",
-    ticketUrl: "https://www.eventbrite.com/e/czechdreamin-2026-tickets-1430906181909?aff=oddtdtcreator",
-    sponsorUrl: "https://czechdreamin.com/call-for-sponsors/"
-  },
-  {
-    name: "London's Calling",
-    date: "June 5, 2026",
-    location: "London, UK",
-    url: "https://londonscalling.net",
-    cfpUrl: "https://www.londonscalling.net/cfp/",
-    ticketUrl: "https://www.eventbrite.com/e/londons-calling-2026-the-largest-european-salesforce-community-event-tickets-1857045215229",
-    sponsorUrl: "https://www.londonscalling.net/sponsor-interest/"
-  },
-  {
-    name: "Portugal Dreamin'",
-    date: "June 19, 2026",
-    location: "Lisbon, Portugal",
-    url: "https://www.portugaldreamin.com/en",
-    ticketUrl: "https://www.portugaldreamin.com/en/register",
-    sponsorUrl: "https://www.portugaldreamin.com/en/sponsors"
-  },
-  {
-    name: "Texas Dreamin'",
-    date: "July 9-10, 2026",
-    location: "Austin, TX",
-    url: "https://www.texasdreamin.org",
-    sponsorUrl: "https://www.texasdreamin.org/sponsorship"
-  },
-  {
-    name: "WITness Success",
-    date: "July 22-24, 2026",
-    location: "Indianapolis, IN",
-    url: "https://witnesssuccess.com",
-    sponsorUrl: "https://witnesssuccess.com/sponsors/"
-  },
-  {
-    name: "Buckeye Dreamin'",
-    date: "July 28-30, 2026",
-    location: "Columbus, OH",
-    url: "https://buckeyedreamin.com",
-    sponsorUrl: "https://www.buckeyedreamin.com/sponsorship"
-  },
-  {
-    name: "Forcelandia",
-    date: "July 29-30, 2026",
-    location: "Portland, OR",
-    url: "https://forcelandia.com",
-    sponsorUrl: "https://forcelandia.com/2026-sponsors/"
-  },
-  {
-    name: "SoCal Dreamin'",
-    date: "August 20, 2026",
-    location: "Newport Beach, CA",
-    url: "https://www.roadmapsolutions.org/socal-dreamin",
-    ticketUrl: "https://www.roadmapsolutions.org/socal-dreamin/register/",
-    sponsorUrl: "https://www.roadmapsolutions.org/socal-dreamin/sponsors/"
-  },
-  {
-    name: "Mile High Dreamin'",
-    date: "August 26-27, 2026",
-    location: "Denver, CO",
-    url: "https://milehighdreamin.com",
-    sponsorUrl: "https://www.milehighdreamin.com/sponsors"
-  },
-  {
-    name: "Dreamforce 2026",
-    date: "September 15-17, 2026",
-    location: "San Francisco, CA",
-    url: "https://www.salesforce.com/dreamforce"
-  },
-  {
-    name: "Northeast Dreamin'",
-    date: "October 29-30, 2026",
-    location: "Concord, NH",
-    url: "https://northeastdreamin.com",
-    cfpUrl: "https://northeastdreamin.com/2025-speakers/",
-    ticketUrl: "https://northeastdreamin.com/register/",
-    sponsorUrl: "https://northeastdreamin.com/sponsors/"
-  },
-  {
-    name: "YeurDreamin'",
-    date: "October 29, 2026",
-    location: "Amsterdam, Netherlands",
-    url: "https://www.yeurdreamin.eu"
-  },
-  {
-    name: "Dubai Dreamin'",
-    date: "November 14, 2026",
-    location: "Dubai, UAE",
-    url: "https://www.dubaidreamin.com",
-    sponsorUrl: "https://www.dubaidreamin.com/dubaidreamin/c/resource/dubaiimage/images/speakersponsor_bg.png"
-  },
-  {
-    name: "French Touch Dreamin'",
-    date: "December 2, 2026",
-    location: "Paris, France",
-    url: "https://frenchtouchdreamin.com",
-    sponsorUrl: "https://frenchtouchdreamin.com/index.php/sponsors/"
-  },
-  {
-    name: "Biggest Little Dreamin' 2027",
-    date: "January 28-29, 2027",
-    location: "Reno, NV",
-    url: "https://biggestlittledreamin.com"
-  }
-];
+// Event configuration - Events are fetched dynamically from Salesforce API
+let EVENTS = [];
 
-// Fetch URL content
-function fetchUrl(url) {
+// Fetch URL content with timeout
+function fetchUrl(url, timeout = 10000) {
   return new Promise((resolve, reject) => {
     const protocol = url.startsWith('https') ? https : http;
-    
-    protocol.get(url, {
+
+    const req = protocol.get(url, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (compatible; SFEventChecker/1.0)'
-      }
+      },
+      timeout: timeout
     }, (res) => {
       if (res.statusCode === 301 || res.statusCode === 302) {
         // Follow redirect
-        return fetchUrl(res.headers.location).then(resolve).catch(reject);
+        return fetchUrl(res.headers.location, timeout).then(resolve).catch(reject);
       }
-      
+
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => resolve({ statusCode: res.statusCode, body: data }));
-    }).on('error', reject);
+    }).on('error', reject).on('timeout', () => {
+      req.destroy();
+      reject(new Error(`Request timeout after ${timeout}ms`));
+    });
+
+    // Set timeout on the request
+    req.setTimeout(timeout, () => {
+      req.destroy();
+      reject(new Error(`Request timeout after ${timeout}ms`));
+    });
   });
+}
+
+// Fetch events from Salesforce API
+async function fetchEventsFromAPI() {
+  const apiUrl = 'https://drm.my.salesforce-sites.com/eventsapp/services/apexrest/communities/events';
+  const result = await fetchUrl(apiUrl);
+  if (result.statusCode !== 200) {
+    throw new Error(`Failed to fetch events: ${result.statusCode}`);
+  }
+  const events = JSON.parse(result.body);
+
+  // Filter to 2026 and 2027 events, map to our format
+  const filteredEvents = events.filter(event => {
+    const year = new Date(event.start_date).getFullYear();
+    return year === 2026 || year === 2027;
+  }).map(event => {
+    // Format date
+    const startDate = new Date(event.start_date);
+    const endDate = new Date(event.end_date);
+    const startMonth = startDate.toLocaleString('en-US', { month: 'long' });
+    const endMonth = endDate.toLocaleString('en-US', { month: 'long' });
+    const startDay = startDate.getDate();
+    const endDay = endDate.getDate();
+    const year = startDate.getFullYear();
+
+    let date;
+    if (startMonth === endMonth && startDay === endDay) {
+      date = `${startMonth} ${startDay}, ${year}`;
+    } else if (startMonth === endMonth) {
+      date = `${startMonth} ${startDay}-${endDay}, ${year}`;
+    } else {
+      date = `${startMonth} ${startDay} - ${endMonth} ${endDay}, ${year}`;
+    }
+
+    // Location
+    const location = `${event.city || ''}, ${event.country || ''}`.replace(/^, /, '').replace(/, $/, '');
+
+    return {
+      name: event.title,
+      date,
+      location,
+      url: event.website_url,
+      // Add other fields if available, but for now keep minimal
+    };
+  });
+
+  // Override specific events with known URLs and fix names
+  const overrides = {
+    "Architect Dreamin' US": {
+      ticketUrl: "https://e.runevents.net/architect-dreamin-2026/checkout",
+      sponsorUrl: "https://architectdreamin.us/sponsors"
+    },
+    "Cactusforce": {
+      ticketUrl: "https://cactusforce.com/register",
+      sponsorUrl: "https://cactusforce.com/sponsor"
+    },
+    "Irish Dreamin'": {
+      cfpUrl: "https://irishdreamin.ie/call-for-speakers/",
+      ticketUrl: "https://irishdreamin.ie/book-tickets/",
+      sponsorUrl: "https://irishdreamin.ie/sponsor-interest/"
+    },
+    "Yeur Architect Dreamin 2026": {
+      name: "Architect Dreamin' Europe",
+      location: "Helsinki, Finland"
+    }
+    // Add more overrides as needed
+  };
+
+  // Apply overrides and prepare events
+  const eventsWithOverrides = filteredEvents.map(event => {
+    const override = overrides[event.name];
+    if (override) {
+      return { ...event, ...override };
+    }
+    return event;
+  });
+
+  // Separate events by status: future, past, and unknown
+  const futureEvents = [];
+  const pastEvents = [];
+  const unknownEvents = [];
+
+  const now = new Date();
+
+  eventsWithOverrides.forEach(event => {
+    // Check if URL is accessible (basic check - not empty and doesn't contain obvious placeholders)
+    const hasValidUrl = event.url && event.url !== 'TBD' && !event.url.includes('example.com') && !event.url.includes('placeholder');
+
+    if (!hasValidUrl) {
+      // Set URL to TBD for unknown events
+      unknownEvents.push({ ...event, url: 'TBD', isPast: false });
+    } else {
+      // Parse the event date to determine if it's past or future
+      // Handle date ranges like "July 8-9, 2026" or single dates like "January 22, 2026"
+      let endDateStr = event.date;
+
+      // If it's a range, get the end date
+      if (event.date.includes(' - ')) {
+        const parts = event.date.split(' - ');
+        if (parts.length === 2) {
+          // For ranges like "July 8 - August 9, 2026", take the second part
+          endDateStr = parts[1];
+        }
+      } else if (event.date.includes('-')) {
+        // For same-month ranges like "July 8-9, 2026", extract the end day
+        const match = event.date.match(/(\w+ \d+)-(\d+), (\d+)/);
+        if (match) {
+          endDateStr = `${match[1].split(' ')[0]} ${match[2]}, ${match[3]}`;
+        }
+      }
+
+      // Create a Date object from the parsed date string
+      const endDate = new Date(endDateStr + ' UTC'); // Add UTC to ensure consistent parsing
+      const isPast = endDate < now;
+
+      if (isPast) {
+        pastEvents.push({ ...event, isPast: true });
+      } else {
+        futureEvents.push({ ...event, isPast: false });
+      }
+    }
+  });
+
+  // Return future events first, then past events, then unknown events
+  return [...futureEvents, ...pastEvents, ...unknownEvents];
 }
 
 // Check if website is active and look for CFP and ticket sales links
 async function checkEvent(event) {
+  // Skip website checking for events with TBD URLs
+  if (event.url === 'TBD') {
+    return {
+      ...event,
+      status: event.isPast ? 'past' : 'pending',
+      cfpStatus: 'TBD',
+      ticketStatus: 'TBD',
+      sponsorStatus: 'TBD'
+    };
+  }
+
+  // Handle past events - only check for future year mentions
+  if (event.isPast) {
+    try {
+      const result = await fetchUrl(event.url);
+
+      if (result.statusCode !== 200) {
+        return {
+          ...event,
+          status: 'past',
+          cfpStatus: 'TBD',
+          ticketStatus: 'TBD',
+          sponsorStatus: 'TBD'
+        };
+      }
+
+      const body = result.body.toLowerCase();
+
+      // For past events, only look for future year mentions (2027)
+      const hasFutureCFP = /202[7-9]/.test(body) && (
+        body.includes('call for speakers') ||
+        body.includes('call for presenters') ||
+        body.includes('submit a session') ||
+        body.includes('speaker submission') ||
+        body.includes('cfp')
+      );
+
+      const hasFutureTickets = /202[7-9]/.test(body) && (
+        body.includes('tickets') ||
+        body.includes('register') ||
+        body.includes('buy tickets')
+      );
+
+      // Check for sponsor opportunities (these might still be relevant)
+      const sponsorKeywords = [
+        'sponsor',
+        'sponsorship',
+        'become a sponsor',
+        'sponsor us',
+        'partnership'
+      ];
+
+      const hasSponsor = sponsorKeywords.some(keyword => body.includes(keyword));
+
+      let sponsorStatus = 'TBD';
+      if (hasSponsor) {
+        // Try to extract sponsor link
+        const sponsorLinkMatch = body.match(/href=["']([^"']*(?:sponsor)[^"']*)["']/i);
+        if (sponsorLinkMatch) {
+          let sponsorLink = sponsorLinkMatch[1];
+          if (!sponsorLink.startsWith('http')) {
+            const baseUrl = new URL(event.url);
+            sponsorLink = `${baseUrl.protocol}//${baseUrl.host}${sponsorLink}`;
+          }
+          sponsorStatus = `[Become a Sponsor](${sponsorLink})`;
+        }
+      }
+
+      // Override with known sponsor URL
+      if (event.sponsorUrl) {
+        sponsorStatus = `[Become a Sponsor](${event.sponsorUrl})`;
+      }
+
+      return {
+        ...event,
+        status: 'past',
+        cfpStatus: hasFutureCFP ? 'TBD' : 'TBD', // Always TBD for past events unless specifically checking future
+        ticketStatus: hasFutureTickets ? 'TBD' : 'TBD', // Always TBD for past events
+        sponsorStatus
+      };
+    } catch (error) {
+      return {
+        ...event,
+        status: 'past',
+        cfpStatus: 'TBD',
+        ticketStatus: 'TBD',
+        sponsorStatus: 'TBD'
+      };
+    }
+  }
+
   try {
     const result = await fetchUrl(event.url);
 
@@ -479,8 +471,11 @@ ${tableRows}
 
 // Main execution
 async function main() {
+  console.log('🔍 Fetching events from Salesforce API...');
+  EVENTS = await fetchEventsFromAPI();
+  console.log(`📅 Found ${EVENTS.length} events for 2026-2027.`);
   console.log('🔍 Checking Call for Presenters and Ticket Sales status for all events...\n');
-  
+
   const results = [];
   
   for (const event of EVENTS) {
@@ -493,7 +488,9 @@ async function main() {
       'cfp-mentioned': '📝',
       'active': '🌐',
       'inactive': '❌',
-      'error': '⚠️'
+      'error': '⚠️',
+      'pending': '⏳',
+      'past': '📅'
     };
     
     console.log(`${statusEmoji[result.status] || '❓'} ${result.status}`);
