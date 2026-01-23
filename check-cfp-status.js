@@ -163,14 +163,21 @@ async function fetchEventsFromAPI() {
       const isPast = endDate < now;
 
       if (isPast) {
-        pastEvents.push({ ...event, isPast: true });
+        // For past events, increment the year and prepare for next year
+        const nextYearEvent = {
+          ...event,
+          name: event.name.replace(/(\d{4})/, (match) => (parseInt(match) + 1).toString()),
+          isPast: true,
+          originalYear: event.name.match(/(\d{4})/)?.[1] || '2026'
+        };
+        pastEvents.push(nextYearEvent);
       } else {
         futureEvents.push({ ...event, isPast: false });
       }
     }
   });
 
-  // Return future events first, then past events, then unknown events
+  // Return future events first, then past events (converted to next year), then unknown events
   return [...futureEvents, ...pastEvents, ...unknownEvents];
 }
 
@@ -187,7 +194,7 @@ async function checkEvent(event) {
     };
   }
 
-  // Handle past events - only check for future year mentions
+  // Handle past events (converted to next year potential events)
   if (event.isPast) {
     try {
       const result = await fetchUrl(event.url);
@@ -195,29 +202,88 @@ async function checkEvent(event) {
       if (result.statusCode !== 200) {
         return {
           ...event,
-          status: 'past',
+          status: 'pending',
           cfpStatus: 'TBD',
           ticketStatus: 'TBD',
-          sponsorStatus: 'TBD'
+          sponsorStatus: 'TBD',
+          date: 'TBD',
+          location: 'TBD'
         };
       }
 
       const body = result.body.toLowerCase();
 
-      // For past events, only look for future year mentions (2027)
-      const hasFutureCFP = /202[7-9]/.test(body) && (
-        body.includes('call for speakers') ||
-        body.includes('call for presenters') ||
-        body.includes('submit a session') ||
-        body.includes('speaker submission') ||
-        body.includes('cfp')
-      );
+      // Look for next year information (2027+)
+      const nextYear = parseInt(event.originalYear || '2026') + 1;
+      const nextYearPattern = new RegExp(nextYear.toString());
 
-      const hasFutureTickets = /202[7-9]/.test(body) && (
-        body.includes('tickets') ||
-        body.includes('register') ||
-        body.includes('buy tickets')
-      );
+      const hasNextYearInfo = nextYearPattern.test(body);
+
+      let date = 'TBD';
+      let location = 'TBD';
+      let cfpStatus = 'TBD';
+      let ticketStatus = 'TBD';
+
+      if (hasNextYearInfo) {
+        // Try to extract next year date information
+        const datePatterns = [
+          // Match patterns like "March 15-16, 2027" or "March 2027"
+          new RegExp(`(${nextYear})\\s*([A-Za-z]+\\s+\\d+(?:-\\d+)?(?:,\\s*${nextYear})?)`, 'i'),
+          new RegExp(`([A-Za-z]+\\s+\\d+(?:-\\d+)?),?\\s*(${nextYear})`, 'i')
+        ];
+
+        for (const pattern of datePatterns) {
+          const dateMatch = body.match(pattern);
+          if (dateMatch) {
+            // Clean up the matched date
+            const matchedDate = dateMatch[0].replace(/\s+/g, ' ').trim();
+            if (matchedDate.length > 4) { // Make sure we captured more than just the year
+              date = matchedDate;
+              break;
+            }
+          }
+        }
+
+        // Try to extract location information near the next year mention
+        const locationPatterns = [
+          /(?:in|at)\s+([A-Za-z\s,]+?)(?:\s+(?:on|from|in\s+${nextYear}|\d{4})|$)/i,
+          /([A-Za-z\s,]+?)(?:\s+(?:on|from|in\s+${nextYear}|\d{4})|$)/i
+        ];
+
+        // Look for location in context around next year mentions
+        const nextYearIndex = body.indexOf(nextYear.toString());
+        if (nextYearIndex !== -1) {
+          const contextStart = Math.max(0, nextYearIndex - 200);
+          const contextEnd = Math.min(body.length, nextYearIndex + 200);
+          const context = body.substring(contextStart, contextEnd);
+
+          for (const pattern of locationPatterns) {
+            const locationMatch = context.match(pattern);
+            if (locationMatch && locationMatch[1].trim().length > 3) {
+              location = locationMatch[1].trim();
+              break;
+            }
+          }
+        }
+
+        // Check for CFP and ticket mentions for next year
+        const hasNextYearCFP = nextYearPattern.test(body) && (
+          body.includes('call for speakers') ||
+          body.includes('call for presenters') ||
+          body.includes('submit a session') ||
+          body.includes('speaker submission') ||
+          body.includes('cfp')
+        );
+
+        const hasNextYearTickets = nextYearPattern.test(body) && (
+          body.includes('tickets') ||
+          body.includes('register') ||
+          body.includes('buy tickets')
+        );
+
+        if (hasNextYearCFP) cfpStatus = 'TBD'; // Will be determined when date is known
+        if (hasNextYearTickets) ticketStatus = 'TBD'; // Will be determined when date is known
+      }
 
       // Check for sponsor opportunities (these might still be relevant)
       const sponsorKeywords = [
@@ -251,18 +317,22 @@ async function checkEvent(event) {
 
       return {
         ...event,
-        status: 'past',
-        cfpStatus: hasFutureCFP ? 'TBD' : 'TBD', // Always TBD for past events unless specifically checking future
-        ticketStatus: hasFutureTickets ? 'TBD' : 'TBD', // Always TBD for past events
-        sponsorStatus
+        status: 'pending',
+        cfpStatus,
+        ticketStatus,
+        sponsorStatus,
+        date,
+        location
       };
     } catch (error) {
       return {
         ...event,
-        status: 'past',
+        status: 'pending',
         cfpStatus: 'TBD',
         ticketStatus: 'TBD',
-        sponsorStatus: 'TBD'
+        sponsorStatus: 'TBD',
+        date: 'TBD',
+        location: 'TBD'
       };
     }
   }
