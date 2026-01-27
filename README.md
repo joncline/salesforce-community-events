@@ -38,6 +38,7 @@ This calendar includes **33 Salesforce community events** for 2025-2027:
 | Delhi Dreamin' 2026 | April 3, 2026 | New Delhi, India | [Website](https://delhidreamin.com/) | [OPEN](https://delhidreamin.com/dd25/speakers) | TBD | [Become a Sponsor](https://delhidreamin.com/callforsponsor) |
 | DREAMin Kosovo 2026 | April 17, 2026 | Prizren, Kosovo | [Website](https://dreaminkosovo.al/) | TBD | TBD | TBD |
 | Bharat Dreamin' 2026 | July 10, 2026 | Jaipur, India | [Website](https://bharatdreamin.com/) | TBD | TBD | [Become a Sponsor](https://bharatdreamin.com/sponsors/) |
+| Yeur Dreamin' 2026 | October 29, 2026 | Amsterdam, Netherlands | [Website](https://www.yeurdreamin.eu/) | TBD | TBD | [Become a Sponsor](https://www.yeurdreamin.eu/sponsors/) |
 | Cactusforce 2027 | TBD | TBD | [Website](https://www.cactusforce.com/) | TBD | TBD | [Become a Sponsor](https://www.cactusforce.com/sponsor) |
 | Architect Dreamin US 2027 | TBD | TBD | [Website](https://www.architectdreaming.us/) | TBD | TBD | [Become a Sponsor](https://www.architectdreaming.us/sponsors) |
 | Japan Dreamin' 2027 | TBD | TBD | [Website](https://www.japandreamin.com/) | TBD | TBD | TBD |
