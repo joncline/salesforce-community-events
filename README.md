@@ -12,11 +12,6 @@ This calendar includes **33 Salesforce community events** for 2025-2027:
 
 | Event | Date | Location | Website | CFP Status | Ticket Sales | Sponsor |
 |-------|------|----------|---------|------------|--------------|---------|
-| Architect Dreamin' US | January 21-22, 2026 | Scottsdale, AZ | [Website](https://architectdreamin.com) | TBD | [Buy Tickets](https://e.runevents.net/architect-dreamin-2026/checkout) | [Become a Sponsor](https://architectdreamin.us/sponsors) |
-| Cactusforce | January 22-23, 2026 | Scottsdale, AZ | [Website](https://cactusforce.com) | TBD | [Buy Tickets](https://cactusforce.com/register) | [Become a Sponsor](https://cactusforce.com/sponsor) |
-| Philippines Dreamin' | January 22-23, 2026 | Mandaluyong City, Philippines | [Website](https://phdreamin.com) | TBD | TBD | TBD |
-| Japan Dreamin' | January 23, 2026 | Tokyo, Japan | [Website](https://www.japandreamin.com) | TBD | TBD | TBD |
-| Bharat Dreamin' | January 24, 2026 | Jaipur, India | [Website](https://bharatdreamin.com) | TBD | TBD | [Become a Sponsor](https://docs.google.com/forms/d/e/1FAIpQLSeyry64v1swzQbeeUl8WVS370ALI3LY8mRtr3OKioj0qk9GtA/viewform) |
 | Cairo Dreamin' | January 31, 2026 | Cairo, Egypt | [Website](https://cairodreamin.com) | [OPEN](https://www.cairodreamin.com/speakers/) | TBD | [Become a Sponsor](https://www.cairodreamin.com/sponsors/) |
 | Irish Dreamin' | March 19, 2026 | Dublin, Ireland | [Website](https://irishdreamin.ie) | [OPEN](https://irishdreamin.ie/call-for-speakers/) | [Buy Tickets](https://irishdreamin.ie/book-tickets/) | [Become a Sponsor](https://irishdreamin.ie/sponsor-interest/) |
 | Polish Dreamin' | March 20, 2026 | Wrocław, Poland | [Website](https://dreamin.coffeeforce.pl) | [OPEN](https://dreamin.coffeeforce.pl#speakers) | [Buy Tickets](https://dreamin.coffeeforce.pl#tickets) | TBD |
@@ -43,6 +38,11 @@ This calendar includes **33 Salesforce community events** for 2025-2027:
 | Dubai Dreamin' | November 14, 2026 | Dubai, UAE | [Website](https://www.dubaidreamin.com) | TBD | TBD | [Become a Sponsor](https://www.dubaidreamin.com/dubaidreamin/c/resource/dubaiimage/images/speakersponsor_bg.png) |
 | French Touch Dreamin' | December 2, 2026 | Paris, France | [Website](https://frenchtouchdreamin.com) | TBD | TBD | [Become a Sponsor](https://frenchtouchdreamin.com/index.php/sponsors/) |
 | Biggest Little Dreamin' 2027 | January 28-29, 2027 | Reno, NV | [Website](https://biggestlittledreamin.com) | TBD | [Buy Tickets](https://buy.stripe.com/5kq3cvbklbpp5emaqt7zu04) | TBD |
+| Architect Dreamin' US | January 21-22, 2026 | Scottsdale, AZ | [Website](https://architectdreamin.com) | TBD | [Buy Tickets](https://e.runevents.net/architect-dreamin-2026/checkout) | [Become a Sponsor](https://architectdreamin.us/sponsors) |
+| Cactusforce | January 22-23, 2026 | Scottsdale, AZ | [Website](https://cactusforce.com) | TBD | [Buy Tickets](https://cactusforce.com/register) | [Become a Sponsor](https://cactusforce.com/sponsor) |
+| Philippines Dreamin' | January 22-23, 2026 | Mandaluyong City, Philippines | [Website](https://phdreamin.com) | TBD | TBD | TBD |
+| Japan Dreamin' | January 23, 2026 | Tokyo, Japan | [Website](https://www.japandreamin.com) | TBD | TBD | TBD |
+| Bharat Dreamin' | January 24, 2026 | Jaipur, India | [Website](https://bharatdreamin.com) | TBD | TBD | [Become a Sponsor](https://docs.google.com/forms/d/e/1FAIpQLSeyry64v1swzQbeeUl8WVS370ALI3LY8mRtr3OKioj0qk9GtA/viewform) |
 
 ### Tentative Events (2)
 - **London Architect Dreamin'** - Estimated February | London, UK
