@@ -6,7 +6,7 @@ A comprehensive calendar of Salesforce community events, conferences, and Dreami
 
 ## 📅 What's Included
 
-This calendar includes **33 Salesforce community events** for 2025-2027:
+This calendar includes **30 Salesforce community events** for 2026-2027:
 
 ### Events Overview Table
 
