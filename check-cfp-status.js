@@ -111,6 +111,9 @@ async function fetchEventsFromAPI() {
     "Yeur Architect Dreamin 2026": {
       name: "Architect Dreamin' Europe",
       location: "Helsinki, Finland"
+    },
+    "Portugal Dreamin’ 2026": {
+      url: "https://www.portugaldreamin.com/en"
     }
     // Add more overrides as needed
   };
@@ -520,7 +523,16 @@ function updateReadme(results) {
   // Build new table content
   let tableRows = '';
   results.forEach(event => {
-    tableRows += `| ${event.name} | ${event.date} | ${event.location} | [Website](${event.url}) | ${event.cfpStatus} | ${event.ticketStatus} | ${event.sponsorStatus} |\n`;
+    // Ensure all values are properly formatted and not undefined
+    const name = event.name || 'TBD';
+    const date = event.date || 'TBD';
+    const location = event.location || 'TBD';
+    const url = event.url || 'TBD';
+    const cfpStatus = event.cfpStatus || 'TBD';
+    const ticketStatus = event.ticketStatus || 'TBD';
+    const sponsorStatus = event.sponsorStatus || 'TBD';
+    
+    tableRows += `| ${name} | ${date} | ${location} | [Website](${url}) | ${cfpStatus} | ${ticketStatus} | ${sponsorStatus} |\n`;
   });
 
   // Replace the table rows in README

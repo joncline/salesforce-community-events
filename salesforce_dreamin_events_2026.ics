@@ -348,8 +348,6 @@ SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
-DTSTART:202610
-
 DTSTART:20261029T080000
 DTEND:20261030T180000
 DTSTAMP:20251205T205500Z
@@ -364,26 +362,26 @@ SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
-DTSTART:20261029T080000
-DTEND:20261029T180000
+DTSTART:20260610T080000
+DTEND:20260611T180000
 DTSTAMP:20251205T205500Z
-UID:yeurdreamin-2026@salesforce-events
-SUMMARY:YeurDreamin'
-LOCATION:Amsterdam, Netherlands
-DESCRIPTION:YeurDreamin' - European Salesforce community conference bringing together Trailblazers from across Europe.\n\nWebsite: https://www.yeurdreamin.eu/\n\nOctober 29, 2026 in Amsterdam, Netherlands
+UID:architect-dreamin-europe-2026@salesforce-events
+SUMMARY:Architect Dreamin' Europe
+LOCATION:Helsinki, Finland
+DESCRIPTION:Architect Dreamin' Europe - European Salesforce architect community conference.\n\nWebsite: https://architectdreamin.org\n\nJune 10-11, 2026 in Helsinki, Finland
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
-DTSTART:20261114T080000
-DTEND:20261114T180000
+DTSTART:20260618T080000
+DTEND:20260618T180000
 DTSTAMP:20251205T205500Z
-UID:dubai-dreamin-2026@salesforce-events
-SUMMARY:Dubai Dreamin'
-LOCATION:Dubai, United Arab Emirates
-DESCRIPTION:Dubai Dreamin' - The UAE's premier Salesforce community conference bringing together Trailblazers from across the Middle East.\n\nWebsite: https://www.dubaidreamin.com\n\nNovember 14, 2026 in Dubai, United Arab Emirates
+UID:portugal-dreamin-2026@salesforce-events
+SUMMARY:Portugal Dreamin'
+LOCATION:Lisbon, Portugal
+DESCRIPTION:Portugal Dreamin' - Portugal's Salesforce community conference.\n\nWebsite: https://www.portugaldreamin.com/en\n\nJune 18, 2026 in Lisbon, Portugal
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 SEQUENCE:0
