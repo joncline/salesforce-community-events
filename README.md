@@ -14,22 +14,22 @@ This calendar includes **30 Salesforce community events** for 2026-2027:
 |-------|------|----------|---------|------------|--------------|---------|
 | Irish Dreamin' 2026 | March 18, 2026 | Dublin, Republic of Ireland | [Website](https://irishdreamin.ie/) | TBD | [Buy Tickets](https://irishdreamin.ie/book-tickets/) | [Become a Sponsor](https://irishdreamin.ie/sponsor-interest/) |
 | Polish Dreamin' 2026 | March 19, 2026 | Wrocław, Poland | [Website](https://coffeeforce.pl/dreamin/) | TBD | [Buy Tickets](https://coffeeforce.pl#tickets) | [Become a Sponsor](https://coffeeforce.pl#sponsors) |
+| Nonprofit Dreamin' 2026 | March 24-26, 2026 | Charlotte, United States | [Website](https://www.nonprofitdreamin.org/) | TBD | TBD | [Become a Sponsor](https://www.nonprofitdreamin.org/sponsorship) |
+| dreamOlé 2026 | March 26, 2026 | Valencia, Spain | [Website](https://dreamole.es/) | TBD | TBD | TBD |
 | Delhi Dreamin' 2026 | April 3, 2026 | New Delhi, India | [Website](https://delhidreamin.com/) | [OPEN](https://delhidreamin.com/dd25/speakers) | TBD | [Become a Sponsor](https://delhidreamin.com/callforsponsor) |
 | DREAMin Kosovo 2026 | April 17, 2026 | Prizren, Kosovo | [Website](https://dreaminkosovo.al/) | TBD | TBD | TBD |
 | Albania Dreamin' 2026 | April 24, 2026 | Tirana, Albania | [Website](https://dreamin.al) | [OPEN](https://dreamin.al/wp-content/uploads/2026/01/albania-dreamin-2026-call-for-speakers-poster.png) | TBD | [Become a Sponsor](https://dreamin.al/wp-content/uploads/2024/12/ad2025-sponsorship-prospectus.pdf) |
-| Nonprofit Dreamin' 2026 | March 24-26, 2026 | Charlotte, United States | [Website](https://www.nonprofitdreamin.org/) | TBD | TBD | [Become a Sponsor](https://www.nonprofitdreamin.org/sponsorship) |
-| dreamOlé 2026 | March 26, 2026 | Valencia, Spain | [Website](https://dreamole.es/) | TBD | TBD | TBD |
 | MidAtlantic Dreamin' 2026 | May 3, 2026 | Philadelphia, United States | [Website](https://midatlanticdreamin.com/) | [OPEN](https://midatlanticdreamin.my.site.com/call-for-speakers) | [Buy Tickets](https://www.ticketleap.events/tickets/midatlanticdreamin/midatlantic-dreamin-2026) | [Become a Sponsor](https://midatlanticdreamin.com/2025-sponsors.html) |
 | Wir sind Ohana 2026 | May 7, 2026 | Berlin, Germany | [Website](https://wirsindohana.wordpress.com/) | [OPEN](https://wirsindohana.de/speakers/) | [Buy Tickets](https://wirsindohana.de/get-your-ticket/) | [Become a Sponsor](https://wirsindohana.de/call-for-sponsors/) |
 | True North Dreamin' 2026 | May 10-11, 2026 | Toronto, Canada | [Website](https://www.truenorthdreamin.com/) | [OPEN](https://www.truenorthdreamin.com/tnd2026-speakers) | [Buy Tickets](https://www.truenorthdreamin.com/tnd26-tickets) | [Become a Sponsor](https://www.truenorthdreamin.com/sponsors-2026) |
-| CzechDreamin 2026 | May 28, 2026 | Prague, Czech Republic | [Website](https://czechdreamin.com) | [OPEN](https://czechdreamin.com/blog/submit-abstract/) | [Buy Tickets](https://www.eventbrite.com/e/czechdreamin-2026-tickets-1430906181909?aff=oddtdtcreator) | [Become a Sponsor](https://czechdreamin.com/call-for-sponsors/) |
 | Dreamin' in Data 2026 | May 18-19, 2026 | Chicago, United States | [Website](https://www.dreaminindata.org/) | [OPEN](https://www.dreaminindata.org/call-for-speakers/) | TBD | [Become a Sponsor](https://www.dreaminindata.org/wp-content/uploads/2026/01/dreamin-in-data-sponsor-prospectus-2026.pdf) |
+| CzechDreamin 2026 | May 28, 2026 | Prague, Czech Republic | [Website](https://czechdreamin.com) | [OPEN](https://czechdreamin.com/blog/submit-abstract/) | [Buy Tickets](https://www.eventbrite.com/e/czechdreamin-2026-tickets-1430906181909?aff=oddtdtcreator) | [Become a Sponsor](https://czechdreamin.com/call-for-sponsors/) |
 | London's Calling 2026 | June 4, 2026 | London, United Kingdom | [Website](https://www.londonscalling.net/) | [OPEN](https://www.londonscalling.net/cfp/) | [Buy Tickets](https://www.eventbrite.com/e/londons-calling-2026-the-largest-european-salesforce-community-event-tickets-1857045215229) | [Become a Sponsor](https://www.londonscalling.net/sponsor-interest/) |
-| Portugal Dreamin' 2026 | June 18, 2026 | Lisbon, Portugal | [Website](https://www.portugaldreamin.com/en) | TBD | [Buy Tickets](https://www.portugaldreamin.com/en/register) | [Become a Sponsor](https://www.portugaldreamin.com/en/sponsors) |
 | Architect Dreamin' Europe | June 10-11, 2026 | Helsinki, Finland | [Website](https://architectdreamin.org) | TBD | TBD | TBD |
+| Portugal Dreamin' 2026 | June 18, 2026 | Lisbon, Portugal | [Website](https://www.portugaldreamin.com/en) | TBD | [Buy Tickets](https://www.portugaldreamin.com/en/register) | [Become a Sponsor](https://www.portugaldreamin.com/en/sponsors) |
 | Texas Dreamin' 2026 | July 8-9, 2026 | Austin, United States | [Website](https://www.texasdreamin.org/) | [OPEN](https://www.texasdreamin.org/call-for-speakers) | TBD | [Become a Sponsor](https://www.texasdreamin.org/sponsorship) |
-| WITness Success 2026 | July 21-23, 2026 | Indianapolis, United States | [Website](https://witnesssuccess.com/) | TBD | TBD | [Become a Sponsor](https://witnesssuccess.com/sponsors/) |
 | Bharat Dreamin' 2026 | July 10, 2026 | Jaipur, India | [Website](https://bharatdreamin.com/) | TBD | TBD | [Become a Sponsor](https://bharatdreamin.com/sponsors/) |
+| WITness Success 2026 | July 21-23, 2026 | Indianapolis, United States | [Website](https://witnesssuccess.com/) | TBD | TBD | [Become a Sponsor](https://witnesssuccess.com/sponsors/) |
 | Buckeye Dreamin' 2026 | July 27-29, 2026 | Columbus, United States | [Website](https://www.buckeyedreamin.com/) | TBD | TBD | [Become a Sponsor](https://www.buckeyedreamin.com/sponsorship) |
 | Forcelandia 2026 | July 28-29, 2026 | Portland, United States | [Website](https://forcelandia.com/) | [OPEN](https://forcelandia.com/2026-call-for-speakers/) | TBD | [Become a Sponsor](https://forcelandia.com/2026-sponsors/) |
 | SoCal Dreamin' 2026 | August 19, 2026 | Newport Beach, United States | [Website](https://www.roadmapsolutions.org/socal-dreamin/) | TBD | [Buy Tickets](https://www.roadmapsolutions.org/socal-dreamin/register/) | [Become a Sponsor](https://www.roadmapsolutions.org/socal-dreamin/sponsors/) |
@@ -37,9 +37,10 @@ This calendar includes **30 Salesforce community events** for 2026-2027:
 | North Africa Dreamin' 2026 | October 23, 2026 | Casablanca, Morocco | [Website](https://northafricadreamin.com/) | TBD | TBD | [Become a Sponsor](https://northafricadreamin.com/sponsors/) |
 | Northeast Dreamin' 2026 | October 28-29, 2026 | Concord, United States | [Website](https://northeastdreamin.com/) | [OPEN](https://northeastdreamin.com/2025-speakers/) | [Buy Tickets](https://northeastdreamin.com/register/) | [Become a Sponsor](https://northeastdreamin.com/sponsors/) |
 | Dubai Dreamin' 2026 | November 13, 2026 | Dubai, United Arab Emirates | [Website](https://www.dubaidreamin.com/s/) | TBD | TBD | [Become a Sponsor](https://www.dubaidreamin.com/dubaidreamin/c/resource/dubaiimage/images/speakersponsor_bg.png) |
-| Cactusforce 2027 | jan 21, 2027 | your feedback shapes all we do, | [Website](https://www.cactusforce.com/) | TBD | TBD | [Become a Sponsor](https://www.cactusforce.com/sponsor) |
+| West Africa Dreamin' 2026 | November 20, 2026 | Lagos, Nigeria | [Website](Westafricadreamin.com) | TBD | TBD | TBD |
+| Cactusforce 2027 | January 21, 2027 | your feedback shapes all we do, | [Website](https://www.cactusforce.com/) | TBD | TBD | [Become a Sponsor](https://www.cactusforce.com/sponsor) |
+| Architect Dreamin Americas 2027 | February 2027 | TBD | [Website](https://architectdreamin.us/) | TBD | TBD | TBD |
 | Cairo Dreamin' 2027 | TBD | TBD | [Website](https://www.cairodreamin.com/) | TBD | TBD | [Become a Sponsor](https://www.cairodreamin.com/sponsors/) |
-| Architect Dreamin US 2027 | TBD | TBD | [Website](https://www.architectdreaming.us/) | TBD | TBD | [Become a Sponsor](https://www.architectdreaming.us/sponsors) |
 | Japan Dreamin' 2027 | TBD | TBD | [Website](https://www.japandreamin.com/) | TBD | TBD | TBD |
 | Philippines Dreamin' 2027 | TBD | TBD | [Website](https://phdreamin.com/) | TBD | TBD | TBD |
 
