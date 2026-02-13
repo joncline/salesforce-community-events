@@ -49,6 +49,56 @@ function fetchUrl(url, timeout = 10000) {
   });
 }
 
+// Parse date string to Date object for sorting
+function parseEventDate(dateStr) {
+  if (!dateStr || dateStr === 'TBD') {
+    return new Date('9999-12-31'); // Put TBD dates at the end
+  }
+
+  try {
+    // Handle date ranges - extract the start date
+    let cleanDate = dateStr;
+    
+    // Handle ranges like "July 8-9, 2026" or "March 24-26, 2026"
+    if (dateStr.includes('-') && !dateStr.includes(' - ')) {
+      const match = dateStr.match(/^(\w+)\s+(\d+)-(\d+),\s*(\d{4})$/);
+      if (match) {
+        cleanDate = `${match[1]} ${match[2]}, ${match[4]}`;
+      }
+    }
+    
+    // Handle ranges like "July 8 - August 9, 2026"
+    if (dateStr.includes(' - ')) {
+      const parts = dateStr.split(' - ');
+      cleanDate = parts[0];
+    }
+    
+    const parsed = new Date(cleanDate + ' UTC');
+    if (isNaN(parsed.getTime())) {
+      return new Date('9999-12-31');
+    }
+    return parsed;
+  } catch (e) {
+    return new Date('9999-12-31');
+  }
+}
+
+// Sort events by date ascending (earliest first), starting from current date
+function sortEventsByDate(events, currentDate = new Date()) {
+  return events.sort((a, b) => {
+    const dateA = parseEventDate(a.date);
+    const dateB = parseEventDate(b.date);
+    
+    // If both dates are valid, sort ascending
+    if (dateA.getTime() !== dateB.getTime()) {
+      return dateA.getTime() - dateB.getTime();
+    }
+    
+    // If dates are equal, maintain original order
+    return 0;
+  });
+}
+
 // Fetch events from Salesforce API
 async function fetchEventsFromAPI() {
   const apiUrl = 'https://drm.my.salesforce-sites.com/eventsapp/services/apexrest/communities/events';
@@ -99,9 +149,10 @@ async function fetchEventsFromAPI() {
       ticketUrl: "https://e.runevents.net/architect-dreamin-2026/checkout",
       sponsorUrl: "https://architectdreamin.us/sponsors"
     },
-    "Cactusforce": {
+    "Cactusforce 2026": {
       ticketUrl: "https://cactusforce.com/register",
-      sponsorUrl: "https://cactusforce.com/sponsor"
+      sponsorUrl: "https://cactusforce.com/sponsor",
+      date: "January 21, 2027"  // Fix date to 2027
     },
     "Irish Dreamin'": {
       cfpUrl: "https://irishdreamin.ie/call-for-speakers/",
@@ -112,8 +163,13 @@ async function fetchEventsFromAPI() {
       name: "Architect Dreamin' Europe",
       location: "Helsinki, Finland"
     },
-    "Portugal Dreamin’ 2026": {
-      url: "https://www.portugaldreamin.com/en"
+    "Portugal Dreamin' 2026": {  // Note: uses Unicode right single quotation mark (U+2019)
+      url: "https://www.portugaldreamin.com/en",
+      ticketUrl: "https://www.portugaldreamin.com/en/register",
+      sponsorUrl: "https://www.portugaldreamin.com/en/sponsors"
+    },
+    "Japan Dreamin' 2026": {
+      url: "https://www.japandreamin.com/event/s/"
     }
     // Add more overrides as needed
   };
@@ -127,6 +183,9 @@ async function fetchEventsFromAPI() {
     return event;
   });
 
+  // Sort events by date ascending (earliest first)
+  const sortedEvents = sortEventsByDate(eventsWithOverrides);
+
   // Separate events by status: future, past, and unknown
   const futureEvents = [];
   const pastEvents = [];
@@ -134,7 +193,7 @@ async function fetchEventsFromAPI() {
 
   const now = new Date();
 
-  eventsWithOverrides.forEach(event => {
+  sortedEvents.forEach(event => {
     // Check if URL is accessible (basic check - not empty and doesn't contain obvious placeholders)
     const hasValidUrl = event.url && event.url !== 'TBD' && !event.url.includes('example.com') && !event.url.includes('placeholder');
 
@@ -180,12 +239,61 @@ async function fetchEventsFromAPI() {
     }
   });
 
-  // Return future events first, then past events (converted to next year), then unknown events
+  // Return future events first (sorted by date), then past events (converted to next year), then unknown events
   return [...futureEvents, ...pastEvents, ...unknownEvents];
+}
+
+// Normalize event name for comparison (replace fancy apostrophes with regular ones)
+function normalizeEventName(name) {
+  return name.replace(/[\u2018\u2019\u201B]/g, "'");
+}
+
+// Apply overrides to event before checking
+function applyOverrides(event) {
+  const normalizedName = normalizeEventName(event.name);
+  
+  const overrides = {
+    "Architect Dreamin' US": {
+      ticketUrl: "https://e.runevents.net/architect-dreamin-2026/checkout",
+      sponsorUrl: "https://architectdreamin.us/sponsors"
+    },
+    "Cactusforce 2026": {
+      ticketUrl: "https://cactusforce.com/register",
+      sponsorUrl: "https://cactusforce.com/sponsor",
+      date: "January 21, 2027"  // Fix date to 2027
+    },
+    "Irish Dreamin'": {
+      cfpUrl: "https://irishdreamin.ie/call-for-speakers/",
+      ticketUrl: "https://irishdreamin.ie/book-tickets/",
+      sponsorUrl: "https://irishdreamin.ie/sponsor-interest/"
+    },
+    "Yeur Architect Dreamin 2026": {
+      name: "Architect Dreamin' Europe",
+      location: "Helsinki, Finland"
+    },
+    "Portugal Dreamin' 2026": {
+      url: "https://www.portugaldreamin.com/en",
+      ticketUrl: "https://www.portugaldreamin.com/en/register",
+      sponsorUrl: "https://www.portugaldreamin.com/en/sponsors"
+    },
+    "Japan Dreamin' 2026": {
+      url: "https://www.japandreamin.com/event/s/"
+    }
+    // Add more overrides as needed
+  };
+
+  const override = overrides[normalizedName];
+  if (override) {
+    return { ...event, ...override };
+  }
+  return event;
 }
 
 // Check if website is active and look for CFP and ticket sales links
 async function checkEvent(event) {
+  // Apply overrides first - before any website checking
+  event = applyOverrides(event);
+
   // Skip website checking for events with TBD URLs
   if (event.url === 'TBD') {
     return {
@@ -344,7 +452,11 @@ async function checkEvent(event) {
     const result = await fetchUrl(event.url);
 
     if (result.statusCode !== 200) {
-      return { ...event, status: 'inactive', statusCode: result.statusCode };
+      // Even if website is inactive, preserve override values
+      let cfpStatus = event.cfpUrl ? `[OPEN](${event.cfpUrl})` : 'TBD';
+      let ticketStatus = event.ticketUrl ? `[Buy Tickets](${event.ticketUrl})` : 'TBD';
+      let sponsorStatus = event.sponsorUrl ? `[Become a Sponsor](${event.sponsorUrl})` : 'TBD';
+      return { ...event, status: 'inactive', statusCode: result.statusCode, cfpStatus, ticketStatus, sponsorStatus };
     }
 
     const body = result.body.toLowerCase();
