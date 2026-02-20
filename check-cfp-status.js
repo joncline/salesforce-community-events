@@ -161,7 +161,8 @@ async function fetchEventsFromAPI() {
     },
     "Yeur Architect Dreamin 2026": {
       name: "Architect Dreamin' Europe",
-      location: "Helsinki, Finland"
+      location: "Helsinki, Finland",
+      cfpUrl: "https://architectdreamin.com/call-for-participation/"
     },
     "Portugal Dreamin' 2026": {  // Note: uses Unicode right single quotation mark (U+2019)
       url: "https://www.portugaldreamin.com/en",
@@ -269,7 +270,8 @@ function applyOverrides(event) {
     },
     "Yeur Architect Dreamin 2026": {
       name: "Architect Dreamin' Europe",
-      location: "Helsinki, Finland"
+      location: "Helsinki, Finland",
+      cfpUrl: "https://architectdreamin.com/call-for-participation/"
     },
     "Portugal Dreamin' 2026": {
       url: "https://www.portugaldreamin.com/en",
