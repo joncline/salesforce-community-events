@@ -257,6 +257,19 @@ SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
+DTSTART:20260715T080000
+DTEND:20260717T180000
+DTSTAMP:20251205T205500Z
+UID:midwest-dreamin-2026@salesforce-events
+SUMMARY:Midwest Dreamin'
+LOCATION:Minneapolis, Minnesota, USA
+DESCRIPTION:Midwest Dreamin' - The premier Salesforce community conference in the Midwest.\n\nWebsite: https://www.midwestdreamin.com/\n\nJuly 15-17, 2026 in Minneapolis, Minnesota
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
 DTSTART:20260722T080000
 DTEND:20260724T180000
 DTSTAMP:20251205T205500Z
