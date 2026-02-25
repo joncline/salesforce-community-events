@@ -365,10 +365,23 @@ BEGIN:VEVENT
 DTSTART:20260610T080000
 DTEND:20260611T180000
 DTSTAMP:20251205T205500Z
+UID:finnish-dreamin-2026@salesforce-events
+SUMMARY:Finnish Dreamin'
+LOCATION:Helsinki, Finland
+DESCRIPTION:Finnish Dreamin' - Finland's Salesforce community conference bringing together Trailblazers in Helsinki.\n\nWebsite: https://finnishdreamin.fi/\n\nJune 10, 2026 in Helsinki, Finland
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART:20260611T080000
+DTEND:20260612T180000
+DTSTAMP:20251205T205500Z
 UID:architect-dreamin-europe-2026@salesforce-events
 SUMMARY:Architect Dreamin' Europe
 LOCATION:Helsinki, Finland
-DESCRIPTION:Architect Dreamin' Europe - European Salesforce architect community conference.\n\nWebsite: https://architectdreamin.org\n\nJune 10-11, 2026 in Helsinki, Finland
+DESCRIPTION:Architect Dreamin' Europe - European Salesforce architect community conference.\n\nWebsite: https://architectdreamin.org\n\nJune 11-12, 2026 in Helsinki, Finland
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 SEQUENCE:0

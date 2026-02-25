@@ -172,8 +172,18 @@ async function fetchEventsFromAPI() {
     "Japan Dreamin' 2026": {
       url: "https://www.japandreamin.com/event/s/"
     }
+    "Yeur Architect Dreamin 2026": {
+      name: "Architect Dreamin' Europe",
+      location: "Helsinki, Finland",
+      cfpUrl: "https://architectdreamin.com/call-for-participation/"
+    },
+    "Finnish Dreamin' 2026": {
+      url: "https://finnishdreamin.fi/",
+      cfpUrl: "https://finnishdreamin.fi/call-for-speakers",
+      ticketUrl: "https://finnishdreamin.fi/tickets",
+      sponsorUrl: "https://finnishdreamin.fi/sponsors"
+    }
     // Add more overrides as needed
-  };
 
   // Apply overrides and prepare events
   const eventsWithOverrides = filteredEvents.map(event => {
