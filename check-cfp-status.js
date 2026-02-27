@@ -17,6 +17,16 @@ const path = require('path');
 // Event configuration - Events are fetched dynamically from Salesforce API
 let EVENTS = [];
 
+// Cross-reference URLs for discovering events not yet in our list
+const CROSS_REFERENCE_URLS = [
+  'https://ascendix.com/blog/salesforce-events-conferences/',
+  'https://lifesciencesdreamin.com/',
+  'https://www.salesforce.com/connections/',
+  'https://montrealdreamin.com/',
+  'https://dreaminincolor.com/',
+  'https://www.linkedin.com/company/women-in-tech-dreamin/'
+];
+
 // Fetch URL content with timeout
 function fetchUrl(url, timeout = 10000) {
   return new Promise((resolve, reject) => {
@@ -171,19 +181,20 @@ async function fetchEventsFromAPI() {
     },
     "Japan Dreamin' 2026": {
       url: "https://www.japandreamin.com/event/s/"
-    }
-    "Yeur Architect Dreamin 2026": {
-      name: "Architect Dreamin' Europe",
-      location: "Helsinki, Finland",
-      cfpUrl: "https://architectdreamin.com/call-for-participation/"
     },
     "Finnish Dreamin' 2026": {
       url: "https://finnishdreamin.fi/",
       cfpUrl: "https://finnishdreamin.fi/call-for-speakers",
       ticketUrl: "https://finnishdreamin.fi/tickets",
       sponsorUrl: "https://finnishdreamin.fi/sponsors"
+    },
+    "MC\u00b2 2026": {
+      url: "https://mcsquare.co.in/",
+      date: "May 16, 2026",
+      location: "Bengaluru, India"
     }
     // Add more overrides as needed
+  };
 
   // Apply overrides and prepare events
   const eventsWithOverrides = filteredEvents.map(event => {
@@ -290,6 +301,30 @@ function applyOverrides(event) {
     },
     "Japan Dreamin' 2026": {
       url: "https://www.japandreamin.com/event/s/"
+    },
+    "Finnish Dreamin' 2026": {
+      url: "https://finnishdreamin.fi/",
+      cfpUrl: "https://finnishdreamin.fi/call-for-speakers",
+      ticketUrl: "https://finnishdreamin.fi/tickets",
+      sponsorUrl: "https://finnishdreamin.fi/sponsors"
+    },
+    "MC\u00b2 2026": {
+      url: "https://mcsquare.co.in/"
+    },
+    "Life Sciences Dreamin' 2026": {
+      url: "https://lifesciencesdreamin.com/"
+    },
+    "Connections 2026": {
+      url: "https://www.salesforce.com/connections/"
+    },
+    "Montreal Dreamin' 2026": {
+      url: "https://montrealdreamin.com/"
+    },
+    "Dreamin in Color 2026": {
+      url: "https://dreaminincolor.com/"
+    },
+    "WIT Dreamin' 2026": {
+      url: "https://www.linkedin.com/company/women-in-tech-dreamin/"
     }
     // Add more overrides as needed
   };
@@ -675,6 +710,55 @@ ${tableRows}
   console.log('✅ README.md Events Overview Table updated successfully!');
 }
 
+// Fetch and compare events from cross-reference URLs to spot missing events
+async function checkCrossReference() {
+  const knownNames = EVENTS.map(e => normalizeEventName(e.name).toLowerCase());
+  const found = [];
+
+  for (const refUrl of CROSS_REFERENCE_URLS) {
+    console.log(`\n🔗 Cross-referencing: ${refUrl}`);
+    try {
+      const result = await fetchUrl(refUrl, 15000);
+      if (result.statusCode !== 200) {
+        console.log(`   ⚠️  Could not fetch cross-reference page (status ${result.statusCode})`);
+        continue;
+      }
+
+      // Extract all hyperlinked text that looks like event names (contains "dreamin" or known keywords)
+      const body = result.body;
+      const linkPattern = /<a[^>]*href=["']([^"']*)["'][^>]*>([^<]+)<\/a>/gi;
+      const eventKeywords = /dreamin|cactus|salesforce|forcelandia|ohana|witness|trailblazer|dreaming/i;
+
+      let match;
+      const candidates = new Set();
+      while ((match = linkPattern.exec(body)) !== null) {
+        const linkText = match[2].trim();
+        if (eventKeywords.test(linkText) && linkText.length > 5 && linkText.length < 80) {
+          candidates.add(linkText);
+        }
+      }
+
+      // Check candidates against known events
+      for (const candidate of candidates) {
+        const normalized = normalizeEventName(candidate).toLowerCase();
+        const isKnown = knownNames.some(name => normalized.includes(name.split(' ')[0].toLowerCase()) && normalized.length < name.length + 15);
+        if (!isKnown && /202[6-9]|2027/.test(candidate)) {
+          found.push({ name: candidate, source: refUrl });
+        }
+      }
+    } catch (err) {
+      console.log(`   ⚠️  Error fetching cross-reference: ${err.message}`);
+    }
+  }
+
+  if (found.length > 0) {
+    console.log('\n🆕 Potential new events found in cross-reference sources (not in current list):');
+    found.forEach(e => console.log(`   - ${e.name} (from ${e.source})`));
+  } else {
+    console.log('   ✅ No new events detected in cross-reference sources.');
+  }
+}
+
 // Main execution
 async function main() {
   console.log('🔍 Fetching events from Salesforce API...');
@@ -714,6 +798,9 @@ async function main() {
   console.log('\n📝 Updating README.md...');
   updateReadme(results);
   
+  console.log('\n🔍 Running cross-reference check for new events...');
+  await checkCrossReference();
+
   console.log('\n✨ Done!');
 }
 

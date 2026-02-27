@@ -6,7 +6,7 @@ A comprehensive calendar of Salesforce community events, conferences, and Dreami
 
 ## 📅 What's Included
 
-This calendar includes **32 Salesforce community events** for 2026-2027:
+This calendar includes **60 Salesforce community events** for 2026-2027:
 
 ### Events Overview Table
 
@@ -16,7 +16,7 @@ This calendar includes **32 Salesforce community events** for 2026-2027:
 | Polish Dreamin' 2026 | March 19, 2026 | Wrocław, Poland | [Website](https://coffeeforce.pl/dreamin/) | TBD | [Buy Tickets](https://coffeeforce.pl#tickets) | [Become a Sponsor](https://coffeeforce.pl#sponsors) |
 | Nonprofit Dreamin' 2026 | March 24-26, 2026 | Charlotte, United States | [Website](https://www.nonprofitdreamin.org/) | TBD | TBD | [Become a Sponsor](https://www.nonprofitdreamin.org/sponsorship) |
 | dreamOlé 2026 | March 26, 2026 | Valencia, Spain | [Website](https://dreamole.es/) | TBD | TBD | [Become a Sponsor](https://dreamole.es/our-sponsors-2026/) |
-| Delhi Dreamin' 2026 | April 3, 2026 | New Delhi, India | [Website](https://delhidreamin.com/) | [OPEN](https://delhidreamin.com/dd25/speakers) | TBD | [Become a Sponsor](https://delhidreamin.com/callforsponsor) |
+| Delhi Dreamin' 2026 | April 3, 2026 | New Delhi, India | [Website](https://delhidreamin.com/) | [OPEN](https://delhidreamin.com/our-speakers) | TBD | [Become a Sponsor](https://delhidreamin.com/callforsponsor) |
 | DREAMin Kosovo 2026 | April 17, 2026 | Prizren, Kosovo | [Website](https://dreaminkosovo.al/) | TBD | TBD | TBD |
 | Albania Dreamin' 2026 | April 24, 2026 | Tirana, Albania | [Website](https://dreamin.al) | [OPEN](https://dreamin.al/wp-content/uploads/2026/01/albania-dreamin-2026-call-for-speakers-poster.png) | TBD | [Become a Sponsor](https://dreamin.al/wp-content/uploads/2024/12/ad2025-sponsorship-prospectus.pdf) |
 | MidAtlantic Dreamin' 2026 | May 3, 2026 | Philadelphia, United States | [Website](https://midatlanticdreamin.com/) | [OPEN](https://midatlanticdreamin.my.site.com/call-for-speakers) | [Buy Tickets](https://www.ticketleap.events/tickets/midatlanticdreamin/midatlantic-dreamin-2026) | [Become a Sponsor](https://midatlanticdreamin.com/2025-sponsors.html) |
@@ -25,18 +25,20 @@ This calendar includes **32 Salesforce community events** for 2026-2027:
 | Dreamin' in Data 2026 | May 18-19, 2026 | Chicago, United States | [Website](https://www.dreaminindata.org/) | [OPEN](https://www.dreaminindata.org/call-for-speakers/) | TBD | [Become a Sponsor](https://www.dreaminindata.org/wp-content/uploads/2026/01/dreamin-in-data-sponsor-prospectus-2026.pdf) |
 | CzechDreamin 2026 | May 28, 2026 | Prague, Czech Republic | [Website](https://czechdreamin.com) | [OPEN](https://czechdreamin.com/blog/submit-abstract/) | [Buy Tickets](https://www.eventbrite.com/e/czechdreamin-2026-tickets-1430906181909?aff=oddtdtcreator) | [Become a Sponsor](https://czechdreamin.com/call-for-sponsors/) |
 | London's Calling 2026 | June 4, 2026 | London, United Kingdom | [Website](https://www.londonscalling.net/) | [OPEN](https://www.londonscalling.net/cfp/) | [Buy Tickets](https://www.eventbrite.com/e/londons-calling-2026-the-largest-european-salesforce-community-event-tickets-1857045215229) | [Become a Sponsor](https://www.londonscalling.net/sponsor-interest/) |
-| Finnish Dreamin' 2026 | June 10, 2026 | Helsinki, Finland | [Website](https://finnishdreamin.fi/) | TBD | TBD | TBD |
-| Architect Dreamin' Europe | June 11-12, 2026 | Helsinki, Finland | [Website](https://architectdreamin.org) | [OPEN](https://architectdreamin.com/call-for-participation/) | TBD | [Become a Sponsor](https://architectdreamin.com/our-amazing-sponsors/) |
+| Architect Dreamin' Europe | June 10-11, 2026 | Helsinki, Finland | [Website](https://architectdreamin.org) | [OPEN](https://architectdreamin.com/call-for-participation/) | TBD | [Become a Sponsor](https://architectdreamin.com/our-amazing-sponsors/) |
 | Portugal Dreamin’ 2026 | June 18, 2026 | Lisbon, Portugal | [Website](https://www.portugaldreamin.com/en) | TBD | [Buy Tickets](https://www.portugaldreamin.com/en/register) | [Become a Sponsor](https://www.portugaldreamin.com/en/sponsors) |
 | Texas Dreamin' 2026 | July 8-9, 2026 | Austin, United States | [Website](https://www.texasdreamin.org/) | [OPEN](https://www.texasdreamin.org/call-for-speakers) | TBD | [Become a Sponsor](https://www.texasdreamin.org/sponsorship) |
 | Bharat Dreamin' 2026 | July 10, 2026 | Jaipur, India | [Website](https://bharatdreamin.com/) | TBD | TBD | [Become a Sponsor](https://bharatdreamin.com/sponsors/) |
+| Midwest Dreamin' 2026 | July 15-17, 2026 | Minneapolis, United States | [Website](http://www.midwestdreamin.com) | [OPEN](https://midwestdreamin.my.site.com/s/speaker-submission-page) | [Buy Tickets](https://www.midwestdreamin.com/register/) | [Become a Sponsor](https://www.midwestdreamin.com/2025-sponsors/) |
 | WITness Success 2026 | July 21-23, 2026 | Indianapolis, United States | [Website](https://witnesssuccess.com/) | TBD | TBD | [Become a Sponsor](https://witnesssuccess.com/sponsors/) |
+| Kiwi Dreaming 2026 | July 22, 2026 | Auckland, New Zealand | [Website](https://kiwidreaming.nz/) | TBD | TBD | [Become a Sponsor](https://kiwidreaming.nz/sponsors/salesforce-developers) |
 | Buckeye Dreamin' 2026 | July 27-29, 2026 | Columbus, United States | [Website](https://www.buckeyedreamin.com/) | TBD | TBD | [Become a Sponsor](https://www.buckeyedreamin.com/sponsorship) |
 | Forcelandia 2026 | July 28-29, 2026 | Portland, United States | [Website](https://forcelandia.com/) | [OPEN](https://forcelandia.com/2026-call-for-speakers/) | TBD | [Become a Sponsor](https://forcelandia.com/2026-sponsors/) |
 | SoCal Dreamin' 2026 | August 19, 2026 | Newport Beach, United States | [Website](https://www.roadmapsolutions.org/socal-dreamin/) | TBD | [Buy Tickets](https://www.roadmapsolutions.org/socal-dreamin/register/) | [Become a Sponsor](https://www.roadmapsolutions.org/socal-dreamin/sponsors/) |
 | Mile High Dreamin' 2026 | August 25-26, 2026 | Denver, United States | [Website](https://www.milehighdreamin.com/) | TBD | TBD | TBD |
 | North Africa Dreamin' 2026 | October 23, 2026 | Casablanca, Morocco | [Website](https://northafricadreamin.com/) | TBD | TBD | [Become a Sponsor](https://northafricadreamin.com/sponsors/) |
 | Northeast Dreamin' 2026 | October 28-29, 2026 | Concord, United States | [Website](https://northeastdreamin.com/) | [OPEN](https://northeastdreamin.com/2025-speakers/) | [Buy Tickets](https://northeastdreamin.com/register/) | [Become a Sponsor](https://northeastdreamin.com/sponsors/) |
+| Pakistan Dreamin' 2026 | November 6, 2026 | Islamabad, Pakistan | [Website](https://www.pakdreamin.com) | TBD | [Buy Tickets](https://www.pakdreamin.com/register/) | [Become a Sponsor](https://www.pakdreamin.com/sponsors/) |
 | Dubai Dreamin' 2026 | November 13, 2026 | Dubai, United Arab Emirates | [Website](https://www.dubaidreamin.com/s/) | TBD | TBD | [Become a Sponsor](https://www.dubaidreamin.com/dubaidreamin/c/resource/dubaiimage/images/speakersponsor_bg.png) |
 | West Africa Dreamin' 2026 | November 20, 2026 | Lagos, Nigeria | [Website](Westafricadreamin.com) | TBD | TBD | TBD |
 | Cactusforce 2026 | January 21, 2027 | Scottsdale, United States | [Website](https://www.cactusforce.com/) | TBD | [Buy Tickets](https://cactusforce.com/register) | [Become a Sponsor](https://cactusforce.com/sponsor) |
@@ -258,6 +260,7 @@ To update the calendar status:
 This calendar is maintained using information from:
 - [Salesforce Trailhead Community Conferences](https://trailhead.salesforce.com/community/conferences/) - Official Salesforce community conference listings
 - [Salesforce Community Conferences Event Data](https://dsc-general-pages-prod.herokuapp.com/component---src-pages-community-conferences-index-js-9950e14cba64ee49b231.js) - Event data source
+- [Ascendix: Salesforce Events & Conferences](https://ascendix.com/blog/salesforce-events-conferences/) - Cross-reference for community event discovery
 - Individual event websites and organizers
 - Community submissions and updates
 
