@@ -85,27 +85,15 @@ TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT
 
-BEGIN:VEVENT
-DTSTART:20260319T100000
-DTEND:20260319T213000
-DTSTAMP:20251205T205500Z
-UID:irish-dreamin-2026@salesforce-events
-SUMMARY:Irish Dreamin'
-LOCATION:Dublin, Ireland
-DESCRIPTION:Irish Dreamin' - Ireland's community-led Salesforce conference bringing together admins, architects, consultants, developers, marketers, and partners for a dynamic day of learning, innovation, and networking.\n\nWebsite: https://www.irishdreamin.ie\nCall for Speakers: https://irishdreamin.ie/call-for-speakers/\n\nMarch 19, 2026 at The Royal Marine Hotel, Dublin, Ireland
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
 
 BEGIN:VEVENT
-DTSTART:20260320T080000
-DTEND:20260320T180000
+DTSTART:20261001T080000
+DTEND:20261001T180000
 DTSTAMP:20251205T205500Z
-UID:polish-dreamin-2026@salesforce-events
-SUMMARY:Polish Dreamin'
-LOCATION:Wrocław, Poland
-DESCRIPTION:Polish Dreamin' - Poland's Salesforce community conference.\n\nWebsite: https://dreamin.coffeeforce.pl/\nCall for Speakers: https://dreamin.coffeeforce.pl#speakers\n\nMarch 20, 2026 in Wrocław, Poland
+UID:lifesciences-dreamin-2026@salesforce-events
+SUMMARY:Life Sciences Dreamin'
+LOCATION:Pennsylvania, USA
+DESCRIPTION:Life Sciences Dreamin' - A Salesforce community conference focused on life sciences and healthcare.\n\nWebsite: https://lifesciencesdreamin.com/\n\nFall 2026 in Pennsylvania
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 SEQUENCE:0
@@ -646,18 +634,6 @@ TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT
 
-BEGIN:VEVENT
-DTSTART:20270404T080000
-DTEND:20270406T180000
-DTSTAMP:20251205T205500Z
-UID:lifesciences-dreamin-2026@salesforce-events
-SUMMARY:Life Sciences Dreamin'
-LOCATION:Philadelphia, Pennsylvania, USA
-DESCRIPTION:Life Sciences Dreamin' - A Salesforce community conference focused on life sciences and healthcare.\n\nWebsite: https://lifesciences-dreamin.com/\n\nApril 4-6, 2026 in Philadelphia, Pennsylvania
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
 
 BEGIN:VEVENT
 DTSTART:20270404T080000
