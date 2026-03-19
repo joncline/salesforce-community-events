@@ -12,6 +12,7 @@ This calendar includes **60 Salesforce community events** for 2026-2027:
 
 | Event | Date | Location | Website | CFP Status | Ticket Sales | Sponsor |
 |-------|------|----------|---------|------------|--------------|---------|
+| Life Sciences Dreamin' 2026 | Fall 2026 | Pennsylvania, United States | [Website](https://lifesciencesdreamin.com/) | TBD | TBD | TBD |
 | Nonprofit Dreamin' 2026 | March 24-26, 2026 | Charlotte, United States | [Website](https://www.nonprofitdreamin.org/) | TBD | TBD | [Become a Sponsor](https://www.nonprofitdreamin.org/sponsorship) |
 | dreamOlé 2026 | March 26, 2026 | Valencia, Spain | [Website](https://dreamole.es/) | TBD | TBD | [Become a Sponsor](https://dreamole.es/our-sponsors-2026/) |
 | Delhi Dreamin' 2026 | April 3, 2026 | New Delhi, India | [Website](https://delhidreamin.com/) | [OPEN](https://delhidreamin.com/our-speakers) | TBD | [Become a Sponsor](https://delhidreamin.com/callforsponsor) |
