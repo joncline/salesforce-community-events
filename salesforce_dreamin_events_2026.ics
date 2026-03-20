@@ -138,6 +138,20 @@ TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT
 
+
+BEGIN:VEVENT
+DTSTART:20260327T080000
+DTEND:20260327T180000
+DTSTAMP:20251205T205500Z
+UID:test-dreamin-2026@salesforce-events
+SUMMARY:Test Dreamin'
+LOCATION:Virtual
+DESCRIPTION:Test Dreamin' - A community conference focused on testing and quality assurance in Salesforce.\n\nWebsite: https://www.testdreamin.com/\n\nMarch 27, 2026 (Virtual Event)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
 BEGIN:VEVENT
 DTSTART:20260425T080000
 DTEND:20260425T180000

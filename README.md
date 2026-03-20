@@ -12,7 +12,7 @@ This calendar includes **60 Salesforce community events** for 2026-2027:
 
 | Event | Date | Location | Website | CFP Status | Ticket Sales | Sponsor |
 |-------|------|----------|---------|------------|--------------|---------|
-| Life Sciences Dreamin' 2026 | Fall 2026 | Pennsylvania, United States | [Website](https://lifesciencesdreamin.com/) | TBD | TBD | TBD |
+| Test Dreamin' 2026 | March 27, 2026 | Virtual | [Website](https://www.testdreamin.com/) | TBD | TBD | TBD |
 | Nonprofit Dreamin' 2026 | March 24-26, 2026 | Charlotte, United States | [Website](https://www.nonprofitdreamin.org/) | TBD | TBD | [Become a Sponsor](https://www.nonprofitdreamin.org/sponsorship) |
 | dreamOlé 2026 | March 26, 2026 | Valencia, Spain | [Website](https://dreamole.es/) | TBD | TBD | [Become a Sponsor](https://dreamole.es/our-sponsors-2026/) |
 | Delhi Dreamin' 2026 | April 3, 2026 | New Delhi, India | [Website](https://delhidreamin.com/) | [OPEN](https://delhidreamin.com/our-speakers) | TBD | [Become a Sponsor](https://delhidreamin.com/callforsponsor) |
@@ -25,7 +25,7 @@ This calendar includes **60 Salesforce community events** for 2026-2027:
 | CzechDreamin 2026 | May 28, 2026 | Prague, Czech Republic | [Website](https://czechdreamin.com) | TBD | [Buy Tickets](https://czechdreamin.com/tickets/) | [Become a Sponsor](https://czechdreamin.com/call-for-sponsors/) |
 | London's Calling 2026 | June 4, 2026 | London, United Kingdom | [Website](https://www.londonscalling.net/) | [OPEN](https://www.londonscalling.net/cfp/) | [Buy Tickets](https://www.eventbrite.com/e/londons-calling-2026-the-largest-european-salesforce-community-event-tickets-1857045215229) | [Become a Sponsor](https://www.londonscalling.net/sponsors/) |
 | Architect Dreamin' Europe | June 10-11, 2026 | Helsinki, Finland | [Website](https://architectdreamin.org) | [OPEN](https://architectdreamin.com/call-for-participation/) | TBD | [Become a Sponsor](https://architectdreamin.com/our-amazing-sponsors/) |
-| Portugal Dreamin’ 2026 | June 18, 2026 | Lisbon, Portugal | [Website](https://www.portugaldreamin.com/en) | TBD | [Buy Tickets](https://www.portugaldreamin.com/en/register) | [Become a Sponsor](https://www.portugaldreamin.com/en/sponsors) |
+| Portugal Dreamin' 2026 | June 18, 2026 | Lisbon, Portugal | [Website](https://www.portugaldreamin.com/en) | TBD | [Buy Tickets](https://www.portugaldreamin.com/en/register) | [Become a Sponsor](https://www.portugaldreamin.com/en/sponsors) |
 | Texas Dreamin' 2026 | July 8-9, 2026 | Austin, United States | [Website](https://www.texasdreamin.org/) | [OPEN](https://www.texasdreamin.org/call-for-speakers) | TBD | [Become a Sponsor](https://www.texasdreamin.org/sponsorship) |
 | Bharat Dreamin' 2026 | July 10, 2026 | Jaipur, India | [Website](https://bharatdreamin.com/) | TBD | TBD | [Become a Sponsor](https://bharatdreamin.com/sponsors/) |
 | Midwest Dreamin' 2026 | July 15-17, 2026 | Minneapolis, United States | [Website](http://www.midwestdreamin.com) | [OPEN](https://midwestdreamin.my.site.com/s/speaker-submission-page) | [Buy Tickets](https://www.midwestdreamin.com/register/) | [Become a Sponsor](https://www.midwestdreamin.com/2025-sponsors/) |
@@ -49,10 +49,12 @@ This calendar includes **60 Salesforce community events** for 2026-2027:
 | Irish Dreamin' 2027 | TBD | TBD | [Website](https://irishdreamin.ie/) | TBD | TBD | [Become a Sponsor](https://irishdreamin.ie/sponsor-interest/) |
 | Polish Dreamin' 2027 | TBD | TBD | [Website](https://coffeeforce.pl/dreamin/) | TBD | TBD | [Become a Sponsor](https://coffeeforce.pl#sponsors) |
 
-### Tentative Events (3)
+### Tentative Events (5)
 - **DevOps Dreamin'** - Estimated November | London, UK | [Website](https://devopsdreamin.com/)
 - **Irish Dreamin' 2026** - March 19, 2026 | Dublin, Ireland | [Website](https://irishdreamin.ie/)
 - **Polish Dreamin' 2026** - March 20, 2026 | Wrocław, Poland | [Website](https://coffeeforce.pl/dreamin/)
+- **QA Dreamin'** - March 18, 2025 | Virtual | [Website](https://qadreamin.com/)
+- **Life Sciences Dreamin'** - Fall 2026 | Pennsylvania, USA | [Website](https://lifesciencesdreamin.com/)
 
 ## 📅 How to Add to Your Calendar
 
