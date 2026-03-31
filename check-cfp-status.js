@@ -325,6 +325,14 @@ function applyOverrides(event) {
     },
     "WIT Dreamin' 2026": {
       url: "https://www.linkedin.com/company/women-in-tech-dreamin/"
+    },
+    "Nonprofit Dreamin' 2026": {
+      url: "https://www.nonprofitdreamin.org/",
+      location: "Charlotte, North Carolina, USA"
+    },
+    "Nonprofit Dreamin' 2027": {
+      url: "https://www.nonprofitdreamin.org/",
+      location: "TBD"
     }
     // Add more overrides as needed
   };

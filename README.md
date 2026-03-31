@@ -47,7 +47,7 @@ This calendar includes **33 Salesforce community events** for 2025-2027:
 | Japan Dreamin' 2027 | TBD | TBD | [Website](https://www.japandreamin.com/event/s/) | TBD | TBD | TBD |
 | Cairo Dreamin' 2027 | TBD | TBD | [Website](https://www.cairodreamin.com/) | TBD | TBD | [Become a Sponsor](https://www.cairodreamin.com/sponsors/) |
 | Irish Dreamin' 2027 | TBD | TBD | [Website](https://irishdreamin.ie/) | TBD | TBD | [Become a Sponsor](https://irishdreamin.ie/sponsor-interest/) |
-| Nonprofit Dreamin' 2027 | TBD | stay tuned for | [Website](https://www.nonprofitdreamin.org/) | TBD | TBD | [Become a Sponsor](https://www.nonprofitdreamin.org/sponsorship) |
+| Nonprofit Dreamin' 2027 | TBD | TBD | [Website](https://www.nonprofitdreamin.org/) | TBD | TBD | [Become a Sponsor](https://www.nonprofitdreamin.org/sponsorship) |
 | dreamOlé 2027 | TBD | TBD | [Website](https://dreamole.es/) | TBD | TBD | [Become a Sponsor](https://dreamole.es/our-sponsors-2026/) |
 | Test Dreamin' 2026 | TBD | TBD | [Website](https://www.testdreamin.com/) | TBD | TBD | TBD |
 | Life Sciences Dreamin' 2026 | TBD | TBD | [Website](https://lifesciencesdreamin.com/) | TBD | [Buy Tickets](https://cloudadoption.zoom.us/webinar/register/wn_uermhribtu-yntcbiotaza#/registration) | [Become a Sponsor](https://lifesciencesdreamin.com/sponsorship/) |
