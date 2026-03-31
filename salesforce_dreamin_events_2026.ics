@@ -413,4 +413,30 @@ TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT
 
+BEGIN:VEVENT
+DTSTART:20270101T080000
+DTEND:20270101T180000
+DTSTAMP:20260330T205500Z
+UID:test-dreamin-tbd@salesforce-events
+SUMMARY:Test Dreamin' (TBD)
+LOCATION:TBD
+DESCRIPTION:Test Dreamin' - A Salesforce community conference focused on testing, quality assurance, and best practices.\n\nWebsite: https://www.testdreamin.com/\n\nDate and location to be determined
+STATUS:TENTATIVE
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART:20270101T080000
+DTEND:20270101T180000
+DTSTAMP:20260330T205500Z
+UID:life-sciences-dreamin-tbd@salesforce-events
+SUMMARY:Life Sciences Dreamin' (TBD)
+LOCATION:TBD
+DESCRIPTION:Life Sciences Dreamin' - A Salesforce community conference focused on the life sciences industry.\n\nWebsite: https://lifesciencesdreamin.com/\n\nDate and location to be determined
+STATUS:TENTATIVE
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
 END:VCALENDAR

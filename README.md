@@ -50,9 +50,11 @@ This calendar includes **33 Salesforce community events** for 2025-2027:
 | Japan Dreamin' 2027 | TBD | TBD | [Website](https://www.japandreamin.com/) | TBD | TBD | TBD |
 | Philippines Dreamin' 2027 | TBD | TBD | [Website](https://phdreamin.com/) | TBD | TBD | TBD |
 
-### Tentative Events (2)
+### Tentative Events (4)
 - **London Architect Dreamin'** - Estimated February | London, UK
 - **DevOps Dreamin'** - Estimated November | London, UK
+- **Test Dreamin'** - TBD | [Website](https://www.testdreamin.com/)
+- **Life Sciences Dreamin'** - TBD | [Website](https://lifesciencesdreamin.com/)
 
 ## 📅 How to Add to Your Calendar
 
