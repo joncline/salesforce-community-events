@@ -8,124 +8,6 @@ X-WR-TIMEZONE:America/Los_Angeles
 X-WR-CALDESC:Salesforce conferences and community events
 
 BEGIN:VEVENT
-DTSTART:20260121T080000
-DTEND:20260122T180000
-DTSTAMP:20251205T205500Z
-UID:architect-dreamin-us-2026@salesforce-events
-SUMMARY:Architect Dreamin' US
-LOCATION:Scottsdale, Arizona, USA
-DESCRIPTION:Architect Dreamin' US - Where Architects Learn from Architects. An elite event for experienced Salesforce professionals who love to design, build, and collaborate.\n\nWebsite: https://architectdreamin.com\n\nJanuary 21-22, 2026 in Scottsdale, Arizona
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20260122T080000
-DTEND:20260123T180000
-DTSTAMP:20251205T205500Z
-UID:cactusforce-2026@salesforce-events
-SUMMARY:Cactusforce
-LOCATION:Scottsdale, Arizona, USA
-DESCRIPTION:Cactusforce - A community conference for Salesforce developers and architects. More code. Less fluff.\n\nWebsite: https://cactusforce.com\n\nJanuary 22-23, 2026 at SkySong Innovation Center, Scottsdale, Arizona
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20260122T080000
-DTEND:20260123T180000
-DTSTAMP:20251205T205500Z
-UID:philippines-dreamin-2026@salesforce-events
-SUMMARY:Philippines Dreamin'
-LOCATION:Mandaluyong City, Philippines
-DESCRIPTION:Philippines Dreamin' - The Philippines' premier Salesforce community conference bringing together Trailblazers across the region.\n\nWebsite: https://phdreamin.com/\n\nJanuary 22-23, 2026 in Mandaluyong City, Philippines
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20260123T080000
-DTEND:20260123T180000
-DTSTAMP:20251205T205500Z
-UID:japan-dreamin-2026@salesforce-events
-SUMMARY:Japan Dreamin'
-LOCATION:Tokyo, Japan
-DESCRIPTION:Japan Dreamin' - Japan's Salesforce community conference bringing together Japanese Trailblazers.\n\nWebsite: https://www.japandreamin.com/\n\nJanuary 23, 2026 in Tokyo, Japan
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20260124T080000
-DTEND:20260124T180000
-DTSTAMP:20251205T205500Z
-UID:bharat-dreamin-2026@salesforce-events
-SUMMARY:Bharat Dreamin'
-LOCATION:Jaipur, Rajasthan, India
-DESCRIPTION:Bharat Dreamin' - India's premier Salesforce community conference.\n\nWebsite: https://bharatdreamin.com/\n\nJanuary 24, 2026 in Jaipur, Rajasthan, India
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20260131T080000
-DTEND:20260131T180000
-DTSTAMP:20251205T205500Z
-UID:cairo-dreamin-2026@salesforce-events
-SUMMARY:Cairo Dreamin'
-LOCATION:Cairo, Egypt
-DESCRIPTION:Cairo Dreamin' - Egypt's Salesforce community conference bringing together Trailblazers from across the region.\n\nWebsite: https://www.cairodreamin.com/\nCall for Speakers: https://www.cairodreamin.com/speakers/\n\nJanuary 31, 2026 in Cairo, Egypt
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-
-BEGIN:VEVENT
-DTSTART:20261001T080000
-DTEND:20261001T180000
-DTSTAMP:20251205T205500Z
-UID:lifesciences-dreamin-2026@salesforce-events
-SUMMARY:Life Sciences Dreamin'
-LOCATION:Pennsylvania, USA
-DESCRIPTION:Life Sciences Dreamin' - A Salesforce community conference focused on life sciences and healthcare.\n\nWebsite: https://lifesciencesdreamin.com/\n\nFall 2026 in Pennsylvania
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20260325T080000
-DTEND:20260327T180000
-DTSTAMP:20251205T205500Z
-UID:nonprofit-dreamin-2026@salesforce-events
-SUMMARY:Nonprofit Dreamin'
-LOCATION:Charlotte, North Carolina, USA
-DESCRIPTION:Nonprofit Dreamin' - A Salesforce community conference dedicated to nonprofit organizations, featuring sessions on fundraising, program management, and leveraging Salesforce for social impact.\n\nWebsite: https://www.nonprofitdreamin.org/\nCall for Speakers: https://www.nonprofitdreamin.org/speaker-submission\n\nMarch 25-27, 2026 in Charlotte, North Carolina
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20260327T080000
-DTEND:20260327T180000
-DTSTAMP:20251205T205500Z
-UID:dreamole-2026@salesforce-events
-SUMMARY:dreamOlé
-LOCATION:Valencia, Spain
-DESCRIPTION:dreamOlé - Spain's Salesforce community conference celebrating the Spanish-speaking Salesforce community.\n\nWebsite: https://dreamole.es/\n\nMarch 27, 2026 in Valencia, Spain
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
 DTSTART:20260415T080000
 DTEND:20260416T180000
 DTSTAMP:20251205T205500Z
@@ -133,20 +15,6 @@ UID:trailblazerdx-2026@salesforce-events
 SUMMARY:TrailblazerDX 2026
 LOCATION:San Francisco, California, USA
 DESCRIPTION:TrailblazerDX - Salesforce's premier developer conference focused on building on the Salesforce Platform. Features technical sessions, hands-on workshops, product announcements, and networking with the global developer community.\n\nCall for Speakers: https://reg.salesforce.com/flow/plus/tdx26/sessionproposal/cfphome\n\nApril 15-16, 2026 in San Francisco, California
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-
-BEGIN:VEVENT
-DTSTART:20260327T080000
-DTEND:20260327T180000
-DTSTAMP:20251205T205500Z
-UID:test-dreamin-2026@salesforce-events
-SUMMARY:Test Dreamin'
-LOCATION:Virtual
-DESCRIPTION:Test Dreamin' - A community conference focused on testing and quality assurance in Salesforce.\n\nWebsite: https://www.testdreamin.com/\n\nMarch 27, 2026 (Virtual Event)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 SEQUENCE:0
@@ -246,47 +114,152 @@ SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
-DTSTART:20260610T080000
-DTEND:20260611T180000
-DTSTAMP:20251205T205500Z
-UID:finnish-dreamin-2026@salesforce-events
-SUMMARY:Finnish Dreamin'
-LOCATION:Helsinki, Finland
-DESCRIPTION:Finnish Dreamin' - Finland's Salesforce community conference bringing together Trailblazers in Helsinki.\n\nWebsite: https://finnishdreamin.fi/\n\nJune 10, 2026 in Helsinki, Finland
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20260611T080000
-DTEND:20260612T180000
-DTSTAMP:20251205T205500Z
-UID:architect-dreamin-europe-2026@salesforce-events
-SUMMARY:Architect Dreamin' Europe
-LOCATION:Helsinki, Finland
-DESCRIPTION:Architect Dreamin' Europe - European Salesforce architect community conference.\n\nWebsite: https://architectdreamin.org\n\nJune 11-12, 2026 in Helsinki, Finland
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20260618T080000
-DTEND:20260618T180000
+DTSTART:20260619T080000
+DTEND:20260619T180000
 DTSTAMP:20251205T205500Z
 UID:portugal-dreamin-2026@salesforce-events
 SUMMARY:Portugal Dreamin'
 LOCATION:Lisbon, Portugal
-DESCRIPTION:Portugal Dreamin' - Portugal's Salesforce community conference.\n\nWebsite: https://www.portugaldreamin.com/en\n\nJune 18, 2026 in Lisbon, Portugal
+DESCRIPTION:Portugal Dreamin' - Portugal's Salesforce community conference.\n\nWebsite: https://portugaldreamin.com/\n\nJune 19, 2026 in Lisbon, Portugal
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
-DTSTART:20260702T080000
-DTEND:20260702T180000
+DTSTART:20260709T080000
+DTEND:20260710T180000
+DTSTAMP:20251205T205500Z
+UID:texas-dreamin-2026@salesforce-events
+SUMMARY:Texas Dreamin'
+LOCATION:Austin, Texas, USA
+DESCRIPTION:Texas Dreamin' - Texas's premier Salesforce community conference.\n\nWebsite: https://www.texasdreamin.org/\n\nJuly 9-10, 2026 in Austin, Texas
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART:20260722T080000
+DTEND:20260724T180000
+DTSTAMP:20251205T205500Z
+UID:witness-success-2026@salesforce-events
+SUMMARY:WITness Success
+LOCATION:Indianapolis, Indiana, USA
+DESCRIPTION:WITness Success - A Salesforce community conference celebrating Women in Technology and fostering connections, learning, and empowerment.\n\nWebsite: https://witnesssuccess.com\n\nJuly 22-24, 2026 in Indianapolis, Indiana
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART:20260728T080000
+DTEND:20260730T180000
+DTSTAMP:20251205T205500Z
+UID:buckeye-dreamin-2026@salesforce-events
+SUMMARY:Buckeye Dreamin'
+LOCATION:Columbus, Ohio, USA
+DESCRIPTION:Buckeye Dreamin' - Ohio's premier Salesforce community conference.\n\nWebsite: https://www.buckeyedreamin.com/\n\nJuly 28-30, 2026 in Columbus, Ohio
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART:20260729T080000
+DTEND:20260730T180000
+DTSTAMP:20251205T205500Z
+UID:forcelandia-2026@salesforce-events
+SUMMARY:Forcelandia
+LOCATION:Portland, Oregon, USA
+DESCRIPTION:Forcelandia - Your favorite Salesforce Developer-Oriented Community Event in Portland, OR. Keeping Code Weird.\n\nWebsite: https://forcelandia.com\n\nJuly 29-30, 2026 at Kennedy School, Portland
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART:20260820T080000
+DTEND:20260820T180000
+DTSTAMP:20251205T205500Z
+UID:socal-dreamin-2026@salesforce-events
+SUMMARY:SoCal Dreamin'
+LOCATION:Newport Beach, California, USA
+DESCRIPTION:SoCal Dreamin' - Southern California's Salesforce community conference.\n\nWebsite: https://www.roadmapsolutions.org/socal-dreamin/\n\nAugust 20, 2026 in Newport Beach, California
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART:20260826T080000
+DTEND:20260827T180000
+DTSTAMP:20251205T205500Z
+UID:mile-high-dreamin-2026@salesforce-events
+SUMMARY:Mile High Dreamin'
+LOCATION:Denver, Colorado, USA
+DESCRIPTION:Mile High Dreamin' - Colorado's Salesforce community conference bringing together Trailblazers in the Mile High City.\n\nWebsite: https://milehighdreamin.com\n\nAugust 26-27, 2026 in Denver, Colorado
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART:20260915T080000
+DTEND:20260917T180000
+DTSTAMP:20251205T205500Z
+UID:dreamforce-2026@salesforce-events
+SUMMARY:Dreamforce 2026
+LOCATION:San Francisco, California, USA
+DESCRIPTION:Dreamforce - The world's largest Salesforce conference bringing together Trailblazers, customers, partners, and industry leaders. Experience groundbreaking innovations, inspiring keynotes, 500+ sessions, hands-on training, and networking opportunities.\n\nWebsite: https://www.salesforce.com/dreamforce/\n\nSeptember 15-17, 2026 in San Francisco and on Salesforce+
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART:20261029T080000
+DTEND:20261030T180000
+DTSTAMP:20251205T205500Z
+UID:northeast-dreamin-2026@salesforce-events
+SUMMARY:Northeast Dreamin'
+LOCATION:Concord, New Hampshire, USA
+DESCRIPTION:Northeast Dreamin' - New England's Salesforce community conference bringing together Trailblazers from across the Northeast.\n\nWebsite: https://northeastdreamin.com/
+Call for Proposals: https://northeastdreamin.com/call-for-proposals/\n\nOctober 29-30, 2026 in Concord, New Hampshire
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART:20261029T080000
+DTEND:20261029T180000
+DTSTAMP:20251205T205500Z
+UID:yeurdreamin-2026@salesforce-events
+SUMMARY:YeurDreamin'
+LOCATION:Amsterdam, Netherlands
+DESCRIPTION:YeurDreamin' - European Salesforce community conference bringing together Trailblazers from across Europe.\n\nWebsite: https://www.yeurdreamin.eu/\n\nOctober 29, 2026 in Amsterdam, Netherlands
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART:20261114T080000
+DTEND:20261114T180000
+DTSTAMP:20251205T205500Z
+UID:dubai-dreamin-2026@salesforce-events
+SUMMARY:Dubai Dreamin'
+LOCATION:Dubai, United Arab Emirates
+DESCRIPTION:Dubai Dreamin' - The UAE's premier Salesforce community conference bringing together Trailblazers from across the Middle East.\n\nWebsite: https://www.dubaidreamin.com\n\nNovember 14, 2026 in Dubai, United Arab Emirates
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART:20261202T090000
+DTEND:20261202T190000
 DTSTAMP:20251205T205500Z
 UID:french-touch-dreamin-2026@salesforce-events
 SUMMARY:French Touch Dreamin'
@@ -298,379 +271,144 @@ SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
-DTSTART:20260708T080000
-DTEND:20260709T180000
+DTSTART:20270128T080000
+DTEND:20270129T180000
 DTSTAMP:20251205T205500Z
-UID:texas-dreamin-2026@salesforce-events
-SUMMARY:Texas Dreamin'
-LOCATION:Austin, Texas, USA
-DESCRIPTION:Texas Dreamin' - Texas's premier Salesforce community conference.\n\nWebsite: https://www.texasdreamin.org/\n\nJuly 8-9, 2026 in Austin, Texas
+UID:biggest-little-dreamin-2027@salesforce-events
+SUMMARY:Biggest Little Dreamin' 2027
+LOCATION:Reno, Nevada, USA
+DESCRIPTION:Biggest Little Dreamin' 2027 - A Salesforce community conference.\n\nJanuary 28-29, 2027 in Reno, Nevada
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
-DTSTART:20260710T080000
-DTEND:20260710T180000
+DTSTART:20260121T080000
+DTEND:20260122T180000
 DTSTAMP:20251205T205500Z
-UID:bharat-dreamin-2026@salesforce-events
-SUMMARY:Bharat Dreamin'
-LOCATION:Jaipur, Rajasthan, India
-DESCRIPTION:Bharat Dreamin' - India's premier Salesforce community conference.\n\nWebsite: https://bharatdreamin.com/\n\nJuly 10, 2026 in Jaipur, Rajasthan, India
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20260715T080000
-DTEND:20260717T180000
-DTSTAMP:20251205T205500Z
-UID:midwest-dreamin-2026@salesforce-events
-SUMMARY:Midwest Dreamin'
-LOCATION:Minneapolis, Minnesota, USA
-DESCRIPTION:Midwest Dreamin' - The premier Salesforce community conference in the Midwest.\n\nWebsite: https://www.midwestdreamin.com/\n\nJuly 15-17, 2026 in Minneapolis, Minnesota
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20260721T080000
-DTEND:20260723T180000
-DTSTAMP:20251205T205500Z
-UID:witness-success-2026@salesforce-events
-SUMMARY:WITness Success
-LOCATION:Indianapolis, Indiana, USA
-DESCRIPTION:WITness Success - A Salesforce community conference celebrating Women in Technology and fostering connections, learning, and empowerment.\n\nWebsite: https://witnesssuccess.com\n\nJuly 21-23, 2026 in Indianapolis, Indiana
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20260722T080000
-DTEND:20260722T180000
-DTSTAMP:20251205T205500Z
-UID:yarl-dreamin-2026@salesforce-events
-SUMMARY:Yarl Dreamin'
-LOCATION:Jaffna, Sri Lanka
-DESCRIPTION:Yarl Dreamin' - Sri Lanka's Salesforce community conference bringing together Trailblazers in Jaffna.\n\nWebsite: https://yarldreamin.com/\n\nJuly 22, 2026 in Jaffna, Sri Lanka
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20260727T080000
-DTEND:20260729T180000
-DTSTAMP:20251205T205500Z
-UID:buckeye-dreamin-2026@salesforce-events
-SUMMARY:Buckeye Dreamin'
-LOCATION:Columbus, Ohio, USA
-DESCRIPTION:Buckeye Dreamin' - Ohio's premier Salesforce community conference.\n\nWebsite: https://www.buckeyedreamin.com/\n\nJuly 27-29, 2026 in Columbus, Ohio
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20260728T080000
-DTEND:20260730T180000
-DTSTAMP:20251205T205500Z
-UID:forcelandia-2026@salesforce-events
-SUMMARY:Forcelandia
-LOCATION:Portland, Oregon, USA
-DESCRIPTION:Forcelandia - Your favorite Salesforce Developer-Oriented Community Event in Portland, OR. Keeping Code Weird.\n\nWebsite: https://forcelandia.com\n\nJuly 28-30, 2026 at Kennedy School, Portland
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20260802T080000
-DTEND:20260802T180000
-DTSTAMP:20251205T205500Z
-UID:southeast-dreamin-2026@salesforce-events
-SUMMARY:Southeast Dreamin'
-LOCATION:Atlanta, Georgia, USA
-DESCRIPTION:Southeast Dreamin' - Southeast's Salesforce community conference.\n\nWebsite: https://southeast-dreamin.com/\n\nAugust 2, 2026 in Atlanta, Georgia
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20260819T080000
-DTEND:20260819T180000
-DTSTAMP:20251205T205500Z
-UID:socal-dreamin-2026@salesforce-events
-SUMMARY:SoCal Dreamin'
-LOCATION:Newport Beach, California, USA
-DESCRIPTION:SoCal Dreamin' - Southern California's Salesforce community conference.\n\nWebsite: https://www.roadmapsolutions.org/socal-dreamin/\n\nAugust 19, 2026 in Newport Beach, California
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20260825T080000
-DTEND:20260826T180000
-DTSTAMP:20251205T205500Z
-UID:mile-high-dreamin-2026@salesforce-events
-SUMMARY:Mile High Dreamin'
-LOCATION:Denver, Colorado, USA
-DESCRIPTION:Mile High Dreamin' - Colorado's Salesforce community conference bringing together Trailblazers in the Mile High City.\n\nWebsite: https://milehighdreamin.com\n\nAugust 25-26, 2026 in Denver, Colorado
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20260902T080000
-DTEND:20260902T180000
-DTSTAMP:20251205T205500Z
-UID:wit-dreamin-2026@salesforce-events
-SUMMARY:WIT Dreamin'
-LOCATION:Ahmedabad, India
-DESCRIPTION:WIT Dreamin' - India's Salesforce community conference celebrating Women in Technology.\n\nWebsite: https://wit-dreamin.com/\n\nSeptember 2, 2026 in Ahmedabad, India
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20261023T080000
-DTEND:20261023T180000
-DTSTAMP:20251205T205500Z
-UID:north-africa-dreamin-2026@salesforce-events
-SUMMARY:North Africa Dreamin'
-LOCATION:Casablanca, Morocco
-DESCRIPTION:North Africa Dreamin' - North Africa's Salesforce community conference bringing together Trailblazers from across the region.\n\nWebsite: https://northafricadreamin.com/\n\nOctober 23, 2026 in Casablanca, Morocco
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20261028T080000
-DTEND:20261029T180000
-DTSTAMP:20251205T205500Z
-UID:northeast-dreamin-2026@salesforce-events
-SUMMARY:Northeast Dreamin'
-LOCATION:Concord, New Hampshire, USA
-DESCRIPTION:Northeast Dreamin' - New England's Salesforce community conference bringing together Trailblazers from across the Northeast.\n\nWebsite: https://northeastdreamin.com/\n\nOctober 28-29, 2026 in Concord, New Hampshire
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20261106T080000
-DTEND:20261106T180000
-DTSTAMP:20251205T205500Z
-UID:pakistan-dreamin-2026@salesforce-events
-SUMMARY:Pakistan Dreamin'
-LOCATION:Islamabad, Pakistan
-DESCRIPTION:Pakistan Dreamin' - Pakistan's Salesforce community conference.\n\nWebsite: https://www.pakdreamin.com\n\nNovember 6, 2026 in Islamabad, Pakistan
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20261113T080000
-DTEND:20261113T180000
-DTSTAMP:20251205T205500Z
-UID:dubai-dreamin-2026@salesforce-events
-SUMMARY:Dubai Dreamin'
-LOCATION:Dubai, United Arab Emirates
-DESCRIPTION:Dubai Dreamin' - UAE's Salesforce community conference bringing together Trailblazers in Dubai.\n\nWebsite: https://www.dubaidreamin.com/s/\n\nNovember 13, 2026 in Dubai, United Arab Emirates
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20261120T080000
-DTEND:20261120T180000
-DTSTAMP:20251205T205500Z
-UID:mexico-dreamin-2026@salesforce-events
-SUMMARY:Mexico Dreamin'
-LOCATION:Mérida, Mexico
-DESCRIPTION:Mexico Dreamin' - Mexico's Salesforce community conference.\n\nWebsite: https://mexicodreamin.com/\n\nNovember 20, 2026 in Mérida, Mexico
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20261120T080000
-DTEND:20261120T180000
-DTSTAMP:20251205T205500Z
-UID:west-africa-dreamin-2026@salesforce-events
-SUMMARY:West Africa Dreamin'
-LOCATION:Lagos, Nigeria
-DESCRIPTION:West Africa Dreamin' - West Africa's Salesforce community conference.\n\nWebsite: https://westafricadreamin.com/\n\nNovember 20, 2026 in Lagos, Nigeria
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20270121T080000
-DTEND:20270122T180000
-DTSTAMP:20251205T205500Z
-UID:cactusforce-2026@salesforce-events
-SUMMARY:Cactusforce
+UID:architect-dreamin-us-2026-tbd@salesforce-events
+SUMMARY:Architect Dreamin' US (TBD)
 LOCATION:Scottsdale, Arizona, USA
-DESCRIPTION:Cactusforce - A community conference for Salesforce developers and architects. More code. Less fluff.\n\nWebsite: https://cactusforce.com\n\nJanuary 21-22, 2027 at SkySong Innovation Center, Scottsdale, Arizona
-STATUS:CONFIRMED
+DESCRIPTION:Architect Dreamin' US - Where Architects Learn from Architects. An elite event for experienced Salesforce professionals who love to design, build, and collaborate.\n\nWebsite: https://architectdreamin.com\n\nJanuary 21-22, 2026 in Scottsdale, Arizona\n\n(Past event - TBD for future dates)
+STATUS:TENTATIVE
 TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
-DTSTART:20270122T080000
-DTEND:20270123T180000
+DTSTART:20260122T080000
+DTEND:20260123T180000
 DTSTAMP:20251205T205500Z
-UID:architect-dreamin-us-2027@salesforce-events
-SUMMARY:Architect Dreamin' US
+UID:cactusforce-2026-tbd@salesforce-events
+SUMMARY:Cactusforce (TBD)
 LOCATION:Scottsdale, Arizona, USA
-DESCRIPTION:Architect Dreamin' US - Where Architects Learn from Architects. An elite event for experienced Salesforce professionals who love to design, build, and collaborate.\n\nWebsite: https://architectdreamin.com\n\nJanuary 22-23, 2027 in Scottsdale, Arizona
-STATUS:CONFIRMED
+DESCRIPTION:Cactusforce - A community conference for Salesforce developers and architects. More code. Less fluff.\n\nWebsite: https://cactusforce.com\n\nJanuary 22-23, 2026 at SkySong Innovation Center, Scottsdale, Arizona\n\n(Past event - TBD for future dates)
+STATUS:TENTATIVE
 TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
-DTSTART:20270122T080000
-DTEND:20270123T180000
+DTSTART:20260122T080000
+DTEND:20260123T180000
 DTSTAMP:20251205T205500Z
-UID:philippines-dreamin-2027@salesforce-events
-SUMMARY:Philippines Dreamin'
+UID:philippines-dreamin-2026-tbd@salesforce-events
+SUMMARY:Philippines Dreamin' (TBD)
 LOCATION:Mandaluyong City, Philippines
-DESCRIPTION:Philippines Dreamin' - The Philippines' premier Salesforce community conference bringing together Trailblazers across the region.\n\nWebsite: https://phdreamin.com/\n\nJanuary 22-23, 2027 in Mandaluyong City, Philippines
-STATUS:CONFIRMED
+DESCRIPTION:Philippines Dreamin' - The Philippines' premier Salesforce community conference bringing together Trailblazers across the region.\n\nWebsite: https://phdreamin.com/\n\nJanuary 22-23, 2026 in Mandaluyong City, Philippines\n\n(Past event - TBD for future dates)
+STATUS:TENTATIVE
 TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
-DTSTART:20270123T080000
-DTEND:20270123T180000
+DTSTART:20260123T080000
+DTEND:20260123T180000
 DTSTAMP:20251205T205500Z
-UID:japan-dreamin-2027@salesforce-events
-SUMMARY:Japan Dreamin'
+UID:japan-dreamin-2026-tbd@salesforce-events
+SUMMARY:Japan Dreamin' (TBD)
 LOCATION:Tokyo, Japan
-DESCRIPTION:Japan Dreamin' - Japan's Salesforce community conference bringing together Japanese Trailblazers.\n\nWebsite: https://www.japandreamin.com/\n\nJanuary 23, 2027 in Tokyo, Japan
-STATUS:CONFIRMED
+DESCRIPTION:Japan Dreamin' - Japan's Salesforce community conference bringing together Japanese Trailblazers.\n\nWebsite: https://www.japandreamin.com/\n\nJanuary 23, 2026 in Tokyo, Japan\n\n(Past event - TBD for future dates)
+STATUS:TENTATIVE
 TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
-DTSTART:20270124T080000
-DTEND:20270124T180000
+DTSTART:20260124T080000
+DTEND:20260124T180000
 DTSTAMP:20251205T205500Z
-UID:bharat-dreamin-2027@salesforce-events
-SUMMARY:Bharat Dreamin'
+UID:bharat-dreamin-2026-tbd@salesforce-events
+SUMMARY:Bharat Dreamin' (TBD)
 LOCATION:Jaipur, Rajasthan, India
-DESCRIPTION:Bharat Dreamin' - India's premier Salesforce community conference.\n\nWebsite: https://bharatdreamin.com/\n\nJanuary 24, 2027 in Jaipur, Rajasthan, India
-STATUS:CONFIRMED
+DESCRIPTION:Bharat Dreamin' - India's premier Salesforce community conference.\n\nWebsite: https://bharatdreamin.com/\n\nJanuary 24, 2026 in Jaipur, Rajasthan, India\n\n(Past event - TBD for future dates)
+STATUS:TENTATIVE
 TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
-DTSTART:20270131T080000
-DTEND:20270131T180000
+DTSTART:20260131T080000
+DTEND:20260131T180000
 DTSTAMP:20251205T205500Z
-UID:cairo-dreamin-2027@salesforce-events
-SUMMARY:Cairo Dreamin'
+UID:cairo-dreamin-2026-tbd@salesforce-events
+SUMMARY:Cairo Dreamin' (TBD)
 LOCATION:Cairo, Egypt
-DESCRIPTION:Cairo Dreamin' - Egypt's Salesforce community conference bringing together Trailblazers from across the region.\n\nWebsite: https://www.cairodreamin.com/\nCall for Speakers: https://www.cairodreamin.com/speakers/\n\nJanuary 31, 2027 in Cairo, Egypt
-STATUS:CONFIRMED
+DESCRIPTION:Cairo Dreamin' - Egypt's Salesforce community conference bringing together Trailblazers from across the region.\n\nWebsite: https://www.cairodreamin.com/\nCall for Speakers: https://www.cairodreamin.com/speakers/\n\nJanuary 31, 2026 in Cairo, Egypt\n\n(Past event - TBD for future dates)
+STATUS:TENTATIVE
 TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
-DTSTART:20270215T080000
-DTEND:20270215T180000
+DTSTART:20260319T100000
+DTEND:20260319T213000
 DTSTAMP:20251205T205500Z
-UID:tahoe-dreamin-2026@salesforce-events
-SUMMARY:Tahoe Dreamin'
-LOCATION:Stateline, Nevada, USA
-DESCRIPTION:Tahoe Dreamin' - Lake Tahoe's Salesforce community conference.\n\nWebsite: https://tahoe-dreamin.com/\n\nFebruary 15, 2026 in Stateline, Nevada
-STATUS:CONFIRMED
+UID:irish-dreamin-2026-tbd@salesforce-events
+SUMMARY:Irish Dreamin' (TBD)
+LOCATION:Dublin, Ireland
+DESCRIPTION:Irish Dreamin' - Ireland's community-led Salesforce conference bringing together admins, architects, consultants, developers, marketers, and partners for a dynamic day of learning, innovation, and networking.\n\nWebsite: https://www.irishdreamin.ie\nCall for Speakers: https://irishdreamin.ie/call-for-speakers/\n\nMarch 19, 2026 at The Royal Marine Hotel, Dublin, Ireland\n\n(Past event - TBD for future dates)
+STATUS:TENTATIVE
 TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
-DTSTART:20270219T080000
-DTEND:20270221T180000
+DTSTART:20260320T080000
+DTEND:20260320T180000
 DTSTAMP:20251205T205500Z
-UID:dreamin-in-color-2026@salesforce-events
-SUMMARY:Dreamin' in Color
-LOCATION:Raleigh, North Carolina, USA
-DESCRIPTION:Dreamin' in Color - A Salesforce community conference celebrating diversity, equity, and inclusion.\n\nWebsite: https://dreamin-color.com/\n\nFebruary 19-21, 2026 in Raleigh, North Carolina
-STATUS:CONFIRMED
+UID:polish-dreamin-2026-tbd@salesforce-events
+SUMMARY:Polish Dreamin' (TBD)
+LOCATION:Wrocław, Poland
+DESCRIPTION:Polish Dreamin' - Poland's Salesforce community conference.\n\nWebsite: https://dreamin.coffeeforce.pl/\nCall for Speakers: https://dreamin.coffeeforce.pl#speakers\n\nMarch 20, 2026 in Wrocław, Poland\n\n(Past event - TBD for future dates)
+STATUS:TENTATIVE
 TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
-DTSTART:20270226T080000
-DTEND:20270227T180000
+DTSTART:20260325T080000
+DTEND:20260327T180000
 DTSTAMP:20251205T205500Z
-UID:montreal-dreamin-2026@salesforce-events
-SUMMARY:Montreal Dreamin'
-LOCATION:Montreal, Quebec, Canada
-DESCRIPTION:Montreal Dreamin' - Canada's Salesforce community conference in Montreal.\n\nWebsite: https://montreal-dreamin.com/\n\nFebruary 26-27, 2026 in Montreal, Quebec
-STATUS:CONFIRMED
+UID:nonprofit-dreamin-2026-tbd@salesforce-events
+SUMMARY:Nonprofit Dreamin' (TBD)
+LOCATION:Charlotte, North Carolina, USA
+DESCRIPTION:Nonprofit Dreamin' - A Salesforce community conference dedicated to nonprofit organizations, featuring sessions on fundraising, program management, and leveraging Salesforce for social impact.\n\nWebsite: https://www.nonprofitdreamin.org/\nCall for Speakers: https://www.nonprofitdreamin.org/speaker-submission\n\nMarch 25-27, 2026 in Charlotte, North Carolina\n\n(Past event - TBD for future dates)
+STATUS:TENTATIVE
 TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
-DTSTART:20270302T080000
-DTEND:20270303T180000
+DTSTART:20260327T080000
+DTEND:20260327T180000
 DTSTAMP:20251205T205500Z
-UID:mardreamin-summit-2026@salesforce-events
-SUMMARY:MarDreamin' Summit
-LOCATION:Atlanta, Georgia, USA
-DESCRIPTION:MarDreamin' Summit - A Salesforce community conference.\n\nWebsite: https://mardreamin.com/\n\nMarch 2-3, 2026 in Atlanta, Georgia
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-
-BEGIN:VEVENT
-DTSTART:20270404T080000
-DTEND:20270406T180000
-DTSTAMP:20251205T205500Z
-UID:connections-2026@salesforce-events
-SUMMARY:Connections
-LOCATION:Chicago, Illinois, USA
-DESCRIPTION:Connections - A Salesforce community conference focused on connections and networking.\n\nWebsite: https://connections.com/\n\nApril 4-6, 2026 in Chicago, Illinois
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-SEQUENCE:0
-END:VEVENT
-
-BEGIN:VEVENT
-DTSTART:20270415T080000
-DTEND:20270416T180000
-DTSTAMP:20251205T205500Z
-UID:devops-dreamin-2026@salesforce-events
-SUMMARY:DevOps Dreamin'
-LOCATION:London, United Kingdom
-DESCRIPTION:DevOps Dreamin' - A Salesforce community conference focused on DevOps practices and methodologies.\n\nWebsite: https://devopsdreamin.com/\n\nApril 15-16, 2026 in London, United Kingdom
-STATUS:CONFIRMED
+UID:dreamole-2026-tbd@salesforce-events
+SUMMARY:dreamOlé (TBD)
+LOCATION:Valencia, Spain
+DESCRIPTION:dreamOlé - Spain's Salesforce community conference celebrating the Spanish-speaking Salesforce community.\n\nWebsite: https://dreamole.es/\n\nMarch 27, 2026 in Valencia, Spain\n\n(Past event - TBD for future dates)
+STATUS:TENTATIVE
 TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT
