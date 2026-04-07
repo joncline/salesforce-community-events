@@ -24,7 +24,8 @@ const CROSS_REFERENCE_URLS = [
   'https://www.salesforce.com/connections/',
   'https://montrealdreamin.com/',
   'https://dreaminincolor.com/',
-  'https://www.linkedin.com/company/women-in-tech-dreamin/'
+  'https://www.linkedin.com/company/women-in-tech-dreamin/',
+  'https://kiwidreaming.nz/'
 ];
 
 // Fetch URL content with timeout
