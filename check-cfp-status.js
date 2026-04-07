@@ -326,6 +326,14 @@ function applyOverrides(event) {
     },
     "WIT Dreamin' 2026": {
       url: "https://www.linkedin.com/company/women-in-tech-dreamin/"
+    },
+    "Nonprofit Dreamin' 2026": {
+      url: "https://www.nonprofitdreamin.org/",
+      location: "Charlotte, North Carolina, USA"
+    },
+    "Nonprofit Dreamin' 2027": {
+      url: "https://www.nonprofitdreamin.org/",
+      location: "TBD"
     }
     // Add more overrides as needed
   };
@@ -760,11 +768,31 @@ async function checkCrossReference() {
   }
 }
 
+// Manual events not in the Salesforce API but should be included
+const MANUAL_EVENTS = [
+  {
+    name: "Test Dreamin' 2026",
+    date: "TBD",
+    location: "TBD",
+    url: "https://www.testdreamin.com/"
+  },
+  {
+    name: "Life Sciences Dreamin' 2026",
+    date: "TBD",
+    location: "TBD",
+    url: "https://lifesciencesdreamin.com/"
+  }
+];
+
 // Main execution
 async function main() {
   console.log('🔍 Fetching events from Salesforce API...');
   EVENTS = await fetchEventsFromAPI();
-  console.log(`📅 Found ${EVENTS.length} events for 2026-2027.`);
+  
+  // Add manual events that are not in the API
+  EVENTS = [...EVENTS, ...MANUAL_EVENTS];
+  
+  console.log(`📅 Found ${EVENTS.length} events for 2026-2027 (including ${MANUAL_EVENTS.length} manual events).`);
   console.log('🔍 Checking Call for Presenters and Ticket Sales status for all events...\n');
 
   const results = [];

@@ -18,7 +18,7 @@ A comprehensive calendar of Salesforce community events, conferences, and Dreami
 
 ## 📅 What's Included
 
-This calendar includes **60 Salesforce community events** for 2026-2027:
+This calendar includes **33 Salesforce community events** for 2025-2027:
 
 ### Events Overview Table
 
@@ -64,12 +64,11 @@ This calendar includes **60 Salesforce community events** for 2026-2027:
 | dreamOlé 2027 | TBD | TBD | [Website](https://dreamole.es/) | TBD | TBD | [Become a Sponsor](https://dreamole.es/our-sponsors-2026/) |
 | Delhi Dreamin' 2027 | TBD | TBD | [Website](https://delhidreamin.com/) | TBD | TBD | [Become a Sponsor](https://delhidreamin.com/callforsponsor) |
 
-### Tentative Events (5)
-- **DevOps Dreamin'** - Estimated November | London, UK | [Website](https://devopsdreamin.com/)
-- **Irish Dreamin' 2026** - March 19, 2026 | Dublin, Ireland | [Website](https://irishdreamin.ie/)
-- **Polish Dreamin' 2026** - March 20, 2026 | Wrocław, Poland | [Website](https://coffeeforce.pl/dreamin/)
-- **QA Dreamin'** - March 18, 2025 | Virtual | [Website](https://qadreamin.com/)
-- **Life Sciences Dreamin'** - Fall 2026 | Pennsylvania, USA | [Website](https://lifesciencesdreamin.com/)
+### Tentative Events (4)
+- **London Architect Dreamin'** - Estimated February | London, UK
+- **DevOps Dreamin'** - Estimated November | London, UK
+- **Test Dreamin'** - TBD | [Website](https://www.testdreamin.com/)
+- **Life Sciences Dreamin'** - TBD | [Website](https://lifesciencesdreamin.com/)
 
 ## 📅 How to Add to Your Calendar
 
@@ -223,6 +222,8 @@ This way, if you need to update events, you can simply:
 - **Outlook:** Use the search function to find duplicates and delete them
 - **Apple Calendar:** Search for the event and manually delete duplicates
 
+
+
 ## ✨ Features
 
 - ✅ All events marked as "busy" on your calendar
@@ -230,6 +231,8 @@ This way, if you need to update events, you can simply:
 - ✅ Location information for each event
 - ✅ Multi-day events properly configured
 - ✅ Compatible with all major calendar applications
+
+
 
 ## 🔄 Manual Maintenance Process
 
@@ -281,11 +284,10 @@ To update the calendar status:
 This calendar is maintained using information from:
 - [Salesforce Trailhead Community Conferences](https://trailhead.salesforce.com/community/conferences/) - Official Salesforce community conference listings
 - [Salesforce Community Conferences Event Data](https://dsc-general-pages-prod.herokuapp.com/component---src-pages-community-conferences-index-js-9950e14cba64ee49b231.js) - Event data source
-- [Ascendix: Salesforce Events & Conferences](https://ascendix.com/blog/salesforce-events-conferences/) - Cross-reference for community event discovery
 - Individual event websites and organizers
 - Community submissions and updates
 
-## 📢 Request New Events
+## � Request New Events
 
 Know of a Salesforce community event that should be included? 
 
@@ -338,7 +340,7 @@ This approach gives you complete control over which events appear in your calend
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## � Acknowledgments
 
 Thanks to all the amazing Salesforce community organizers who make these events possible! Special thanks to the Dreamin' event organizers worldwide for building such an incredible global community.
 
