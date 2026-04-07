@@ -8,9 +8,11 @@ A comprehensive calendar of Salesforce community events, conferences, and Dreami
 
 ## 📣 Announcement for Dreamin' Event Organizers
 
+[![StoreConnect Logo](https://res.cloudinary.com/hzkr6fi81/image/upload/v1731391867/media/StoreConnect_Logo_Gradient_REV03.svg)](https://storeconnect.com/tcl)
+
 > 🎉 **StoreConnect is now offering a free Community License for Dreamin' events!**
 >
-> If you run a Dreamin' event and are looking for a powerful eCommerce & point-of-sale solution built natively on Salesforce, StoreConnect has a special offer just for community event organizers.
+> StoreConnect — proud sponsor of **Architect Dreamin' Americas** and **Kiwi Dreaming** — is the powerful eCommerce & point-of-sale solution built natively on Salesforce. They have a special community license offer just for Dreamin' event organizers.
 >
 > 👉 **[Learn more and apply at storeconnect.com/tcl](https://storeconnect.com/tcl)**
 
