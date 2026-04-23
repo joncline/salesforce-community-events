@@ -127,6 +127,19 @@ SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
+DTSTART:20260624T080000
+DTEND:20260625T180000
+DTSTAMP:20260422T000000Z
+UID:education-trailblazers-summit-2026@salesforce-events
+SUMMARY:Education Trailblazers Summit 2026
+LOCATION:Hyatt Regency Denver at Colorado Convention Center, Denver, Colorado, USA
+DESCRIPTION:Education Trailblazers Summit - The premier gathering of the Salesforce for Higher Education community. Institutional leaders, admins, developers, and professionals working across campus come together to discuss challenges and successes, learn what is possible, and build connections.\n\nWebsite: https://summit.educationtrailblazersassociation.org\nEvent page: https://whova.com/web/WtnpObpuWTWUn7Lv7VueHZTZDBW7cuhTZWXtuQ2cr40%3D/\n\nJune 24-25, 2026 at Hyatt Regency Denver at Colorado Convention Center
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
 DTSTART:20260709T080000
 DTEND:20260710T180000
 DTSTAMP:20251205T205500Z
@@ -173,6 +186,19 @@ UID:forcelandia-2026@salesforce-events
 SUMMARY:Forcelandia
 LOCATION:Portland, Oregon, USA
 DESCRIPTION:Forcelandia - Your favorite Salesforce Developer-Oriented Community Event in Portland, OR. Keeping Code Weird.\n\nWebsite: https://forcelandia.com\n\nJuly 29-30, 2026 at Kennedy School, Portland
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART:20260813T080000
+DTEND:20260815T180000
+DTSTAMP:20260422T000000Z
+UID:dreamin-in-color-2026@salesforce-events
+SUMMARY:Dreamin' in Color 2026
+LOCATION:Grand Hyatt Atlanta, Atlanta, Georgia, USA
+DESCRIPTION:Dreamin' in Color - A Salesforce community conference for Black, Latinx, and Hispanic professionals connected to Salesforce and related technologies including Tableau, MuleSoft, Slack, and AI. Open to all supporters of underrepresented groups in tech.\n\nWebsite: https://dreaminincolor.com/\nTickets: https://events.humanitix.com/dreamin-in-color-2026/tickets\n\nAugust 13-15, 2026 at Grand Hyatt Atlanta, Atlanta, Georgia
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 SEQUENCE:0

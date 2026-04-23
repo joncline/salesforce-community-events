@@ -771,6 +771,20 @@ async function checkCrossReference() {
 // Manual events not in the Salesforce API but should be included
 const MANUAL_EVENTS = [
   {
+    name: "Education Trailblazers Summit 2026",
+    date: "June 24-25, 2026",
+    location: "Denver, Colorado, USA",
+    url: "https://summit.educationtrailblazersassociation.org"
+  },
+  {
+    name: "Dreamin' in Color 2026",
+    date: "August 13-15, 2026",
+    location: "Atlanta, Georgia, USA",
+    url: "https://dreaminincolor.com/",
+    ticketUrl: "https://events.humanitix.com/dreamin-in-color-2026/tickets",
+    sponsorUrl: "https://dreaminincolor.myshopify.com/"
+  },
+  {
     name: "Test Dreamin' 2026",
     date: "TBD",
     location: "TBD",
