@@ -206,10 +206,14 @@ async function fetchEventsFromAPI() {
     return event;
   });
 
-  // Sort events by date ascending (earliest first)
-  const sortedEvents = sortEventsByDate(eventsWithOverrides);
+  return eventsWithOverrides;
+}
 
-  // Separate events by status: future, past, and unknown
+// Sort events by date and split into future / past-converted-to-next-year / unknown buckets.
+// Manual events and API events go through the same pipeline so they interleave by date.
+function categorizeAndSortEvents(events) {
+  const sortedEvents = sortEventsByDate(events);
+
   const futureEvents = [];
   const pastEvents = [];
   const unknownEvents = [];
@@ -217,52 +221,49 @@ async function fetchEventsFromAPI() {
   const now = new Date();
 
   sortedEvents.forEach(event => {
-    // Check if URL is accessible (basic check - not empty and doesn't contain obvious placeholders)
     const hasValidUrl = event.url && event.url !== 'TBD' && !event.url.includes('example.com') && !event.url.includes('placeholder');
 
     if (!hasValidUrl) {
-      // Set URL to TBD for unknown events
       unknownEvents.push({ ...event, url: 'TBD', isPast: false });
+      return;
+    }
+
+    // Events with a TBD date can't be classified as past/future — treat as unknown ordering-wise.
+    if (!event.date || event.date === 'TBD') {
+      unknownEvents.push({ ...event, isPast: false });
+      return;
+    }
+
+    let endDateStr = event.date;
+
+    if (event.date.includes(' - ')) {
+      const parts = event.date.split(' - ');
+      if (parts.length === 2) {
+        endDateStr = parts[1];
+      }
+    } else if (event.date.includes('-')) {
+      const match = event.date.match(/(\w+ \d+)-(\d+), (\d+)/);
+      if (match) {
+        endDateStr = `${match[1].split(' ')[0]} ${match[2]}, ${match[3]}`;
+      }
+    }
+
+    const endDate = new Date(endDateStr + ' UTC');
+    const isPast = endDate < now;
+
+    if (isPast) {
+      const nextYearEvent = {
+        ...event,
+        name: event.name.replace(/(\d{4})/, (match) => (parseInt(match) + 1).toString()),
+        isPast: true,
+        originalYear: event.name.match(/(\d{4})/)?.[1] || '2026'
+      };
+      pastEvents.push(nextYearEvent);
     } else {
-      // Parse the event date to determine if it's past or future
-      // Handle date ranges like "July 8-9, 2026" or single dates like "January 22, 2026"
-      let endDateStr = event.date;
-
-      // If it's a range, get the end date
-      if (event.date.includes(' - ')) {
-        const parts = event.date.split(' - ');
-        if (parts.length === 2) {
-          // For ranges like "July 8 - August 9, 2026", take the second part
-          endDateStr = parts[1];
-        }
-      } else if (event.date.includes('-')) {
-        // For same-month ranges like "July 8-9, 2026", extract the end day
-        const match = event.date.match(/(\w+ \d+)-(\d+), (\d+)/);
-        if (match) {
-          endDateStr = `${match[1].split(' ')[0]} ${match[2]}, ${match[3]}`;
-        }
-      }
-
-      // Create a Date object from the parsed date string
-      const endDate = new Date(endDateStr + ' UTC'); // Add UTC to ensure consistent parsing
-      const isPast = endDate < now;
-
-      if (isPast) {
-        // For past events, increment the year and prepare for next year
-        const nextYearEvent = {
-          ...event,
-          name: event.name.replace(/(\d{4})/, (match) => (parseInt(match) + 1).toString()),
-          isPast: true,
-          originalYear: event.name.match(/(\d{4})/)?.[1] || '2026'
-        };
-        pastEvents.push(nextYearEvent);
-      } else {
-        futureEvents.push({ ...event, isPast: false });
-      }
+      futureEvents.push({ ...event, isPast: false });
     }
   });
 
-  // Return future events first (sorted by date), then past events (converted to next year), then unknown events
   return [...futureEvents, ...pastEvents, ...unknownEvents];
 }
 
@@ -807,10 +808,11 @@ const MANUAL_EVENTS = [
 // Main execution
 async function main() {
   console.log('🔍 Fetching events from Salesforce API...');
-  EVENTS = await fetchEventsFromAPI();
-  
-  // Add manual events that are not in the API
-  EVENTS = [...EVENTS, ...MANUAL_EVENTS];
+  const apiEvents = await fetchEventsFromAPI();
+
+  // Merge API events with manual events, then categorize/sort the combined list so
+  // manual events interleave with API events by date instead of being appended.
+  EVENTS = categorizeAndSortEvents([...apiEvents, ...MANUAL_EVENTS]);
   
   console.log(`📅 Found ${EVENTS.length} events for 2026-2027 (including ${MANUAL_EVENTS.length} manual events).`);
   console.log('🔍 Checking Call for Presenters and Ticket Sales status for all events...\n');
