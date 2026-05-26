@@ -795,6 +795,12 @@ const MANUAL_EVENTS = [
     date: "TBD",
     location: "TBD",
     url: "https://lifesciencesdreamin.com/"
+  },
+  {
+    name: "Salesforce EOY Benelux 2026",
+    date: "December 10, 2026",
+    location: "Kontich, Belgium",
+    url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7464689853214044160/"
   }
 ];
 
