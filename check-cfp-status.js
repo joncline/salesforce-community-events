@@ -193,6 +193,10 @@ async function fetchEventsFromAPI() {
       url: "https://mcsquare.co.in/",
       date: "May 16, 2026",
       location: "Bengaluru, India"
+    },
+    "Higher Ed Dreamin': Marketing Edition 2026": {
+      date: "June 2, 2026",  // Fix date to match RingCentral event page
+      ticketUrl: "https://events.ringcentral.com/events/higher-ed-dreamin-marketing-edition"
     }
     // Add more overrides as needed
   };
@@ -335,6 +339,10 @@ function applyOverrides(event) {
     "Nonprofit Dreamin' 2027": {
       url: "https://www.nonprofitdreamin.org/",
       location: "TBD"
+    },
+    "Higher Ed Dreamin': Marketing Edition 2026": {
+      date: "June 2, 2026",  // Fix date to match RingCentral event page
+      ticketUrl: "https://events.ringcentral.com/events/higher-ed-dreamin-marketing-edition"
     }
     // Add more overrides as needed
   };
@@ -802,6 +810,12 @@ const MANUAL_EVENTS = [
     date: "December 10, 2026",
     location: "Kontich, Belgium",
     url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7464689853214044160/"
+  },
+  {
+    name: "Higher Ed Dreamin' 2026",
+    date: "TBD",
+    location: "Virtual",
+    url: "https://highereddreamin.com/"
   }
 ];
 
