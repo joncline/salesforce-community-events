@@ -1,6 +1,6 @@
-# Salesforce Community Events 2025-2027 Calendar
+# Salesforce Community Events 2026-2027 Calendar
 
-A comprehensive calendar of Salesforce community events, conferences, and Dreamin' events for 2025-2027. Import this calendar to stay up-to-date with the global Salesforce community!
+A comprehensive calendar of Salesforce community events, conferences, and Dreamin' events for 2026-2027. Import this calendar to stay up-to-date with the global Salesforce community!
 
 > ⭐ **Like this resource?** Please star this repository to help increase visibility and help other Trailblazers discover it!
 
@@ -8,7 +8,7 @@ A comprehensive calendar of Salesforce community events, conferences, and Dreami
 
 ## 📣 Announcement for Dreamin' Event Organizers
 
-[![StoreConnect Logo](https://res.cloudinary.com/hzkr6fi81/image/upload/v1731391867/media/StoreConnect_Logo_Gradient_REV03.svg)](https://storeconnect.com/tcl)
+<a href="https://storeconnect.com/tcl"><img src="https://res.cloudinary.com/hzkr6fi81/image/upload/v1731391867/media/StoreConnect_Logo_Gradient_REV03.svg" alt="StoreConnect Logo" width="200"></a>
 
 > 🎉 **StoreConnect is now offering a free Community License for Dreamin' events!**
 >
@@ -16,11 +16,13 @@ A comprehensive calendar of Salesforce community events, conferences, and Dreami
 >
 > 👉 **[Learn more and apply at storeconnect.com/tcl](https://storeconnect.com/tcl)**
 
+> 🥝 **Congratulations to [Kiwi Dreaming](https://kiwidreaming.nz/)** on going live on their StoreConnect store in under a week! 🚀
+
 ---
 
 ## 📅 What's Included
 
-This calendar includes **47 Salesforce community events** for 2025-2027:
+This calendar includes **47 Salesforce community events** for 2026-2027:
 
 ### Events Overview Table
 
