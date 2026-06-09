@@ -22,7 +22,7 @@ A comprehensive calendar of Salesforce community events, conferences, and Dreami
 
 ## 📅 What's Included
 
-This calendar includes **47 Salesforce community events** for 2026-2027:
+This calendar includes **49 Salesforce community events** for 2026-2027:
 
 ### Events Overview Table
 
@@ -37,9 +37,9 @@ This calendar includes **47 Salesforce community events** for 2026-2027:
 | Bharat Dreamin' 2026 | July 10, 2026 | Jaipur, India | [Website](https://bharatdreamin.com/) | TBD | TBD | [Become a Sponsor](https://bharatdreamin.com/sponsors/) |
 | Midwest Dreamin' 2026 | July 15-17, 2026 | Minneapolis, United States | [Website](http://www.midwestdreamin.com) | TBD | [Buy Tickets](https://www.midwestdreamin.com/register/) | [Become a Sponsor](https://www.midwestdreamin.com/sponsors/) |
 | WITness Success 2026 | July 21-23, 2026 | Indianapolis, United States | [Website](https://witnesssuccess.com/) | TBD | TBD | [Become a Sponsor](https://witnesssuccess.com/sponsors/) |
-| Kiwi Dreaming 2026 | July 22, 2026 | Auckland, New Zealand | [Website](https://kiwidreaming.nz/) | TBD | TBD | [Become a Sponsor](https://kiwidreaming.nz/pages/sponsors) |
+| Kiwi Dreaming 2026 | July 22, 2026 | Auckland, New Zealand | [Website](https://kiwidreaming.nz/) | TBD | TBD | [Become a Sponsor](https://kiwidreaming.nz/pages/current-sponsors) |
 | Buckeye Dreamin' 2026 | July 27-29, 2026 | Columbus, United States | [Website](https://www.buckeyedreamin.com/) | TBD | TBD | [Become a Sponsor](https://www.buckeyedreamin.com/sponsorship) |
-| Forcelandia 2026 | July 28-29, 2026 | Portland, United States | [Website](https://forcelandia.com/) | TBD | [Buy Tickets](https://www.eventbrite.com/e/forcelandia-2026-tickets-1988583489749) | [Become a Sponsor](https://forcelandia.com/2026-sponsors/) |
+| Forcelandia 2026 | July 29-30, 2026 | Portland, United States | [Website](https://forcelandia.com/) | TBD | [Buy Tickets](https://www.eventbrite.com/e/forcelandia-2026-tickets-1988583489749) | [Become a Sponsor](https://forcelandia.com/2026-sponsors/) |
 | Dreamin' in Color 2026 | August 13-15, 2026 | Atlanta, Georgia, USA | [Website](https://dreaminincolor.com/) | TBD | [Buy Tickets](https://events.humanitix.com/dreamin-in-color-2026/tickets) | [Become a Sponsor](https://dreaminincolor.myshopify.com/) |
 | SoCal Dreamin' 2026 | August 19, 2026 | Newport Beach, United States | [Website](https://www.roadmapsolutions.org/socal-dreamin/) | TBD | [Buy Tickets](https://www.roadmapsolutions.org/socal-dreamin/register/) | [Become a Sponsor](https://www.roadmapsolutions.org/socal-dreamin/sponsors/) |
 | Mile High Dreamin' 2026 | August 25-26, 2026 | Denver, United States | [Website](https://www.milehighdreamin.com/) | TBD | TBD | TBD |
@@ -54,7 +54,7 @@ This calendar includes **47 Salesforce community events** for 2026-2027:
 | West Africa Dreamin' 2026 | November 20, 2026 | Lagos, Nigeria | [Website](https://westafricadreamin.com/) | [OPEN](https://westafricadreamin.my.site.com/s/register-speaker) | TBD | [Become a Sponsor](https://westafricadreamin.my.site.com/s/register-sponsor) |
 | Sri Lanka Dreamin 2026 | November 27, 2026 | Colombo, Sri Lanka | [Website](https://srilankadreamin.com/) | TBD | TBD | TBD |
 | Salesforce EOY Benelux 2026 | December 10, 2026 | Kontich, Belgium | [Website](https://www.linkedin.com/feed/update/urn:li:ugcPost:7464689853214044160/) | TBD | TBD | [Become a Sponsor](https://www.linkedin.com/posts/kennyvanbeeck_sponsorship-proposal-eoy-2026-activity-7464929611555008512-qa0m) |
-| Cactusforce 2026 | January 21, 2027 | Scottsdale, United States | [Website](https://www.cactusforce.com/) | TBD | [Buy Tickets](https://cactusforce.com/register) | [Become a Sponsor](https://cactusforce.com/sponsor) |
+| Cactusforce 2027 | January 21-22, 2027 | Scottsdale, United States | [Website](https://www.cactusforce.com/) | [OPEN](https://www.cactusforce.com/submit-a-talk) | [Buy Tickets](https://www.cactusforce.com/register) | [Become a Sponsor](https://www.cactusforce.com/sponsor) |
 | Polish Dreamin' 2027 | April 16, 2027 | Wroclaw, Poland | [Website](https://dreamin.coffeeforce.pl/) | TBD | [Buy Tickets](https://dreamin.coffeeforce.pl#tickets) | [Become a Sponsor](https://dreamin.coffeeforce.pl#sponsors) |
 | Architect Dreamin US 2027 | TBD | TBD | [Website](https://www.architectdreaming.us/) | TBD | TBD | [Become a Sponsor](https://www.architectdreaming.us/sponsors) |
 | Philippines Dreamin' 2027 | TBD | TBD | [Website](https://phdreamin.com/) | TBD | TBD | TBD |
@@ -69,9 +69,11 @@ This calendar includes **47 Salesforce community events** for 2026-2027:
 | MidAtlantic Dreamin' 2027 | TBD | TBD | [Website](https://midatlanticdreamin.com/) | TBD | TBD | [Become a Sponsor](https://midatlanticdreamin.com/2026-sponsors.html) |
 | Wir sind Ohana 2027 | TBD | TBD | [Website](https://wirsindohana.wordpress.com/) | TBD | TBD | [Become a Sponsor](https://wirsindohana.de/call-for-sponsors/) |
 | True North Dreamin' 2027 | TBD | TBD | [Website](https://www.truenorthdreamin.com/) | TBD | TBD | [Become a Sponsor](https://www.truenorthdreamin.com/sponsors) |
-| MC² 2027 | TBD | TBD | [Website](https://mcsquare.co.in/) | TBD | TBD | [Become a Sponsor](https://mcsquare.co.in/sponsors/) |
+| MC² 2026 | May 16, 2026 | Bengaluru, India | [Website](https://mcsquare.co.in/) | TBD | TBD | [Become a Sponsor](https://mcsquare.co.in/sponsors/) |
 | Dreamin' in Data 2027 | TBD | TBD | [Website](https://www.dreaminindata.org/) | TBD | TBD | [Become a Sponsor](https://www.dreaminindata.org/sponsors/) |
 | CzechDreamin 2027 | TBD | TBD | [Website](https://czechdreamin.com) | TBD | TBD | [Become a Sponsor](https://czechdreamin.com/call-for-sponsors/) |
+| Higher Ed Dreamin': Marketing Edition 2027 | TBD | TBD | [Website](https://highereddreamin.com/) | TBD | TBD | [Become a Sponsor](https://highereddreamin.com/become-a-sponsor/) |
+| London's Calling 2027 | TBD | TBD | [Website](https://www.londonscalling.net/) | TBD | TBD | [Become a Sponsor](https://www.londonscalling.net/sponsors/) |
 | Test Dreamin' 2026 | TBD | TBD | [Website](https://www.testdreamin.com/) | TBD | TBD | TBD |
 | Life Sciences Dreamin' 2026 | TBD | TBD | [Website](https://lifesciencesdreamin.com/) | TBD | [Buy Tickets](https://cloudadoption.zoom.us/webinar/register/wn_uermhribtu-yntcbiotaza#/registration) | [Become a Sponsor](https://lifesciencesdreamin.com/sponsorship/) |
 | Higher Ed Dreamin' 2026 | TBD | Virtual | [Website](https://highereddreamin.com/) | TBD | TBD | [Become a Sponsor](https://highereddreamin.com/become-a-sponsor/) |

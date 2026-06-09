@@ -28,6 +28,103 @@ const CROSS_REFERENCE_URLS = [
   'https://kiwidreaming.nz/'
 ];
 
+// Curated overrides keyed by exact (apostrophe-normalized) event name.
+// These SURVIVE flaky fetches: if a site times out or scraping misses a link, the
+// values here are still written, preventing the false-negative TBDs that wipe good
+// data on every run (the README is fully regenerated each run, so anything not
+// reproduced here is lost). Add an entry whenever the table loses a known-good link.
+const EVENT_OVERRIDES = {
+  "Architect Dreamin' US": {
+    ticketUrl: "https://e.runevents.net/architect-dreamin-2026/checkout",
+    sponsorUrl: "https://architectdreamin.us/sponsors"
+  },
+  "Cactusforce 2027": {
+    date: "January 21-22, 2027",
+    cfpUrl: "https://www.cactusforce.com/submit-a-talk",
+    ticketUrl: "https://www.cactusforce.com/register",
+    sponsorUrl: "https://www.cactusforce.com/sponsor"
+  },
+  "Irish Dreamin'": {
+    cfpUrl: "https://irishdreamin.ie/call-for-speakers/",
+    ticketUrl: "https://irishdreamin.ie/book-tickets/",
+    sponsorUrl: "https://irishdreamin.ie/sponsor-interest/"
+  },
+  "Yeur Architect Dreamin 2026": {
+    name: "Architect Dreamin' Europe",
+    location: "Helsinki, Finland",
+    cfpUrl: "https://architectdreamin.com/call-for-participation/"
+  },
+  "Portugal Dreamin' 2026": {
+    url: "https://www.portugaldreamin.com/en",
+    ticketUrl: "https://www.portugaldreamin.com/en/register",
+    sponsorUrl: "https://www.portugaldreamin.com/en/sponsors"
+  },
+  "Japan Dreamin' 2026": {
+    url: "https://www.japandreamin.com/event/s/"
+  },
+  "Finnish Dreamin' 2026": {
+    url: "https://finnishdreamin.fi/",
+    cfpUrl: "https://finnishdreamin.fi/call-for-speakers",
+    ticketUrl: "https://finnishdreamin.fi/tickets",
+    sponsorUrl: "https://finnishdreamin.fi/sponsors"
+  },
+  "MC² 2026": {
+    url: "https://mcsquare.co.in/",
+    date: "May 16, 2026",
+    location: "Bengaluru, India",
+    sponsorUrl: "https://mcsquare.co.in/sponsors/"
+  },
+  "Higher Ed Dreamin': Marketing Edition 2026": {
+    date: "June 2, 2026",  // Fix date to match RingCentral event page
+    ticketUrl: "https://events.ringcentral.com/events/higher-ed-dreamin-marketing-edition"
+  },
+  "Life Sciences Dreamin' 2026": {
+    url: "https://lifesciencesdreamin.com/"
+  },
+  "Connections 2026": {
+    url: "https://www.salesforce.com/connections/"
+  },
+  "Montreal Dreamin' 2026": {
+    url: "https://montrealdreamin.com/"
+  },
+  "Dreamin in Color 2026": {
+    url: "https://dreaminincolor.com/"
+  },
+  "WIT Dreamin' 2026": {
+    url: "https://www.linkedin.com/company/women-in-tech-dreamin/"
+  },
+  "Nonprofit Dreamin' 2026": {
+    url: "https://www.nonprofitdreamin.org/",
+    location: "Charlotte, North Carolina, USA"
+  },
+  "Nonprofit Dreamin' 2027": {
+    url: "https://www.nonprofitdreamin.org/",
+    location: "TBD"
+  },
+  "True Blue Blazing Melbourne 2026": {
+    cfpUrl: "https://trueblueblazing.com/speakers-expression-of-interest/",
+    ticketUrl: "https://trueblueblazing.com/tickets",
+    sponsorUrl: "https://trueblueblazing.com/sponsorship-opportunities/"
+  },
+  "West Africa Dreamin' 2026": {
+    url: "https://westafricadreamin.com/",  // API returns a bare, unlinkable "Westafricadreamin.com"
+    cfpUrl: "https://westafricadreamin.my.site.com/s/register-speaker",
+    sponsorUrl: "https://westafricadreamin.my.site.com/s/register-sponsor"
+  },
+  "Cairo Dreamin' 2027": {
+    sponsorUrl: "https://www.cairodreamin.com/sponsors/"
+  },
+  "Forcelandia 2026": {
+    date: "July 29-30, 2026",
+    ticketUrl: "https://www.eventbrite.com/e/forcelandia-2026-tickets-1988583489749",
+    sponsorUrl: "https://forcelandia.com/2026-sponsors/"
+  },
+  "Polish Dreamin' 2027": {
+    date: "April 16, 2027",
+    location: "Wroclaw, Poland"
+  }
+};
+
 // Fetch URL content with timeout
 function fetchUrl(url, timeout = 10000) {
   return new Promise((resolve, reject) => {
@@ -154,56 +251,10 @@ async function fetchEventsFromAPI() {
     };
   });
 
-  // Override specific events with known URLs and fix names
-  const overrides = {
-    "Architect Dreamin' US": {
-      ticketUrl: "https://e.runevents.net/architect-dreamin-2026/checkout",
-      sponsorUrl: "https://architectdreamin.us/sponsors"
-    },
-    "Cactusforce 2026": {
-      ticketUrl: "https://cactusforce.com/register",
-      sponsorUrl: "https://cactusforce.com/sponsor",
-      date: "January 21, 2027"  // Fix date to 2027
-    },
-    "Irish Dreamin'": {
-      cfpUrl: "https://irishdreamin.ie/call-for-speakers/",
-      ticketUrl: "https://irishdreamin.ie/book-tickets/",
-      sponsorUrl: "https://irishdreamin.ie/sponsor-interest/"
-    },
-    "Yeur Architect Dreamin 2026": {
-      name: "Architect Dreamin' Europe",
-      location: "Helsinki, Finland",
-      cfpUrl: "https://architectdreamin.com/call-for-participation/"
-    },
-    "Portugal Dreamin' 2026": {  // Note: uses Unicode right single quotation mark (U+2019)
-      url: "https://www.portugaldreamin.com/en",
-      ticketUrl: "https://www.portugaldreamin.com/en/register",
-      sponsorUrl: "https://www.portugaldreamin.com/en/sponsors"
-    },
-    "Japan Dreamin' 2026": {
-      url: "https://www.japandreamin.com/event/s/"
-    },
-    "Finnish Dreamin' 2026": {
-      url: "https://finnishdreamin.fi/",
-      cfpUrl: "https://finnishdreamin.fi/call-for-speakers",
-      ticketUrl: "https://finnishdreamin.fi/tickets",
-      sponsorUrl: "https://finnishdreamin.fi/sponsors"
-    },
-    "MC\u00b2 2026": {
-      url: "https://mcsquare.co.in/",
-      date: "May 16, 2026",
-      location: "Bengaluru, India"
-    },
-    "Higher Ed Dreamin': Marketing Edition 2026": {
-      date: "June 2, 2026",  // Fix date to match RingCentral event page
-      ticketUrl: "https://events.ringcentral.com/events/higher-ed-dreamin-marketing-edition"
-    }
-    // Add more overrides as needed
-  };
-
-  // Apply overrides and prepare events
+  // Apply curated overrides (shared with checkEvent) and prepare events.
+  // Normalize the lookup key so fancy-apostrophe API titles still match.
   const eventsWithOverrides = filteredEvents.map(event => {
-    const override = overrides[event.name];
+    const override = EVENT_OVERRIDES[normalizeEventName(event.name)];
     if (override) {
       return { ...event, ...override };
     }
@@ -271,6 +322,36 @@ function categorizeAndSortEvents(events) {
   return [...futureEvents, ...pastEvents, ...unknownEvents];
 }
 
+// Remove duplicate rows that creep in when the API and the manual list (or two API
+// records) describe the same event under slightly different spelling/casing — e.g.
+// "Dreamin' In Color" vs "Dreamin' in Color", or a stray repeated Polish Dreamin' row.
+// Dedupe on the apostrophe-normalized, lower-cased name. The YEAR is kept in the key,
+// so 2026/2027 editions remain separate rows; only same-year duplicates collapse.
+// When two copies collide we keep whichever carries the most real (non-TBD) data.
+function dedupeEvents(events) {
+  const isReal = (v) => v && v !== 'TBD' && !/example\.com|placeholder/.test(v);
+  const score = (e) => {
+    let s = 0;
+    if (isReal(e.date)) s++;
+    if (isReal(e.location)) s++;
+    if (isReal(e.url) && e.url.startsWith('http')) s++;  // absolute links beat bare "foo.com"
+    if (e.cfpUrl) s++;
+    if (e.ticketUrl) s++;
+    if (e.sponsorUrl) s++;
+    return s;
+  };
+
+  const byKey = new Map();  // insertion order preserved → keeps the sorted ordering
+  for (const event of events) {
+    const key = normalizeEventName(event.name).toLowerCase().replace(/\s+/g, ' ').trim();
+    const existing = byKey.get(key);
+    if (!existing || score(event) > score(existing)) {
+      byKey.set(key, event);
+    }
+  }
+  return Array.from(byKey.values());
+}
+
 // Normalize event name for comparison (replace fancy apostrophes with regular ones)
 function normalizeEventName(name) {
   return name.replace(/[\u2018\u2019\u201B]/g, "'");
@@ -278,76 +359,7 @@ function normalizeEventName(name) {
 
 // Apply overrides to event before checking
 function applyOverrides(event) {
-  const normalizedName = normalizeEventName(event.name);
-  
-  const overrides = {
-    "Architect Dreamin' US": {
-      ticketUrl: "https://e.runevents.net/architect-dreamin-2026/checkout",
-      sponsorUrl: "https://architectdreamin.us/sponsors"
-    },
-    "Cactusforce 2026": {
-      ticketUrl: "https://cactusforce.com/register",
-      sponsorUrl: "https://cactusforce.com/sponsor",
-      date: "January 21, 2027"  // Fix date to 2027
-    },
-    "Irish Dreamin'": {
-      cfpUrl: "https://irishdreamin.ie/call-for-speakers/",
-      ticketUrl: "https://irishdreamin.ie/book-tickets/",
-      sponsorUrl: "https://irishdreamin.ie/sponsor-interest/"
-    },
-    "Yeur Architect Dreamin 2026": {
-      name: "Architect Dreamin' Europe",
-      location: "Helsinki, Finland",
-      cfpUrl: "https://architectdreamin.com/call-for-participation/"
-    },
-    "Portugal Dreamin' 2026": {
-      url: "https://www.portugaldreamin.com/en",
-      ticketUrl: "https://www.portugaldreamin.com/en/register",
-      sponsorUrl: "https://www.portugaldreamin.com/en/sponsors"
-    },
-    "Japan Dreamin' 2026": {
-      url: "https://www.japandreamin.com/event/s/"
-    },
-    "Finnish Dreamin' 2026": {
-      url: "https://finnishdreamin.fi/",
-      cfpUrl: "https://finnishdreamin.fi/call-for-speakers",
-      ticketUrl: "https://finnishdreamin.fi/tickets",
-      sponsorUrl: "https://finnishdreamin.fi/sponsors"
-    },
-    "MC\u00b2 2026": {
-      url: "https://mcsquare.co.in/"
-    },
-    "Life Sciences Dreamin' 2026": {
-      url: "https://lifesciencesdreamin.com/"
-    },
-    "Connections 2026": {
-      url: "https://www.salesforce.com/connections/"
-    },
-    "Montreal Dreamin' 2026": {
-      url: "https://montrealdreamin.com/"
-    },
-    "Dreamin in Color 2026": {
-      url: "https://dreaminincolor.com/"
-    },
-    "WIT Dreamin' 2026": {
-      url: "https://www.linkedin.com/company/women-in-tech-dreamin/"
-    },
-    "Nonprofit Dreamin' 2026": {
-      url: "https://www.nonprofitdreamin.org/",
-      location: "Charlotte, North Carolina, USA"
-    },
-    "Nonprofit Dreamin' 2027": {
-      url: "https://www.nonprofitdreamin.org/",
-      location: "TBD"
-    },
-    "Higher Ed Dreamin': Marketing Edition 2026": {
-      date: "June 2, 2026",  // Fix date to match RingCentral event page
-      ticketUrl: "https://events.ringcentral.com/events/higher-ed-dreamin-marketing-edition"
-    }
-    // Add more overrides as needed
-  };
-
-  const override = overrides[normalizedName];
+  const override = EVENT_OVERRIDES[normalizeEventName(event.name)];
   if (override) {
     return { ...event, ...override };
   }
@@ -826,7 +838,7 @@ async function main() {
 
   // Merge API events with manual events, then categorize/sort the combined list so
   // manual events interleave with API events by date instead of being appended.
-  EVENTS = categorizeAndSortEvents([...apiEvents, ...MANUAL_EVENTS]);
+  EVENTS = dedupeEvents(categorizeAndSortEvents([...apiEvents, ...MANUAL_EVENTS]));
   
   console.log(`📅 Found ${EVENTS.length} events for 2026-2027 (including ${MANUAL_EVENTS.length} manual events).`);
   console.log('🔍 Checking Call for Presenters and Ticket Sales status for all events...\n');
