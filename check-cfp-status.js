@@ -74,6 +74,10 @@ const EVENT_OVERRIDES = {
     location: "Bengaluru, India",
     sponsorUrl: "https://mcsquare.co.in/sponsors/"
   },
+  "MC² 2027": {  // the May 2026 edition rolls forward to this once the date passes
+    url: "https://mcsquare.co.in/",
+    sponsorUrl: "https://mcsquare.co.in/sponsors/"
+  },
   "Higher Ed Dreamin': Marketing Edition 2026": {
     date: "June 2, 2026",  // Fix date to match RingCentral event page
     ticketUrl: "https://events.ringcentral.com/events/higher-ed-dreamin-marketing-edition"

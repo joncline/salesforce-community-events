@@ -69,7 +69,7 @@ This calendar includes **49 Salesforce community events** for 2026-2027:
 | MidAtlantic Dreamin' 2027 | TBD | TBD | [Website](https://midatlanticdreamin.com/) | TBD | TBD | [Become a Sponsor](https://midatlanticdreamin.com/2026-sponsors.html) |
 | Wir sind Ohana 2027 | TBD | TBD | [Website](https://wirsindohana.wordpress.com/) | TBD | TBD | [Become a Sponsor](https://wirsindohana.de/call-for-sponsors/) |
 | True North Dreamin' 2027 | TBD | TBD | [Website](https://www.truenorthdreamin.com/) | TBD | TBD | [Become a Sponsor](https://www.truenorthdreamin.com/sponsors) |
-| MC² 2026 | May 16, 2026 | Bengaluru, India | [Website](https://mcsquare.co.in/) | TBD | TBD | [Become a Sponsor](https://mcsquare.co.in/sponsors/) |
+| MC² 2027 | TBD | TBD | [Website](https://mcsquare.co.in/) | TBD | TBD | [Become a Sponsor](https://mcsquare.co.in/sponsors/) |
 | Dreamin' in Data 2027 | TBD | TBD | [Website](https://www.dreaminindata.org/) | TBD | TBD | [Become a Sponsor](https://www.dreaminindata.org/sponsors/) |
 | CzechDreamin 2027 | TBD | TBD | [Website](https://czechdreamin.com) | TBD | TBD | [Become a Sponsor](https://czechdreamin.com/call-for-sponsors/) |
 | Higher Ed Dreamin': Marketing Edition 2027 | TBD | TBD | [Website](https://highereddreamin.com/) | TBD | TBD | [Become a Sponsor](https://highereddreamin.com/become-a-sponsor/) |
