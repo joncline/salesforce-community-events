@@ -392,12 +392,14 @@ async function checkEvent(event) {
       const result = await fetchUrl(event.url);
 
       if (result.statusCode !== 200) {
+        // Preserve curated override links even when the site is unreachable —
+        // otherwise a rolled-forward event silently loses its known sponsor/CFP links.
         return {
           ...event,
           status: 'pending',
-          cfpStatus: 'TBD',
-          ticketStatus: 'TBD',
-          sponsorStatus: 'TBD',
+          cfpStatus: event.cfpUrl ? `[OPEN](${event.cfpUrl})` : 'TBD',
+          ticketStatus: event.ticketUrl ? `[Buy Tickets](${event.ticketUrl})` : 'TBD',
+          sponsorStatus: event.sponsorUrl ? `[Become a Sponsor](${event.sponsorUrl})` : 'TBD',
           date: 'TBD',
           location: 'TBD'
         };
@@ -517,12 +519,13 @@ async function checkEvent(event) {
         location
       };
     } catch (error) {
+      // Same as the non-200 case: keep any curated override links on a failed fetch.
       return {
         ...event,
         status: 'pending',
-        cfpStatus: 'TBD',
-        ticketStatus: 'TBD',
-        sponsorStatus: 'TBD',
+        cfpStatus: event.cfpUrl ? `[OPEN](${event.cfpUrl})` : 'TBD',
+        ticketStatus: event.ticketUrl ? `[Buy Tickets](${event.ticketUrl})` : 'TBD',
+        sponsorStatus: event.sponsorUrl ? `[Become a Sponsor](${event.sponsorUrl})` : 'TBD',
         date: 'TBD',
         location: 'TBD'
       };
@@ -596,10 +599,14 @@ async function checkEvent(event) {
 
     let ticketStatus = 'TBD';
     if (hasTickets) {
-      // Try to extract ticket link
-      const ticketLinkMatch = body.match(/href=["']([^"']*(?:ticket|register|buy)[^"']*)["']/i);
-      if (ticketLinkMatch) {
-        let ticketLink = ticketLinkMatch[1];
+      // Collect candidate links and skip sponsor/speaker registration links: these
+      // also contain "register" but are not ticket sales (e.g. ".../register-sponsor"),
+      // which previously got mislabeled as "Buy Tickets".
+      const ticketCandidate = [...body.matchAll(/href=["']([^"']*(?:ticket|register|buy)[^"']*)["']/gi)]
+        .map(m => m[1])
+        .find(link => !/sponsor|speaker/i.test(link));
+      if (ticketCandidate) {
+        let ticketLink = ticketCandidate;
         if (!ticketLink.startsWith('http')) {
           const baseUrl = new URL(event.url);
           ticketLink = `${baseUrl.protocol}//${baseUrl.host}${ticketLink}`;
@@ -808,6 +815,16 @@ const MANUAL_EVENTS = [
     url: "https://dreaminincolor.com/",
     ticketUrl: "https://events.humanitix.com/dreamin-in-color-2026/tickets",
     sponsorUrl: "https://dreaminincolor.myshopify.com/"
+  },
+  {
+    // The Salesforce API feed is inconsistent about Forcelandia; pin it here so it
+    // doesn't vanish from the table on runs where the API omits it.
+    name: "Forcelandia 2026",
+    date: "July 29-30, 2026",
+    location: "Portland, United States",
+    url: "https://forcelandia.com/",
+    ticketUrl: "https://www.eventbrite.com/e/forcelandia-2026-tickets-1988583489749",
+    sponsorUrl: "https://forcelandia.com/2026-sponsors/"
   },
   {
     name: "Test Dreamin' 2026",
