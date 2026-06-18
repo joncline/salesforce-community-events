@@ -22,14 +22,12 @@ A comprehensive calendar of Salesforce community events, conferences, and Dreami
 
 ## 📅 What's Included
 
-This calendar includes **47 Salesforce community events** for 2026-2027:
+This calendar includes **49 Salesforce community events** for 2026-2027:
 
 ### Events Overview Table
 
 | Event | Date | Location | Website | CFP Status | Ticket Sales | Sponsor |
 |-------|------|----------|---------|------------|--------------|---------|
-| Architect Dreamin' Europe | June 10-11, 2026 | Helsinki, Finland | [Website](https://architectdreamin.org) | [OPEN](https://architectdreamin.com/call-for-participation/) | [Buy Tickets](https://www.eventbrite.com/e/architect-dreamin-tickets-1986527063924) | [Become a Sponsor](https://architectdreamin.com/our-amazing-sponsors/) |
-| Portugal Dreamin’ 2026 | June 18, 2026 | Lisbon, Portugal | [Website](https://www.portugaldreamin.com/en) | TBD | [Buy Tickets](https://www.portugaldreamin.com/en/register) | [Become a Sponsor](https://www.portugaldreamin.com/en/sponsors) |
 | Education Trailblazers Summit 2026 | June 24-25, 2026 | Denver, Colorado, USA | [Website](https://summit.educationtrailblazersassociation.org) | TBD | TBD | TBD |
 | Texas Dreamin' 2026 | July 8-9, 2026 | Austin, United States | [Website](https://www.texasdreamin.org/) | TBD | TBD | [Become a Sponsor](https://www.texasdreamin.org/sponsorship) |
 | Bharat Dreamin' 2026 | July 10, 2026 | Jaipur, India | [Website](https://bharatdreamin.com/) | TBD | TBD | [Become a Sponsor](https://bharatdreamin.com/sponsors/) |
@@ -72,9 +70,13 @@ This calendar includes **47 Salesforce community events** for 2026-2027:
 | CzechDreamin 2027 | TBD | TBD | [Website](https://czechdreamin.com) | TBD | TBD | [Become a Sponsor](https://czechdreamin.com/call-for-sponsors/) |
 | Higher Ed Dreamin': Marketing Edition 2027 | TBD | TBD | [Website](https://highereddreamin.com/) | TBD | TBD | [Become a Sponsor](https://highereddreamin.com/become-a-sponsor/) |
 | London's Calling 2027 | TBD | TBD | [Website](https://www.londonscalling.net/) | TBD | TBD | [Become a Sponsor](https://www.londonscalling.net/sponsors/) |
+| Architect Dreamin' Europe | TBD | TBD | [Website](https://architectdreamin.org) | TBD | TBD | [Become a Sponsor](https://architectdreamin.com/our-amazing-sponsors/) |
+| Portugal Dreamin’ 2027 | TBD | TBD | [Website](https://www.portugaldreamin.com/en) | TBD | TBD | [Become a Sponsor](https://www.portugaldreamin.com/en/sponsors) |
 | Test Dreamin' 2026 | TBD | TBD | [Website](https://www.testdreamin.com/) | TBD | TBD | TBD |
 | Life Sciences Dreamin' 2026 | TBD | TBD | [Website](https://lifesciencesdreamin.com/) | TBD | [Buy Tickets](https://cloudadoption.zoom.us/webinar/register/wn_uermhribtu-yntcbiotaza#/registration) | [Become a Sponsor](https://lifesciencesdreamin.com/sponsorship/) |
 | Higher Ed Dreamin' 2026 | TBD | Virtual | [Website](https://highereddreamin.com/) | TBD | TBD | [Become a Sponsor](https://highereddreamin.com/become-a-sponsor/) |
+| MarDreamin' 2026 | TBD | TBD | [Website](https://mardreamin.com/) | TBD | [Buy Tickets](https://mardreamin.com/summit-registration/) | [Become a Sponsor](https://mardreamin.com/become-a-sponsor/) |
+| ParDreamin' 2026 | TBD | TBD | [Website](https://pardreamin.com/) | TBD | TBD | [Become a Sponsor](https://pardreamin.com/become-a-sponsor/) |
 
 ### Tentative Events (4)
 - **London Architect Dreamin'** - Estimated February | London, UK

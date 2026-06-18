@@ -686,4 +686,30 @@ TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT
 
+BEGIN:VEVENT
+DTSTART:20270101T080000
+DTEND:20270101T180000
+DTSTAMP:20260618T205500Z
+UID:mardreamin-2026-tbd@salesforce-events
+SUMMARY:MarDreamin' 2026 (TBD)
+LOCATION:TBD
+DESCRIPTION:MarDreamin' - A Salesforce marketing-focused community event organized by Sercante (the rebrand of ParDreamin').\n\nWebsite: https://mardreamin.com/\n\nDate and location to be determined
+STATUS:TENTATIVE
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART:20270101T080000
+DTEND:20270101T180000
+DTSTAMP:20260618T205500Z
+UID:pardreamin-2026-tbd@salesforce-events
+SUMMARY:ParDreamin' 2026 (TBD)
+LOCATION:TBD
+DESCRIPTION:ParDreamin' - The original Pardot-focused Salesforce community event by Sercante, predecessor to MarDreamin'.\n\nWebsite: https://pardreamin.com/\n\nDate and location to be determined
+STATUS:TENTATIVE
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+
 END:VCALENDAR

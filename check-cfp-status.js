@@ -849,6 +849,28 @@ const MANUAL_EVENTS = [
     date: "TBD",
     location: "Virtual",
     url: "https://highereddreamin.com/"
+  },
+  {
+    // Sercante's marketing-focused community event ("Mar" = Marketing Cloud Account
+    // Engagement, the rebrand of ParDreamin'). No 2026 date announced; last edition was
+    // the 2025 Summit (Atlanta, GA, May 7-8). Listed TBD as it hasn't run in over a year.
+    name: "MarDreamin' 2026",
+    date: "TBD",
+    location: "TBD",
+    url: "https://mardreamin.com/",
+    ticketUrl: "https://mardreamin.com/summit-registration/",
+    sponsorUrl: "https://mardreamin.com/become-a-sponsor/"
+  },
+  {
+    // ParDreamin' — the original Pardot-focused Sercante event, predecessor to MarDreamin'.
+    // Site is stale (latest content is the Oct 2022 virtual conference). Listed TBD.
+    name: "ParDreamin' 2026",
+    date: "TBD",
+    location: "TBD",
+    url: "https://pardreamin.com/",
+    // Set explicitly: the page's relative href ("become-a-sponsor/") otherwise gets
+    // joined without a slash into a broken "pardreamin.combecome-a-sponsor/" link.
+    sponsorUrl: "https://pardreamin.com/become-a-sponsor/"
   }
 ];
 
