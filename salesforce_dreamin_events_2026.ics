@@ -127,14 +127,14 @@ SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
-DTSTART:20260624T080000
-DTEND:20260625T180000
-DTSTAMP:20260422T000000Z
-UID:education-trailblazers-summit-2026@salesforce-events
-SUMMARY:Education Trailblazers Summit 2026
-LOCATION:Hyatt Regency Denver at Colorado Convention Center, Denver, Colorado, USA
-DESCRIPTION:Education Trailblazers Summit - The premier gathering of the Salesforce for Higher Education community. Institutional leaders, admins, developers, and professionals working across campus come together to discuss challenges and successes, learn what is possible, and build connections.\n\nWebsite: https://summit.educationtrailblazersassociation.org\nEvent page: https://whova.com/web/WtnpObpuWTWUn7Lv7VueHZTZDBW7cuhTZWXtuQ2cr40%3D/\n\nJune 24-25, 2026 at Hyatt Regency Denver at Colorado Convention Center
-STATUS:CONFIRMED
+DTSTART:20270101T080000
+DTEND:20270101T180000
+DTSTAMP:20260709T000000Z
+UID:education-trailblazers-summit-2027-tbd@salesforce-events
+SUMMARY:Education Trailblazers Summit 2027 (TBD)
+LOCATION:TBD
+DESCRIPTION:Education Trailblazers Summit - The premier gathering of the Salesforce for Higher Education community. Institutional leaders, admins, developers, and professionals working across campus come together to discuss challenges and successes, learn what is possible, and build connections.\n\nWebsite: https://summit.educationtrailblazersassociation.org\n\nDate and location to be determined
+STATUS:TENTATIVE
 TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT
@@ -329,7 +329,7 @@ DTSTAMP:20251205T205500Z
 UID:midwest-dreamin-2026@salesforce-events
 SUMMARY:Midwest Dreamin'
 LOCATION:Minneapolis, Minnesota, USA
-DESCRIPTION:Midwest Dreamin' - The premier Salesforce community conference in the Midwest.\n\nWebsite: https://www.midwestdreamin.com/\n\nJuly 15-17, 2026 in Minneapolis, Minnesota
+DESCRIPTION:Midwest Dreamin' - The premier Salesforce community conference in the Midwest.\n\nWebsite: https://midwestdreamin.com/\n\nJuly 15-17, 2026 in Minneapolis, Minnesota
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 SEQUENCE:0
@@ -609,14 +609,15 @@ SEQUENCE:0
 END:VEVENT
 
 BEGIN:VEVENT
-DTSTART:20260319T100000
-DTEND:20260319T213000
-DTSTAMP:20251205T205500Z
-UID:irish-dreamin-2026-tbd@salesforce-events
-SUMMARY:Irish Dreamin' (TBD)
-LOCATION:Dublin, Ireland
-DESCRIPTION:Irish Dreamin' - Ireland's community-led Salesforce conference bringing together admins, architects, consultants, developers, marketers, and partners for a dynamic day of learning, innovation, and networking.\n\nWebsite: https://www.irishdreamin.ie\nCall for Speakers: https://irishdreamin.ie/call-for-speakers/\n\nMarch 19, 2026 at The Royal Marine Hotel, Dublin, Ireland\n\n(Past event - TBD for future dates)
-STATUS:TENTATIVE
+DTSTART:20270318T100000
+DTEND:20270318T213000
+DTSTAMP:20260709T000000Z
+UID:irish-dreamin-2027@salesforce-events
+SUMMARY:Irish Dreamin' 2027
+LOCATION:Dublin, Republic of Ireland
+DESCRIPTION:Irish Dreamin' - Ireland's community-led Salesforce conference bringing together admins, architects, consultants, developers, marketers, and partners for a dynamic day of learning, innovation, and networking.\n\nWebsite: https://irishdreamin.ie
+Tickets: https://irishdreamin.ie/book-tickets/\nSponsor Interest: https://irishdreamin.ie/sponsor-interest/\n\nMarch 18, 2027 in Dublin, Republic of Ireland
+STATUS:CONFIRMED
 TRANSP:OPAQUE
 SEQUENCE:0
 END:VEVENT
