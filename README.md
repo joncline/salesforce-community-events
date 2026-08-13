@@ -1,6 +1,6 @@
 # Salesforce Community Events 2026-2027 Calendar
 
-A comprehensive calendar of Salesforce community events, conferences, and Dreamin' events for 2026-2027. Import this calendar to stay up-to-date with the global Salesforce community!
+A comprehensive calendar of Salesforce community events, conferences, and Dreamin' events for 2026-2027. Check back here to stay up-to-date with the global Salesforce community!
 
 > ⭐ **Like this resource?** Please star this repository to help increase visibility and help other Trailblazers discover it!
 
@@ -22,34 +22,28 @@ A comprehensive calendar of Salesforce community events, conferences, and Dreami
 
 ## 📅 What's Included
 
-This calendar includes **49 Salesforce community events** for 2026-2027:
+This calendar includes **44 Salesforce community events** for 2026-2027:
 
 ### Events Overview Table
 
 | Event | Date | Location | Website | CFP Status | Ticket Sales | Sponsor |
 |-------|------|----------|---------|------------|--------------|---------|
-| Texas Dreamin' 2026 | July 8-9, 2026 | Austin, United States | [Website](https://www.texasdreamin.org/) | TBD | TBD | [Become a Sponsor](https://www.texasdreamin.org/sponsorship) |
-| Bharat Dreamin' 2026 | July 10, 2026 | Jaipur, India | [Website](https://bharatdreamin.com/) | TBD | TBD | [Become a Sponsor](https://bharatdreamin.com/sponsors/) |
-| Midwest Dreamin' 2026 | July 15-17, 2026 | Minneapolis, United States | [Website](http://www.midwestdreamin.com) | TBD | [Buy Tickets](https://midwestdreamin.com/register/) | [Become a Sponsor](https://midwestdreamin.com/sponsors/) |
-| WITness Success 2026 | July 21-23, 2026 | Indianapolis, United States | [Website](https://witnesssuccess.com/) | TBD | TBD | [Become a Sponsor](https://witnesssuccess.com/sponsors/) |
-| Kiwi Dreaming 2026 | July 22, 2026 | Auckland, New Zealand | [Website](https://kiwidreaming.nz/) | TBD | TBD | [Become a Sponsor](https://kiwidreaming.nz/pages/current-sponsors) |
-| Buckeye Dreamin' 2026 | July 27-29, 2026 | Columbus, United States | [Website](https://www.buckeyedreamin.com/) | TBD | TBD | [Become a Sponsor](https://www.buckeyedreamin.com/sponsorship) |
-| Forcelandia 2026 | July 29-30, 2026 | Portland, United States | [Website](https://forcelandia.com/) | TBD | [Buy Tickets](https://www.eventbrite.com/e/forcelandia-2026-tickets-1988583489749) | [Become a Sponsor](https://forcelandia.com/2026-sponsors/) |
 | Dreamin' in Color 2026 | August 13-15, 2026 | Atlanta, Georgia, USA | [Website](https://dreaminincolor.com/) | TBD | [Buy Tickets](https://events.humanitix.com/dreamin-in-color-2026/tickets) | [Become a Sponsor](https://dreaminincolor.myshopify.com/) |
 | SoCal Dreamin' 2026 | August 19, 2026 | Newport Beach, United States | [Website](https://www.roadmapsolutions.org/socal-dreamin/) | TBD | [Buy Tickets](https://www.roadmapsolutions.org/socal-dreamin/register/) | [Become a Sponsor](https://www.roadmapsolutions.org/socal-dreamin/sponsors/) |
 | Mile High Dreamin' 2026 | August 25-26, 2026 | Denver, United States | [Website](https://www.milehighdreamin.com/) | TBD | TBD | TBD |
 | True Blue Blazing Melbourne 2026 | October 19, 2026 | Melbourne, Australia | [Website](https://trueblueblazing.com/) | [OPEN](https://trueblueblazing.com/speakers-expression-of-interest/) | [Buy Tickets](https://trueblueblazing.com/tickets) | [Become a Sponsor](https://trueblueblazing.com/sponsorship-opportunities/) |
+| Seoul Dreamin' 2026 | October 19, 2026 | Seoul, South Korea | [Website](https://www.seouldreamin.org/) | TBD | TBD | TBD |
 | North Africa Dreamin' 2026 | October 23, 2026 | Casablanca, Morocco | [Website](https://northafricadreamin.com/) | TBD | [Buy Tickets](https://www.eventbrite.nl/e/north-africa-dreamin-2026-tickets-1988557660493) | [Become a Sponsor](https://northafricadreamin.com/sponsors/) |
-| Northeast Dreamin' 2026 | October 28-29, 2026 | Concord, United States | [Website](https://northeastdreamin.com/) | [OPEN](https://northeastdreamin.com/2025-speakers/) | [Buy Tickets](https://northeastdreamin.com/register/) | [Become a Sponsor](https://northeastdreamin.com/sponsors/) |
-| Pakistan Dreamin' 2026 | November 6, 2026 | Islamabad, Pakistan | [Website](https://www.pakdreamin.com) | TBD | [Buy Tickets](https://www.pakdreamin.com/register/) | [Become a Sponsor](https://www.pakdreamin.com/sponsors/) |
+| Northeast Dreamin' 2026 | October 28-29, 2026 | Concord, United States | [Website](https://northeastdreamin.com/) | [OPEN](https://northeastdreamin.com/2026-speakers/) | [Buy Tickets](https://northeastdreamin.com/register/) | [Become a Sponsor](https://northeastdreamin.com/sponsors/) |
+| Pakistan Dreamin' 2026 | November 6, 2026 | Islamabad, Pakistan | [Website](https://www.pakdreamin.com) | [OPEN](https://www.pakdreamin.com/call-for-speakers/) | [Buy Tickets](https://www.pakdreamin.com/register/) | [Become a Sponsor](https://www.pakdreamin.com/sponsors/) |
 | Down Under Dreaming - Brisbane Edition 2026 | November 10, 2026 | Brisbane, Australia | [Website](https://www.dudbe.com/) | TBD | TBD | TBD |
 | Brazil Dreamin' 2026 | November 11-12, 2026 | São Paulo, Brazil | [Website](https://semananasnuvens.com.br/) | TBD | TBD | TBD |
-| Dubai Dreamin' 2026 | November 13, 2026 | Dubai, United Arab Emirates | [Website](https://www.dubaidreamin.com/s/) | TBD | TBD | [Become a Sponsor](https://www.dubaidreamin.com/dubaidreamin/c/resource/dubaiimage/images/speakersponsor_bg.png) |
 | Mexico Dreamin' 2026 | November 19, 2026 | Mexico City, Mexico | [Website](https://mexicodreamin.com/) | TBD | TBD | TBD |
 | West Africa Dreamin' 2026 | November 20, 2026 | Lagos, Nigeria | [Website](https://westafricadreamin.com/) | [OPEN](https://westafricadreamin.my.site.com/s/register-speaker) | TBD | [Become a Sponsor](https://westafricadreamin.my.site.com/s/register-sponsor) |
-| Sri Lanka Dreamin 2026 | November 27, 2026 | Colombo, Sri Lanka | [Website](https://srilankadreamin.com/) | TBD | TBD | TBD |
+| Sri Lanka Dreamin 2026 | November 20, 2026 | Colombo, Sri Lanka | [Website](https://srilankadreamin.com/) | TBD | TBD | TBD |
 | Salesforce EOY Benelux 2026 | December 10, 2026 | Kontich, Belgium | [Website](https://www.linkedin.com/feed/update/urn:li:ugcPost:7464689853214044160/) | TBD | TBD | [Become a Sponsor](https://www.linkedin.com/posts/kennyvanbeeck_sponsorship-proposal-eoy-2026-activity-7464929611555008512-qa0m) |
 | Cactusforce 2027 | January 21-22, 2027 | Scottsdale, United States | [Website](https://www.cactusforce.com/) | [OPEN](https://www.cactusforce.com/submit-a-talk) | [Buy Tickets](https://www.cactusforce.com/register) | [Become a Sponsor](https://www.cactusforce.com/sponsor) |
+| True North Dreamin' 2027 | March 11, 2027 | TBD | [Website](https://www.truenorthdreamin.com/) | TBD | TBD | [Become a Sponsor](https://www.truenorthdreamin.com/sponsors-2027) |
 | Irish Dreamin' 2027 | March 18, 2027 | Dublin, Republic of Ireland | [Website](https://irishdreamin.ie) | TBD | [Buy Tickets](https://irishdreamin.ie/book-tickets/) | [Become a Sponsor](https://irishdreamin.ie/sponsor-interest/) |
 | Polish Dreamin' 2027 | April 16, 2027 | Wroclaw, Poland | [Website](https://dreamin.coffeeforce.pl/) | TBD | [Buy Tickets](https://dreamin.coffeeforce.pl#tickets) | [Become a Sponsor](https://dreamin.coffeeforce.pl#sponsors) |
 | Architect Dreamin US 2027 | TBD | TBD | [Website](https://www.architectdreaming.us/) | TBD | TBD | [Become a Sponsor](https://www.architectdreaming.us/sponsors) |
@@ -63,7 +57,6 @@ This calendar includes **49 Salesforce community events** for 2026-2027:
 | Albania Dreamin' 2027 | TBD | TBD | [Website](https://dreamin.al) | TBD | TBD | TBD |
 | MidAtlantic Dreamin' 2027 | TBD | TBD | [Website](https://midatlanticdreamin.com/) | TBD | TBD | [Become a Sponsor](https://midatlanticdreamin.com/2026-sponsors.html) |
 | Wir sind Ohana 2027 | TBD | TBD | [Website](https://wirsindohana.wordpress.com/) | TBD | TBD | [Become a Sponsor](https://wirsindohana.de/call-for-sponsors/) |
-| True North Dreamin' 2027 | TBD | TBD | [Website](https://www.truenorthdreamin.com/) | TBD | TBD | [Become a Sponsor](https://www.truenorthdreamin.com/sponsors) |
 | MC² 2027 | TBD | TBD | [Website](https://mcsquare.co.in/) | TBD | TBD | [Become a Sponsor](https://mcsquare.co.in/sponsors/) |
 | Dreamin' in Data 2027 | TBD | TBD | [Website](https://www.dreaminindata.org/) | TBD | TBD | [Become a Sponsor](https://www.dreaminindata.org/sponsors/) |
 | CzechDreamin 2027 | TBD | TBD | [Website](https://czechdreamin.com) | TBD | TBD | [Become a Sponsor](https://czechdreamin.com/call-for-sponsors/) |
@@ -72,179 +65,37 @@ This calendar includes **49 Salesforce community events** for 2026-2027:
 | Architect Dreamin' Europe | TBD | TBD | [Website](https://architectdreamin.org) | TBD | TBD | [Become a Sponsor](https://architectdreamin.com/our-amazing-sponsors/) |
 | Portugal Dreamin’ 2027 | TBD | TBD | [Website](https://www.portugaldreamin.com/en) | TBD | TBD | [Become a Sponsor](https://www.portugaldreamin.com/en/sponsors) |
 | Education Trailblazers Summit 2027 | TBD | TBD | [Website](https://summit.educationtrailblazersassociation.org) | TBD | TBD | TBD |
-| Test Dreamin' 2026 | TBD | TBD | [Website](https://www.testdreamin.com/) | TBD | TBD | TBD |
-| Life Sciences Dreamin' 2026 | TBD | TBD | [Website](https://lifesciencesdreamin.com/) | TBD | [Buy Tickets](https://cloudadoption.zoom.us/webinar/register/wn_uermhribtu-yntcbiotaza#/registration) | [Become a Sponsor](https://lifesciencesdreamin.com/sponsorship/) |
-| Higher Ed Dreamin' 2026 | TBD | Virtual | [Website](https://highereddreamin.com/) | TBD | TBD | [Become a Sponsor](https://highereddreamin.com/become-a-sponsor/) |
-| MarDreamin' 2026 | TBD | TBD | [Website](https://mardreamin.com/) | TBD | [Buy Tickets](https://mardreamin.com/summit-registration/) | [Become a Sponsor](https://mardreamin.com/become-a-sponsor/) |
-| ParDreamin' 2026 | TBD | TBD | [Website](https://pardreamin.com/) | TBD | TBD | [Become a Sponsor](https://pardreamin.com/become-a-sponsor/) |
+| Texas Dreamin' 2027 | TBD | TBD | [Website](https://www.texasdreamin.org/) | TBD | TBD | [Become a Sponsor](https://www.texasdreamin.org/sponsorship) |
+| Bharat Dreamin' 2027 | TBD | TBD | [Website](https://bharatdreamin.com/) | TBD | TBD | [Become a Sponsor](https://bharatdreamin.com/sponsors/) |
+| Midwest Dreamin' 2027 | TBD | TBD | [Website](http://www.midwestdreamin.com) | TBD | TBD | [Become a Sponsor](https://midwestdreamin.com/sponsors/) |
+| WITness Success 2027 | July 15-16, 2027 | TBD | [Website](https://witnesssuccess.com/) | TBD | TBD | [Become a Sponsor](https://witnesssuccess.com/sponsors/) |
+| Kiwi Dreaming 2027 | TBD | TBD | [Website](https://kiwidreaming.nz/) | TBD | TBD | [Become a Sponsor](https://kiwidreaming.nz/pages/current-sponsors) |
+| Buckeye Dreamin' 2027 | TBD | TBD | [Website](https://www.buckeyedreamin.com/) | TBD | TBD | [Become a Sponsor](https://www.buckeyedreamin.com/sponsorship) |
+| Forcelandia 2027 | TBD | TBD | [Website](https://forcelandia.com/) | TBD | TBD | [Become a Sponsor](https://forcelandia.com/2026-sponsors/) |
 
-### Tentative Events (4)
+### Tentative Events (2)
 - **London Architect Dreamin'** - Estimated February | London, UK
 - **DevOps Dreamin'** - Estimated November | London, UK
-- **Test Dreamin'** - TBD | [Website](https://www.testdreamin.com/)
-- **Life Sciences Dreamin'** - TBD | [Website](https://lifesciencesdreamin.com/)
 
-## 📅 How to Add to Your Calendar
+### Past Events
+Events with no current 2026-2027 edition planned. Listed for reference; check their sites for any future announcements.
 
-### ⭐ Option 1: Auto-Updating Subscription (RECOMMENDED)
-
-For **automatic updates** when new events are added or existing events are modified, subscribe to the calendar:
-
-**Subscription URL:**
-```
-https://joncline.github.io/salesforce-community-events/salesforce_dreamin_events_2026.ics
-```
-
-#### Google Calendar:
-1. Open [Google Calendar](https://calendar.google.com)
-2. Click the **+** next to "Add calendar" (left sidebar)
-3. Select **From URL**
-4. Paste the subscription URL above
-5. Click **Add calendar**
-
-#### Microsoft Outlook:
-1. Open [Outlook Calendar](https://outlook.office.com/calendar)
-2. Click **Add calendar** → **Subscribe from web**
-3. Paste the subscription URL above
-4. Click **Import**
-
-#### Apple Calendar (macOS):
-1. Open Calendar app
-2. Go to **File** → **New Calendar Subscription**
-3. Paste the subscription URL above
-4. Click **Subscribe**
-5. Choose update frequency (recommended: every 15 minutes)
-
-#### Apple Calendar (iOS):
-1. Open Settings → **Calendar** → **Accounts** → **Add Account**
-2. Select **Other** → **Add Subscribed Calendar**
-3. Paste the subscription URL above
-4. Tap **Next** then **Save**
-
-**Benefits:**
-- ✅ Automatic updates when new events are added
-- ✅ Real-time sync across all your devices
-- ✅ No manual re-importing required
+- **Dubai Dreamin'** - Last held 2025 | Dubai, United Arab Emirates | [Website](https://www.dubaidreamin.com/s/)
+- **Test Dreamin'** | [Website](https://www.testdreamin.com/)
+- **Life Sciences Dreamin'** | [Website](https://lifesciencesdreamin.com/)
+- **Higher Ed Dreamin'** | [Website](https://highereddreamin.com/)
+- **MarDreamin'** | [Website](https://mardreamin.com/)
+- **ParDreamin'** | [Website](https://pardreamin.com/)
 
 ---
-
-### 📥 Option 2: One-Time Import
-
-If you prefer a one-time import (no automatic updates), download and import the calendar file:
-
-#### Google Calendar
-
-1. **Download the calendar file:**
-   - Click on `salesforce_dreamin_events_2026.ics` above
-   - Click the "Download" button (or right-click "Raw" and select "Save Link As...")
-
-2. **Import to Google Calendar:**
-   - Open [Google Calendar](https://calendar.google.com)
-   - Click the **Settings gear** icon (top right) → **Settings**
-   - In the left sidebar, click **Import & Export**
-   - Click **Select file from your computer**
-   - Choose the downloaded `.ics` file
-   - Select which calendar to add the events to
-   - Click **Import**
-
-3. **Done!** All 28 events will appear on your calendar marked as "busy"
-
-#### Microsoft Office 365 / Outlook Web
-
-1. **Download the calendar file:**
-   - Click on `salesforce_dreamin_events_2026.ics` above
-   - Click the "Download" button
-
-2. **Import to Outlook Web:**
-   - Open [Outlook Calendar](https://outlook.office.com/calendar)
-   - Click **Add calendar** (left sidebar)
-   - Select **Upload from file**
-   - Click **Browse** and select the downloaded `.ics` file
-   - Choose which calendar to import into
-   - Click **Import**
-
-3. **Done!** Events will appear in your Outlook calendar
-
-#### Microsoft Outlook Desktop
-
-1. **Download the calendar file:**
-   - Click on `salesforce_dreamin_events_2026.ics` above
-   - Click the "Download" button
-
-2. **Import to Outlook Desktop:**
-   - Open **Outlook**
-   - Go to **File** → **Open & Export** → **Import/Export**
-   - Select **Import an iCalendar (.ics) or vCalendar file (.vcs)**
-   - Click **Next**
-   - Browse to the downloaded `.ics` file
-   - Click **OK**
-   - Choose **Import** (to add to your calendar) or **Open as New** (to create a separate calendar)
-
-3. **Done!** Events will appear in your Outlook calendar
-
-#### Apple Calendar (macOS/iOS)
-
-##### On Mac:
-1. **Download the calendar file:**
-   - Click on `salesforce_dreamin_events_2026.ics` above
-   - Click the "Download" button
-
-2. **Import to Apple Calendar:**
-   - Double-click the downloaded `.ics` file
-   - Calendar will open automatically
-   - Choose which calendar to add the events to
-   - Click **OK**
-
-##### On iPhone/iPad:
-1. **Download the calendar file:**
-   - Open this GitHub page in Safari
-   - Tap on `salesforce_dreamin_events_2026.ics`
-   - Tap "Download" or "Raw"
-
-2. **Import:**
-   - Tap **Add All** when prompted
-   - Events will be added to your default calendar
-
-3. **Done!** Events will sync across all your Apple devices via iCloud
-
-## ⚠️ Important: Avoiding Duplicate Events
-
-**If you import this calendar file multiple times, it WILL create duplicate events.** Each import is treated as a new set of events.
-
-### How to Prevent Duplicates:
-
-1. **Before Re-importing:** Delete the previously imported events first
-2. **Use a Separate Calendar:** Import into a dedicated "Salesforce Events" calendar that you can easily delete and re-import
-3. **Check UIDs:** Each event has a unique identifier (UID), but most calendar apps don't automatically merge duplicates
-
-### Recommended Approach:
-
-**Create a dedicated calendar for these events:**
-
-- **Google Calendar:** Create a new calendar called "Salesforce Events 2026" and import there
-- **Outlook:** Import as a new calendar rather than adding to your main calendar
-- **Apple Calendar:** Create a new calendar specifically for Salesforce events
-
-This way, if you need to update events, you can simply:
-1. Delete the entire "Salesforce Events 2026" calendar
-2. Create a new one
-3. Re-import the updated file
-
-### If You Already Have Duplicates:
-
-- **Google Calendar:** Search for the event name, select all duplicates, and delete
-- **Outlook:** Use the search function to find duplicates and delete them
-- **Apple Calendar:** Search for the event and manually delete duplicates
 
 
 
 ## ✨ Features
 
-- ✅ All events marked as "busy" on your calendar
 - ✅ Complete event descriptions with website URLs
 - ✅ Location information for each event
 - ✅ Multi-day events properly configured
-- ✅ Compatible with all major calendar applications
 
 
 
@@ -301,7 +152,7 @@ This calendar is maintained using information from:
 - Individual event websites and organizers
 - Community submissions and updates
 
-## � Request New Events
+## 📢 Request New Events
 
 Know of a Salesforce community event that should be included? 
 
@@ -315,46 +166,11 @@ Please provide:
 - Location
 - Official website URL (if available)
 
-## 🤖 Advanced: Customize Events with AI
-
-Want to modify the calendar before importing? You can use AI tools to customize which events to include or modify event details.
-
-### Using Cline.bot or Salesforce Vibes:
-
-1. **Download the calendar file:**
-   - Click on `salesforce_dreamin_events_2026.ics` above
-   - Click "Download" to save it to your computer
-
-2. **Open in your AI tool:**
-   - **Cline.bot:** Open the file in VS Code with Cline extension
-   - **Salesforce Vibes:** Upload the file to the AI assistant
-
-3. **Customize as needed:**
-   - Ask the AI to remove specific events you don't want
-   - Modify event times or descriptions
-   - Add your own custom events
-   - Filter to only certain regions or event types
-
-4. **Example prompts:**
-   ```
-   "Remove all events outside of North America"
-   "Keep only the Dreamin' events, remove Dreamforce and TrailblazerDX"
-   "Change all event times to start at 9:00 AM"
-   "Add a reminder 1 week before each event"
-   "Remove tentative events and keep only confirmed ones"
-   ```
-
-5. **Save and import:**
-   - Save the modified .ics file
-   - Import it to your calendar using the instructions above
-
-This approach gives you complete control over which events appear in your calendar without having to manually edit the file or deal with duplicates!
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## � Acknowledgments
+## 🙏 Acknowledgments
 
 Thanks to all the amazing Salesforce community organizers who make these events possible! Special thanks to the Dreamin' event organizers worldwide for building such an incredible global community.
 
