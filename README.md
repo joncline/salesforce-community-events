@@ -144,6 +144,16 @@ To update the calendar status:
 - Run after major Salesforce community announcements
 - Run when you notice events with outdated status information
 
+### 🤖 Weekly Automation (local cron)
+
+A wrapper script and crontab entry automate the weekly run on the maintainer's machine. The script runs unattended and leaves the working tree dirty for manual review — it does **not** auto-commit.
+
+- **Wrapper:** `scripts/weekly-update.sh` — sources nvm, runs `node check-cfp-status.js`, logs to `~/.local/state/sf-events/weekly-update-<timestamp>.log` (latest symlink: `weekly-update-latest.log`), and fires a best-effort desktop notification.
+- **Schedule:** Sunday 08:00 local — `0 8 * * 0 .../scripts/weekly-update.sh >> ~/.local/state/sf-events/cron.log 2>&1`
+- **Review flow after each run:** `git diff README.md` → clean up scrape artifacts (lowercase months, non-location text in the Location column, dropped/dormant events) → commit and push. See the Past Events section for events that should stay archived rather than return to the table.
+- **Install/reinstall the crontab entry:** `( crontab -l 2>/dev/null; echo "0 8 * * 0 $HOME/Documents/ClineApps/SF-Events/scripts/weekly-update.sh >> $HOME/.local/state/sf-events/cron.log 2>&1" ) | crontab -`
+- **Run it on demand:** `./scripts/weekly-update.sh`
+
 ## 📚 Sources
 
 This calendar is maintained using information from:
