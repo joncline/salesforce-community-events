@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:kiwi-dreaming-2027@salesforce-events
+DTSTAMP:20270729T000000Z
+DTSTART;VALUE=DATE:20270729
+DTEND;VALUE=DATE:20270730
+SUMMARY:Kiwi Dreaming 2027
+LOCATION:Auckland\, New Zealand
+URL:https://kiwidreaming.nz/
+DESCRIPTION:Salesforce community event. Details and updates: https://kiwidreaming.nz/
+END:VEVENT
+END:VCALENDAR

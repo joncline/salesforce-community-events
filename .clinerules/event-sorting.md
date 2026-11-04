@@ -41,11 +41,7 @@ This rule ensures that all events in the Salesforce Community Events README file
 
   4. **Re-sort if needed**: If the table is out of order after the script runs, manually re-sort the README.md table rows to restore ascending chronological order.
 
-  5. **Verify .ics file is in sync**: Check that `salesforce_dreamin_events_2026.ics` contains a VEVENT entry for every event listed in the README Events Overview Table.
-     - Compare event names/dates in the README table against SUMMARY/DTSTART fields in the .ics file
-     - For any README event missing from the .ics, add a new VEVENT block with correct UID, SUMMARY, DTSTART, DTEND, LOCATION, and DESCRIPTION fields
-     - Use UID format: `event-slug-year@salesforce-events` (e.g., `kiwi-dreaming-2026@salesforce-events`)
-     - Set DTSTAMP to today's date in YYYYMMDDTHHMMSSZ format
+  5. **Verify per-event .ics downloads are in sync**: the script writes `ics/<event-slug>.ics` for every dated table row and an "Add 📅" cell in the Calendar column (TBD-dated rows get no file). Compare the .ics count against dated rows; the script also removes stale slugs from rolled/renamed events. Files are byte-stable across runs (DTSTAMP is pinned to the event's own start), so a clean run leaves `git status` quiet. Do not hand-edit .ics files — they regenerate every run. Links point at raw.githubusercontent.com URLs so a click downloads instead of opening GitHub's file view.
 
   6. **Check the script's cross-reference output**: the run ends with a "Potential new events found" list. Investigate each — it usually means an event the API dropped (add to `MANUAL_EVENTS`) or a genuinely new event to add. One source is the **official Trailblazer Community conferences page** (fetched through the r.jina.ai JS reader — one call per run; rapid-fire r.jina.ai calls rate-limit to empty responses).
 
@@ -55,7 +51,7 @@ This rule ensures that all events in the Salesforce Community Events README file
      - A "Buy Tickets" link pointing at a sponsor/speaker registration URL is wrong (should be TBD).
      - An override-backed event that suddenly shows TBD links means a fetch failed and the override didn't apply — confirm the `EVENT_OVERRIDES` key matches the current (possibly rolled-forward) event name.
 
-  9. **Update the manual event count** in the README header to match the actual number of table rows (the script does not maintain this number).
+  8. **Update the manual event count** in the README header to match the actual number of table rows (the script does not maintain this number).
 
 ## Maintenance requirements
   - When updating the README with new events or date changes, always re-sort the entire table

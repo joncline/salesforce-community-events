@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:benelux-dreamin-2026@salesforce-events
+DTSTAMP:20261210T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Benelux Dreamin' 2026
+LOCATION:Antwerp\, Belgium
+URL:https://www.yeurdreamin.eu/
+DESCRIPTION:Salesforce community event. Details and updates: https://www.yeurdreamin.eu/
+END:VEVENT
+END:VCALENDAR

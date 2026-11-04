@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:sri-lanka-dreamin-2026@salesforce-events
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Sri Lanka Dreamin 2026
+LOCATION:Colombo\, Sri Lanka
+URL:https://srilankadreamin.com/
+DESCRIPTION:Salesforce community event. Details and updates: https://srilankadreamin.com/
+END:VEVENT
+END:VCALENDAR

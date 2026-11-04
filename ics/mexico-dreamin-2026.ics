@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:mexico-dreamin-2026@salesforce-events
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Mexico Dreamin' 2026
+LOCATION:Mexico City\, Mexico
+URL:https://mexicodreamin.com/
+DESCRIPTION:Salesforce community event. Details and updates: https://mexicodreamin.com/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:pakistan-dreamin-2026@salesforce-events
+DTSTAMP:20261107T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Pakistan Dreamin' 2026
+LOCATION:Islamabad\, Pakistan
+URL:https://www.pakdreamin.com
+DESCRIPTION:Salesforce community event. Details and updates: https://www.pakdreamin.com
+END:VEVENT
+END:VCALENDAR

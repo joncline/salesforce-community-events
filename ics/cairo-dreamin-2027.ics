@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:cairo-dreamin-2027@salesforce-events
+DTSTAMP:20270130T000000Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270131
+SUMMARY:Cairo Dreamin' 2027
+LOCATION:Cairo\, Egypt
+URL:https://www.cairodreamin.com/
+DESCRIPTION:Salesforce community event. Details and updates: https://www.cairodreamin.com/
+END:VEVENT
+END:VCALENDAR

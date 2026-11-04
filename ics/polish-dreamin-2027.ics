@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:polish-dreamin-2027@salesforce-events
+DTSTAMP:20270416T000000Z
+DTSTART;VALUE=DATE:20270416
+DTEND;VALUE=DATE:20270417
+SUMMARY:Polish Dreamin' 2027
+LOCATION:Wroclaw\, Poland
+URL:https://dreamin.coffeeforce.pl/
+DESCRIPTION:Salesforce community event. Details and updates: https://dreamin.coffeeforce.pl/
+END:VEVENT
+END:VCALENDAR

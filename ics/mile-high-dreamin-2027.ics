@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:mile-high-dreamin-2027@salesforce-events
+DTSTAMP:20270825T000000Z
+DTSTART;VALUE=DATE:20270825
+DTEND;VALUE=DATE:20270827
+SUMMARY:Mile High Dreamin' 2027
+LOCATION:Denver\, United States
+URL:https://www.milehighdreamin.com/
+DESCRIPTION:Salesforce community event. Details and updates: https://www.milehighdreamin.com/
+END:VEVENT
+END:VCALENDAR

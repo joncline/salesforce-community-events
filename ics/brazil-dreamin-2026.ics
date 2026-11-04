@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:brazil-dreamin-2026@salesforce-events
+DTSTAMP:20261112T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261114
+SUMMARY:Brazil Dreamin' 2026
+LOCATION:São Paulo\, Brazil
+URL:https://semananasnuvens.com.br/
+DESCRIPTION:Salesforce community event. Details and updates: https://semananasnuvens.com.br/
+END:VEVENT
+END:VCALENDAR

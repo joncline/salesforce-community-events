@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:true-north-dreamin-2027@salesforce-events
+DTSTAMP:20270406T000000Z
+DTSTART;VALUE=DATE:20270406
+DTEND;VALUE=DATE:20270408
+SUMMARY:True North Dreamin' 2027
+LOCATION:Toronto\, Canada
+URL:https://www.truenorthdreamin.com/
+DESCRIPTION:Salesforce community event. Details and updates: https://www.truenorthdreamin.com/
+END:VEVENT
+END:VCALENDAR

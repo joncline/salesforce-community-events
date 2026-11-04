@@ -776,6 +776,106 @@ async function checkEvent(event) {
   }
 }
 
+// Per-event .ics downloads — raw.githubusercontent URL so a README click
+// downloads the file instead of opening GitHub's text file view.
+const RAW_ICS_BASE = 'https://raw.githubusercontent.com/joncline/salesforce-community-events/main/ics';
+
+function slugifyEventName(name) {
+  return name
+    .toLowerCase()
+    .normalize('NFD')                    // fold accents (dreamOlé -> dreamole)
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')         // apostrophes, spaces, symbols -> dash
+    .replace(/^-+|-+$/g, '');
+}
+
+// event.date -> { dtstart, dtend } as YYYYMMDD. DTEND is EXCLUSIVE (RFC 5545
+// VALUE=DATE): a single-day event gets start+1. Returns null for unparseable
+// formats — those events get no .ics and no Calendar link.
+function icsDates(dateStr) {
+  const MONTHS = { January: 0, February: 1, March: 2, April: 3, May: 4, June: 5,
+                   July: 6, August: 7, September: 8, October: 9, November: 10, December: 11 };
+  const fmt = d => `${d.getUTCFullYear()}${String(d.getUTCMonth() + 1).padStart(2, '0')}${String(d.getUTCDate()).padStart(2, '0')}`;
+  const toDate = (month, day, year) => new Date(Date.UTC(year, MONTHS[month], day));
+  const exclusiveEnd = d => new Date(d.getTime() + 86400000); // +1 day
+  const s = dateStr.trim();
+
+  // "June 23 - June 25, 2027" — cross-month range; only the end carries the year
+  let m = s.match(/^([A-Za-z]+) (\d{1,2}) - ([A-Za-z]+) (\d{1,2}), (\d{4})$/);
+  if (m) {
+    const start = toDate(m[1], +m[2], +m[5]);
+    return { dtstart: fmt(start), dtend: fmt(exclusiveEnd(toDate(m[3], +m[4], +m[5]))) };
+  }
+  // "July 20-22, 2027" — same-month range
+  m = s.match(/^([A-Za-z]+) (\d{1,2})-(\d{1,2}), (\d{4})$/);
+  if (m) {
+    const start = toDate(m[1], +m[2], +m[4]);
+    return { dtstart: fmt(start), dtend: fmt(exclusiveEnd(toDate(m[1], +m[3], +m[4]))) };
+  }
+  // "November 7, 2026" — single day
+  m = s.match(/^([A-Za-z]+) (\d{1,2}), (\d{4})$/);
+  if (m) {
+    const start = toDate(m[1], +m[2], +m[3]);
+    return { dtstart: fmt(start), dtend: fmt(exclusiveEnd(start)) };
+  }
+  return null;
+}
+
+function escapeIcsText(text) {
+  return String(text).replace(/\\/g, '\\\\').replace(/;/g, '\\;')
+    .replace(/,/g, '\\,').replace(/\r?\n/g, '\\n');
+}
+
+// Write one .ics per dated event into ics/ (all-day VEVENT, CRLF line endings).
+// DTSTAMP is pinned to the event's own start so re-runs produce byte-identical
+// files — no git churn on clean runs. Only changed files are rewritten; slugs
+// of renamed/rolled-away events are removed.
+function generateIcsFiles(results) {
+  const icsDir = path.join(__dirname, 'ics');
+  if (!fs.existsSync(icsDir)) fs.mkdirSync(icsDir);
+
+  const wanted = new Set();
+  let written = 0;
+  for (const event of results) {
+    const date = event.date || 'TBD';
+    if (date === 'TBD') continue;
+    const span = icsDates(date);
+    if (!span) { console.log(`   ⚠️  Unparseable date for .ics: ${event.name} "${date}"`); continue; }
+
+    const slug = slugifyEventName(event.name);
+    const relPath = `ics/${slug}.ics`;
+    wanted.add(relPath);
+    const body = [
+      'BEGIN:VCALENDAR',
+      'VERSION:2.0',
+      'PRODID:-//salesforce-community-events//calendar//EN',
+      'BEGIN:VEVENT',
+      `UID:${slug}@salesforce-events`,
+      `DTSTAMP:${span.dtstart}T000000Z`,
+      `DTSTART;VALUE=DATE:${span.dtstart}`,
+      `DTEND;VALUE=DATE:${span.dtend}`,
+      `SUMMARY:${escapeIcsText(event.name)}`,
+      ...(event.location && event.location !== 'TBD' ? [`LOCATION:${escapeIcsText(event.location)}`] : []),
+      ...(event.url && event.url !== 'TBD' ? [`URL:${event.url}`] : []),
+      `DESCRIPTION:${escapeIcsText('Salesforce community event. Details and updates: ' + (event.url || 'the events calendar'))}`,
+      'END:VEVENT',
+      'END:VCALENDAR',
+      ''
+    ].join('\r\n');
+
+    const file = path.join(icsDir, `${slug}.ics`);
+    if (fs.existsSync(file) && fs.readFileSync(file, 'utf8') === body) continue;
+    fs.writeFileSync(file, body, 'utf8');
+    written++;
+  }
+
+  let removed = 0;
+  for (const f of fs.readdirSync(icsDir)) {
+    if (f.endsWith('.ics') && !wanted.has(`ics/${f}`)) { fs.unlinkSync(path.join(icsDir, f)); removed++; }
+  }
+  console.log(`✅ ICS: ${wanted.size} events offer downloads (${written} written, ${removed} removed)`);
+}
+
 // Update README with results
 function updateReadme(results) {
   const readmePath = path.join(__dirname, 'README.md');
@@ -809,8 +909,12 @@ function updateReadme(results) {
     const cfpStatus = event.cfpStatus || 'TBD';
     const ticketStatus = event.ticketStatus || 'TBD';
     const sponsorStatus = event.sponsorStatus || 'TBD';
-    
-    tableRows += `| ${name} | ${date} | ${location} | [Website](${url}) | ${cfpStatus} | ${ticketStatus} | ${sponsorStatus} |\n`;
+
+    // Dated rows link the generated per-event .ics; TBD rows have none yet.
+    const span = date !== 'TBD' ? icsDates(date) : null;
+    const calendarCell = span ? `[Add 📅](${RAW_ICS_BASE}/${slugifyEventName(name)}.ics)` : 'TBD';
+
+    tableRows += `| ${name} | ${date} | ${calendarCell} | ${location} | [Website](${url}) | ${cfpStatus} | ${ticketStatus} | ${sponsorStatus} |\n`;
   });
 
   // Replace the table rows in README
@@ -818,8 +922,8 @@ function updateReadme(results) {
 
   const newTable = `### Events Overview Table
 
-| Event | Date | Location | Website | CFP Status | Ticket Sales | Sponsor |
-|-------|------|----------|---------|------------|--------------|---------|
+| Event | Date | Calendar | Location | Website | CFP Status | Ticket Sales | Sponsor |
+|-------|------|----------|----------|---------|------------|--------------|---------|
 ${tableRows}
 ### Tentative Events`;
 
@@ -1012,6 +1116,7 @@ async function main() {
 
   console.log('\n📝 Updating README.md...');
   updateReadme(dedupedResults);
+  generateIcsFiles(dedupedResults);
   
   console.log('\n🔍 Running cross-reference check for new events...');
   await checkCrossReference();

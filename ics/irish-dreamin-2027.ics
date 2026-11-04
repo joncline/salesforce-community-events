@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:irish-dreamin-2027@salesforce-events
+DTSTAMP:20270319T000000Z
+DTSTART;VALUE=DATE:20270319
+DTEND;VALUE=DATE:20270320
+SUMMARY:Irish Dreamin' 2027
+LOCATION:Dublin\, Republic of Ireland
+URL:https://irishdreamin.ie
+DESCRIPTION:Salesforce community event. Details and updates: https://irishdreamin.ie
+END:VEVENT
+END:VCALENDAR

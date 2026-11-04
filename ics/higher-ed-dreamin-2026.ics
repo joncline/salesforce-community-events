@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:higher-ed-dreamin-2026@salesforce-events
+DTSTAMP:20261209T000000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:Higher Ed Dreamin' 2026
+LOCATION:Virtual
+URL:https://events.ringcentral.com/events/higher-ed-dreamin-2026
+DESCRIPTION:Salesforce community event. Details and updates: https://events.ringcentral.com/events/higher-ed-dreamin-2026
+END:VEVENT
+END:VCALENDAR

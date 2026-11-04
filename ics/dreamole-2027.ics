@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:dreamole-2027@salesforce-events
+DTSTAMP:20270312T000000Z
+DTSTART;VALUE=DATE:20270312
+DTEND;VALUE=DATE:20270313
+SUMMARY:dreamOlé 2027
+LOCATION:Seville\, Spain
+URL:https://dreamole.es/
+DESCRIPTION:Salesforce community event. Details and updates: https://dreamole.es/
+END:VEVENT
+END:VCALENDAR

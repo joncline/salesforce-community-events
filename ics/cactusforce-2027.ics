@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:cactusforce-2027@salesforce-events
+DTSTAMP:20270121T000000Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270123
+SUMMARY:Cactusforce 2027
+LOCATION:Scottsdale\, United States
+URL:https://www.cactusforce.com/
+DESCRIPTION:Salesforce community event. Details and updates: https://www.cactusforce.com/
+END:VEVENT
+END:VCALENDAR

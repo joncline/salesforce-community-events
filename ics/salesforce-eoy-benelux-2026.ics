@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:salesforce-eoy-benelux-2026@salesforce-events
+DTSTAMP:20261210T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Salesforce EOY Benelux 2026
+LOCATION:Kontich\, Belgium
+URL:https://www.linkedin.com/feed/update/urn:li:ugcPost:7464689853214044160/
+DESCRIPTION:Salesforce community event. Details and updates: https://www.linkedin.com/feed/update/urn:li:ugcPost:7464689853214044160/
+END:VEVENT
+END:VCALENDAR

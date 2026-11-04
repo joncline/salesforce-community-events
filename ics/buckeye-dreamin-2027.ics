@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:buckeye-dreamin-2027@salesforce-events
+DTSTAMP:20270720T000000Z
+DTSTART;VALUE=DATE:20270720
+DTEND;VALUE=DATE:20270723
+SUMMARY:Buckeye Dreamin' 2027
+URL:https://www.buckeyedreamin.com/
+DESCRIPTION:Salesforce community event. Details and updates: https://www.buckeyedreamin.com/
+END:VEVENT
+END:VCALENDAR

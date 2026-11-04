@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:witness-success-2027@salesforce-events
+DTSTAMP:20270715T000000Z
+DTSTART;VALUE=DATE:20270715
+DTEND;VALUE=DATE:20270717
+SUMMARY:WITness Success 2027
+LOCATION:Indianapolis\, United States
+URL:https://witnesssuccess.com/
+DESCRIPTION:Salesforce community event. Details and updates: https://witnesssuccess.com/
+END:VEVENT
+END:VCALENDAR

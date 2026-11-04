@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:midwest-dreamin-2027@salesforce-events
+DTSTAMP:20270804T000000Z
+DTSTART;VALUE=DATE:20270804
+DTEND;VALUE=DATE:20270807
+SUMMARY:Midwest Dreamin' 2027
+LOCATION:St. Louis\, United States
+URL:http://www.midwestdreamin.com
+DESCRIPTION:Salesforce community event. Details and updates: http://www.midwestdreamin.com
+END:VEVENT
+END:VCALENDAR

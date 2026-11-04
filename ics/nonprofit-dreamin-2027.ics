@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:nonprofit-dreamin-2027@salesforce-events
+DTSTAMP:20270315T000000Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270317
+SUMMARY:Nonprofit Dreamin' 2027
+URL:https://www.nonprofitdreamin.org/
+DESCRIPTION:Salesforce community event. Details and updates: https://www.nonprofitdreamin.org/
+END:VEVENT
+END:VCALENDAR

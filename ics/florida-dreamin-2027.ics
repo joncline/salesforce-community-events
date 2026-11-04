@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:florida-dreamin-2027@salesforce-events
+DTSTAMP:20270623T000000Z
+DTSTART;VALUE=DATE:20270623
+DTEND;VALUE=DATE:20270626
+SUMMARY:Florida Dreamin' 2027
+LOCATION:Clearwater Beach\, United States
+URL:https://www.fldreamin.com/
+DESCRIPTION:Salesforce community event. Details and updates: https://www.fldreamin.com/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:biggest-little-dreamin-2027@salesforce-events
+DTSTAMP:20270128T000000Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270130
+SUMMARY:Biggest Little Dreamin' 2027
+LOCATION:Reno\, United States
+URL:https://biggestlittledreamin.com/
+DESCRIPTION:Salesforce community event. Details and updates: https://biggestlittledreamin.com/
+END:VEVENT
+END:VCALENDAR

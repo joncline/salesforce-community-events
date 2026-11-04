@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:texas-dreamin-2027@salesforce-events
+DTSTAMP:20270715T000000Z
+DTSTART;VALUE=DATE:20270715
+DTEND;VALUE=DATE:20270717
+SUMMARY:Texas Dreamin' 2027
+LOCATION:Austin\, United States
+URL:https://www.texasdreamin.org/
+DESCRIPTION:Salesforce community event. Details and updates: https://www.texasdreamin.org/
+END:VEVENT
+END:VCALENDAR

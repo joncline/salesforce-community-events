@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:london-s-calling-2027@salesforce-events
+DTSTAMP:20270521T000000Z
+DTSTART;VALUE=DATE:20270521
+DTEND;VALUE=DATE:20270522
+SUMMARY:London's Calling 2027
+LOCATION:London\, United Kingdom
+URL:https://www.londonscalling.net/
+DESCRIPTION:Salesforce community event. Details and updates: https://www.londonscalling.net/
+END:VEVENT
+END:VCALENDAR

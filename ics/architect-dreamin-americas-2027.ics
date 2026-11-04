@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:architect-dreamin-americas-2027@salesforce-events
+DTSTAMP:20270209T000000Z
+DTSTART;VALUE=DATE:20270209
+DTEND;VALUE=DATE:20270211
+SUMMARY:Architect Dreamin' Americas 2027
+LOCATION:Orlando\, United States
+URL:https://architectdreamin.us/
+DESCRIPTION:Salesforce community event. Details and updates: https://architectdreamin.us/
+END:VEVENT
+END:VCALENDAR

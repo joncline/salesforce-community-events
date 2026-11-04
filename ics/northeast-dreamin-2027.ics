@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:northeast-dreamin-2027@salesforce-events
+DTSTAMP:20271012T000000Z
+DTSTART;VALUE=DATE:20271012
+DTEND;VALUE=DATE:20271014
+SUMMARY:Northeast Dreamin' 2027
+URL:https://northeastdreamin.com/
+DESCRIPTION:Salesforce community event. Details and updates: https://northeastdreamin.com/
+END:VEVENT
+END:VCALENDAR

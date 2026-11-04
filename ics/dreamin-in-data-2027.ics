@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:dreamin-in-data-2027@salesforce-events
+DTSTAMP:20270526T000000Z
+DTSTART;VALUE=DATE:20270526
+DTEND;VALUE=DATE:20270528
+SUMMARY:Dreamin' in Data 2027
+LOCATION:Prague\, Czech Republic
+URL:https://www.dreaminindata.org/
+DESCRIPTION:Salesforce community event. Details and updates: https://www.dreaminindata.org/
+END:VEVENT
+END:VCALENDAR

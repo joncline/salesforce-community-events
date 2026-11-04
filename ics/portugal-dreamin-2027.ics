@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:portugal-dreamin-2027@salesforce-events
+DTSTAMP:20270619T000000Z
+DTSTART;VALUE=DATE:20270619
+DTEND;VALUE=DATE:20270620
+SUMMARY:Portugal Dreamin' 2027
+LOCATION:Coimbra\, Portugal
+URL:https://www.portugaldreamin.com/en
+DESCRIPTION:Salesforce community event. Details and updates: https://www.portugaldreamin.com/en
+END:VEVENT
+END:VCALENDAR

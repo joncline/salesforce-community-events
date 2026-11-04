@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:czechdreamin-2027@salesforce-events
+DTSTAMP:20270528T000000Z
+DTSTART;VALUE=DATE:20270528
+DTEND;VALUE=DATE:20270529
+SUMMARY:CzechDreamin' 2027
+LOCATION:Prague\, Czech Republic
+URL:https://czechdreamin.com
+DESCRIPTION:Salesforce community event. Details and updates: https://czechdreamin.com
+END:VEVENT
+END:VCALENDAR
