@@ -47,7 +47,7 @@ This rule ensures that all events in the Salesforce Community Events README file
      - Use UID format: `event-slug-year@salesforce-events` (e.g., `kiwi-dreaming-2026@salesforce-events`)
      - Set DTSTAMP to today's date in YYYYMMDDTHHMMSSZ format
 
-  6. **Check the script's cross-reference output**: the run ends with a "Potential new events found" list. Investigate each — it usually means an event the API dropped (add to `MANUAL_EVENTS`) or a genuinely new event to add.
+  6. **Check the script's cross-reference output**: the run ends with a "Potential new events found" list. Investigate each — it usually means an event the API dropped (add to `MANUAL_EVENTS`) or a genuinely new event to add. One source is the **official Trailblazer Community conferences page** (fetched through the r.jina.ai JS reader — one call per run; rapid-fire r.jina.ai calls rate-limit to empty responses).
 
   7. **Watch for dropped or duplicate events**: compare the row count before/after the run. A sudden drop usually means the API stopped returning an event (pin it in `MANUAL_EVENTS`). Duplicate rows for the same event/year should be deduped.
 

@@ -25,7 +25,14 @@ const CROSS_REFERENCE_URLS = [
   'https://montrealdreamin.com/',
   'https://dreaminincolor.com/',
   'https://www.linkedin.com/company/women-in-tech-dreamin/',
-  'https://kiwidreaming.nz/'
+  'https://kiwidreaming.nz/',
+  // Official Trailblazer Community conferences list (verified 2026-11-04 against a
+  // full regen — all dated rows matched). The page is a JS-rendered Gatsby shell:
+  // a plain fetch returns 1MB of framework HTML with zero event names, so it is
+  // fetched through the r.jina.ai reader (renders JS, returns a markdown table).
+  // Kept LAST: slowest call. r.jina.ai rate-limits rapid-fire calls — there is one
+  // call per run here, fine; don't loop it quickly.
+  'https://r.jina.ai/https://trailhead.salesforce.com/community/conferences/'
 ];
 
 // Curated overrides keyed by exact (apostrophe-normalized) event name.
@@ -34,10 +41,6 @@ const CROSS_REFERENCE_URLS = [
 // data on every run (the README is fully regenerated each run, so anything not
 // reproduced here is lost). Add an entry whenever the table loses a known-good link.
 const EVENT_OVERRIDES = {
-  "Architect Dreamin' US": {
-    ticketUrl: "https://e.runevents.net/architect-dreamin-2026/checkout",
-    sponsorUrl: "https://architectdreamin.us/sponsors"
-  },
   "Cactusforce 2027": {
     date: "January 21-22, 2027",
     cfpUrl: "https://www.cactusforce.com/submit-a-talk",
@@ -126,6 +129,60 @@ const EVENT_OVERRIDES = {
   "Polish Dreamin' 2027": {
     date: "April 16, 2027",
     location: "Wroclaw, Poland"
+  },
+  // 2026-11-04 run fixes (each verified against the event site / announcements).
+  // Seoul's real date is Nov 11, 2026 (Trailhead calendar + official LinkedIn
+  // announcement) — the API feed is off by one day.
+  "Seoul Dreamin' 2026": {
+    date: "November 11, 2026"
+  },
+  // Site confirms May 28, 2027; the API lists the event twice (with and without
+  // the apostrophe) and once with a wrong May 27 date — pin both name variants
+  // to one correct row; the rename makes dedupe collapse them.
+  "CzechDreamin' 2027": {
+    date: "May 28, 2027"
+  },
+  "CzechDreamin 2027": {
+    name: "CzechDreamin' 2027",
+    date: "May 28, 2027"
+  },
+  // API lists the same event twice: the dated architectdreamin.us row plus a
+  // stale TBD row on the misspelled architectdreaming.us domain. Rename so
+  // dedupe collapses them (higher score keeps the dated row's data).
+  "Architect Dreamin US 2027": {
+    name: "Architect Dreamin' Americas 2027"
+  },
+  // API returns lowercase month names for these events; corrected date format.
+  "True North Dreamin' 2027": {
+    date: "April 6-7, 2027",  // site-verified
+    url: "https://www.truenorthdreamin.com/"  // scrape otherwise returns a scheme-less copy
+  },
+  "Buckeye Dreamin' 2027": {
+    date: "July 20-22, 2027"
+  },
+  "Northeast Dreamin' 2027": {
+    date: "October 12-13, 2027"
+  },
+  // Site URL was scraped without a scheme ("biggestlittledreamin.com")
+  "Biggest Little Dreamin' 2027": {
+    url: "https://biggestlittledreamin.com/"
+  },
+  // API 2027 record appears intermittently; its URL comes back scheme-less from the scrape.
+  "Mile High Dreamin' 2027": {
+    url: "https://www.milehighdreamin.com/"
+  },
+  // Site sponsor href is a mailto joined onto the domain ("fldreamin.commailto:…");
+  // pin the full mailto from the site.
+  "Florida Dreamin' 2027": {
+    sponsorUrl: "mailto:michelle@fldreamin.com?subject=2027%20Sponsor%20Interest&body=Company%20Name%3A%0ACompany%20Email%3A%0A%0AComments%3A"
+  },
+  // The API now feeds Portugal 2027 natively (June 19, 2027); a rolled 2026
+  // placeholder competes for the same normalized name — pin the date so either
+  // surviving row keeps it.
+  "Portugal Dreamin' 2027": {
+    date: "June 19, 2027",
+    url: "https://www.portugaldreamin.com/en",
+    sponsorUrl: "https://www.portugaldreamin.com/en/sponsors"
   }
 };
 
@@ -222,17 +279,20 @@ async function fetchEventsFromAPI() {
 
   // Filter to 2026 and 2027 events, map to our format
   const filteredEvents = events.filter(event => {
-    const year = new Date(event.start_date).getFullYear();
+    const year = new Date(event.start_date).getUTCFullYear();
     return year === 2026 || year === 2027;
   }).map(event => {
-    // Format date
+    // Format date. The API stores midnight-UTC dates: render in UTC — local-time
+    // rendering shifted every event one day earlier on America/Los_Angeles machines
+    // (site-verified 2026-11-04: Seoul Nov 11, Pakistan Nov 7, Irish Mar 19,
+    // Architect Dreamin' Americas Feb 9-10, WITness/Texas Jul 15-16, …).
     const startDate = new Date(event.start_date);
     const endDate = new Date(event.end_date);
-    const startMonth = startDate.toLocaleString('en-US', { month: 'long' });
-    const endMonth = endDate.toLocaleString('en-US', { month: 'long' });
-    const startDay = startDate.getDate();
-    const endDay = endDate.getDate();
-    const year = startDate.getFullYear();
+    const startMonth = startDate.toLocaleString('en-US', { month: 'long', timeZone: 'UTC' });
+    const endMonth = endDate.toLocaleString('en-US', { month: 'long', timeZone: 'UTC' });
+    const startDay = startDate.getUTCDate();
+    const endDay = endDate.getUTCDate();
+    const year = startDate.getUTCFullYear();
 
     let date;
     if (startMonth === endMonth && startDay === endDay) {
@@ -313,6 +373,10 @@ function categorizeAndSortEvents(events) {
     if (isPast) {
       const nextYearEvent = {
         ...event,
+        // The rolled placeholder is a NEXT-YEAR event: never carry the original
+        // date forward — it is last year's date. It starts TBD, and only an
+        // override or the site scrape may fill a real next-year date in.
+        date: 'TBD',
         name: event.name.replace(/(\d{4})/, (match) => (parseInt(match) + 1).toString()),
         isPast: true,
         originalYear: event.name.match(/(\d{4})/)?.[1] || '2026'
@@ -400,7 +464,7 @@ async function checkEvent(event) {
           cfpStatus: event.cfpUrl ? `[OPEN](${event.cfpUrl})` : 'TBD',
           ticketStatus: event.ticketUrl ? `[Buy Tickets](${event.ticketUrl})` : 'TBD',
           sponsorStatus: event.sponsorUrl ? `[Become a Sponsor](${event.sponsorUrl})` : 'TBD',
-          date: 'TBD',
+          date: (event.date && event.date !== 'TBD') ? event.date : 'TBD',
           location: 'TBD'
         };
       }
@@ -479,6 +543,15 @@ async function checkEvent(event) {
         if (hasNextYearTickets) ticketStatus = 'TBD'; // Will be determined when date is known
       }
 
+      // An explicit override/known date (applied at checkEvent start) beats the
+      // scraped page text; the page body is lower-cased, so scraped dates render
+      // lowercase ("may 28, 2027") — title-case them for the table format.
+      if (event.date && event.date !== 'TBD') {
+        date = event.date;
+      } else if (date !== 'TBD') {
+        date = date.replace(/^[a-z]/, c => c.toUpperCase());
+      }
+
       // Check for sponsor opportunities (these might still be relevant)
       const sponsorKeywords = [
         'sponsor',
@@ -519,14 +592,15 @@ async function checkEvent(event) {
         location
       };
     } catch (error) {
-      // Same as the non-200 case: keep any curated override links on a failed fetch.
+      // Same as the non-200 case: keep any curated override links on a failed fetch,
+      // plus a curated override date (e.g. site-verified) instead of wiping to TBD.
       return {
         ...event,
         status: 'pending',
         cfpStatus: event.cfpUrl ? `[OPEN](${event.cfpUrl})` : 'TBD',
         ticketStatus: event.ticketUrl ? `[Buy Tickets](${event.ticketUrl})` : 'TBD',
         sponsorStatus: event.sponsorUrl ? `[Become a Sponsor](${event.sponsorUrl})` : 'TBD',
-        date: 'TBD',
+        date: (event.date && event.date !== 'TBD') ? event.date : 'TBD',
         location: 'TBD'
       };
     }
@@ -713,11 +787,15 @@ function updateReadme(results) {
     day: 'numeric'
   });
 
-  // Sort results to match the order in EVENTS
+  // Render order: dated rows ascending by start date, TBD rows at the bottom
+  // (parseEventDate maps TBD to 9999-12-31 and reduces ranges to their start).
+  // Dates were often only learned at check time (site scrape or a rolled
+  // event's override), so sorting would break on the pre-check EVENTS order —
+  // _order survives the dedupe merge and breaks ties / orders the TBD block.
   results.sort((a, b) => {
-    const indexA = EVENTS.findIndex(e => e.name === a.name);
-    const indexB = EVENTS.findIndex(e => e.name === b.name);
-    return indexA - indexB;
+    const timeDiff = parseEventDate(a.date).getTime() - parseEventDate(b.date).getTime();
+    if (timeDiff !== 0) return timeDiff;
+    return (a._order ?? 0) - (b._order ?? 0);
   });
 
   // Build new table content
@@ -759,7 +837,8 @@ async function checkCrossReference() {
   for (const refUrl of CROSS_REFERENCE_URLS) {
     console.log(`\n🔗 Cross-referencing: ${refUrl}`);
     try {
-      const result = await fetchUrl(refUrl, 15000);
+      // r.jina.ai renders JS + returns markdown — it needs a longer timeout.
+      const result = await fetchUrl(refUrl, refUrl.includes('r.jina.ai') ? 60000 : 15000);
       if (result.statusCode !== 200) {
         console.log(`   ⚠️  Could not fetch cross-reference page (status ${result.statusCode})`);
         continue;
@@ -768,12 +847,20 @@ async function checkCrossReference() {
       // Extract all hyperlinked text that looks like event names (contains "dreamin" or known keywords)
       const body = result.body;
       const linkPattern = /<a[^>]*href=["']([^"']*)["'][^>]*>([^<]+)<\/a>/gi;
+      // r.jina.ai output is markdown — parse [text](url) too. (?<!!) skips image ![alt](src).
+      const mdLinkPattern = /(?<!!)\[([^\[\]]{6,80})\]\([^)]{0,200}\)/g;
       const eventKeywords = /dreamin|cactus|salesforce|forcelandia|ohana|witness|trailblazer|dreaming/i;
 
       let match;
       const candidates = new Set();
       while ((match = linkPattern.exec(body)) !== null) {
         const linkText = match[2].trim();
+        if (eventKeywords.test(linkText) && linkText.length > 5 && linkText.length < 80) {
+          candidates.add(linkText);
+        }
+      }
+      while ((match = mdLinkPattern.exec(body)) !== null) {
+        const linkText = match[1].trim();
         if (eventKeywords.test(linkText) && linkText.length > 5 && linkText.length < 80) {
           candidates.add(linkText);
         }
@@ -887,10 +974,12 @@ async function main() {
   console.log('🔍 Checking Call for Presenters and Ticket Sales status for all events...\n');
 
   const results = [];
-  
-  for (const event of EVENTS) {
+
+  for (let i = 0; i < EVENTS.length; i++) {
+    const event = EVENTS[i];
     process.stdout.write(`Checking ${event.name}... `);
     const result = await checkEvent(event);
+    result._order = i;  // stable render order, immune to override renames
     results.push(result);
     
     const statusEmoji = {
@@ -910,13 +999,19 @@ async function main() {
     await new Promise(resolve => setTimeout(resolve, 500));
   }
   
+  // Collapse same-name rows that only differ after check-time override renames
+  // (e.g. a rolled 2026 placeholder renamed into the API's native 2027 event).
+  // dedupeEvents keeps the higher-scored copy and preserves insertion order,
+  // so the summary counts and table row count stay coherent.
+  const dedupedResults = dedupeEvents(results);
+
   console.log('\n📊 Summary:');
-  console.log(`   CFP Open: ${results.filter(r => r.status === 'cfp-open').length}`);
-  console.log(`   Active Sites: ${results.filter(r => r.status === 'active' || r.status === 'cfp-mentioned').length}`);
-  console.log(`   Inactive: ${results.filter(r => r.status === 'inactive' || r.status === 'error').length}`);
-  
+  console.log(`   CFP Open: ${dedupedResults.filter(r => r.status === 'cfp-open').length}`);
+  console.log(`   Active Sites: ${dedupedResults.filter(r => r.status === 'active' || r.status === 'cfp-mentioned').length}`);
+  console.log(`   Inactive: ${dedupedResults.filter(r => r.status === 'inactive' || r.status === 'error').length}`);
+
   console.log('\n📝 Updating README.md...');
-  updateReadme(results);
+  updateReadme(dedupedResults);
   
   console.log('\n🔍 Running cross-reference check for new events...');
   await checkCrossReference();
