@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:wir-sind-ohana-2027@salesforce-events
+DTSTAMP:20270423T000000Z
+DTSTART;VALUE=DATE:20270423
+DTEND;VALUE=DATE:20270424
+SUMMARY:Wir sind Ohana 2027
+URL:https://wirsindohana.wordpress.com/
+DESCRIPTION:Salesforce community event. Details and updates: https://wirsindohana.wordpress.com/
+END:VEVENT
+END:VCALENDAR

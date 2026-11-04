@@ -183,6 +183,11 @@ const EVENT_OVERRIDES = {
     date: "June 19, 2027",
     url: "https://www.portugaldreamin.com/en",
     sponsorUrl: "https://www.portugaldreamin.com/en/sponsors"
+  },
+
+  // Announced 2026-11-04 (owner).
+  "Wir sind Ohana 2027": {
+    date: "April 23, 2027"
   }
 };
 
@@ -776,9 +781,10 @@ async function checkEvent(event) {
   }
 }
 
-// Per-event .ics downloads — raw.githubusercontent URL so a README click
-// downloads the file instead of opening GitHub's text file view.
-const RAW_ICS_BASE = 'https://raw.githubusercontent.com/joncline/salesforce-community-events/main/ics';
+// Per-event .ics downloads — links point at GitHub's blob view, whose
+// "Download raw file" button performs a reliable download. raw.githubusercontent
+// serves .ics as text/plain, so a raw click only displays the file as text.
+const ICS_BASE = 'https://github.com/joncline/salesforce-community-events/blob/main/ics';
 
 function slugifyEventName(name) {
   return name
@@ -912,7 +918,7 @@ function updateReadme(results) {
 
     // Dated rows link the generated per-event .ics; TBD rows have none yet.
     const span = date !== 'TBD' ? icsDates(date) : null;
-    const calendarCell = span ? `[Add 📅](${RAW_ICS_BASE}/${slugifyEventName(name)}.ics)` : 'TBD';
+    const calendarCell = span ? `[Add 📅](${ICS_BASE}/${slugifyEventName(name)}.ics)` : 'TBD';
 
     tableRows += `| ${name} | ${date} | ${calendarCell} | ${location} | [Website](${url}) | ${cfpStatus} | ${ticketStatus} | ${sponsorStatus} |\n`;
   });
@@ -1062,6 +1068,13 @@ const MANUAL_EVENTS = [
     // Set explicitly: the page's relative href ("become-a-sponsor/") otherwise gets
     // joined without a slash into a broken "pardreamin.combecome-a-sponsor/" link.
     sponsorUrl: "https://pardreamin.com/become-a-sponsor/"
+  },
+  {
+    // The Salesforce API feed carries no DevOps Dreamin' record; date announced 2026-11-04.
+    name: "DevOps Dreamin' 2027",
+    date: "January 28, 2027",
+    location: "London, UK",
+    url: "https://devopsdreamin.com/"
   }
 ];
 

@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:devops-dreamin-2027@salesforce-events
+DTSTAMP:20270128T000000Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270129
+SUMMARY:DevOps Dreamin' 2027
+LOCATION:London\, UK
+URL:https://devopsdreamin.com/
+DESCRIPTION:Salesforce community event. Details and updates: https://devopsdreamin.com/
+END:VEVENT
+END:VCALENDAR
