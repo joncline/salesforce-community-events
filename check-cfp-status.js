@@ -155,7 +155,14 @@ const EVENT_OVERRIDES = {
   // API returns lowercase month names for these events; corrected date format.
   "True North Dreamin' 2027": {
     date: "April 6-7, 2027",  // site-verified
-    url: "https://www.truenorthdreamin.com/"  // scrape otherwise returns a scheme-less copy
+    url: "https://www.truenorthdreamin.com/",  // scrape otherwise returns a scheme-less copy
+    // CFP page states "Applications close November 15, 2026 at 11:59 pm Eastern" (3x).
+    cfpDeadline: "November 15, 2026"
+  },
+  // pakdreamin.com/call-for-speakers/ shows "open until August 24, 2026, 11:59 PM PKT"
+  // — already past, so pin the closed state instead of [OPEN].
+  "Pakistan Dreamin' 2026": {
+    cfpStatus: "Closed — deadline August 24, 2026"
   },
   "Buckeye Dreamin' 2027": {
     date: "July 20-22, 2027"
@@ -920,7 +927,10 @@ function updateReadme(results) {
     const span = date !== 'TBD' ? icsDates(date) : null;
     const calendarCell = span ? `[Add 📅](${ICS_BASE}/${slugifyEventName(name)}.ics)` : 'TBD';
 
-    tableRows += `| ${name} | ${date} | ${calendarCell} | ${location} | [Website](${url}) | ${cfpStatus} | ${ticketStatus} | ${sponsorStatus} |\n`;
+    // Pinned cfpDeadline renders in the CFP cell: "[OPEN](url) — deadline May 15, 2027".
+    const cfpCell = event.cfpDeadline ? `${cfpStatus} — deadline ${event.cfpDeadline}` : cfpStatus;
+
+    tableRows += `| ${name} | ${date} | ${calendarCell} | ${location} | [Website](${url}) | ${cfpCell} | ${ticketStatus} | ${sponsorStatus} |\n`;
   });
 
   // Replace the table rows in README
@@ -1097,6 +1107,9 @@ async function main() {
     process.stdout.write(`Checking ${event.name}... `);
     const result = await checkEvent(event);
     result._order = i;  // stable render order, immune to override renames
+    // A cfpStatus override is raw display text ("Closed") — re-apply after the
+    // site scan computed its own OPEN/TBD value (the scan clobbers it).
+    if (event.cfpStatus) result.cfpStatus = event.cfpStatus;
     results.push(result);
     
     const statusEmoji = {
