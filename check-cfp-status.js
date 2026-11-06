@@ -155,9 +155,10 @@ const EVENT_OVERRIDES = {
   // API returns lowercase month names for these events; corrected date format.
   "True North Dreamin' 2027": {
     date: "April 6-7, 2027",  // site-verified
-    url: "https://www.truenorthdreamin.com/",  // scrape otherwise returns a scheme-less copy
-    // CFP page states "Applications close November 15, 2026 at 11:59 pm Eastern" (3x).
-    cfpDeadline: "November 15, 2026"
+    url: "https://www.truenorthdreamin.com/"  // scrape otherwise returns a scheme-less copy
+    // CFP deadline auto-found by extractCfpDeadline from /call-for-speakers-tnd27
+    // ("Applications close November 15, 2026 at 11:59 pm Eastern") — no pin needed;
+    // add a pin here only if their site copy changes.
   },
   // pakdreamin.com/call-for-speakers/ shows "open until August 24, 2026, 11:59 PM PKT"
   // — already past, so pin the closed state instead of [OPEN].
@@ -435,6 +436,38 @@ function dedupeEvents(events) {
 // Normalize event name for comparison (replace fancy apostrophes with regular ones)
 function normalizeEventName(name) {
   return name.replace(/[\u2018\u2019\u201B]/g, "'");
+}
+
+// Locate a CFP deadline in raw page text: the first month-name date within
+// ~120 chars after a deadline-ish keyword ("deadline", "closes", "open until",
+// "submissions close", "applications close"...). Returns a display string
+// ("November 15, 2026") or null. HTML tags are stripped first (dates often
+// straddle tags); abbreviated months expand; a date equal to the event's own
+// date is IGNORED (that's the event date, not the deadline). Best effort \u2014 a
+// pinned cfpDeadline override always outranks anything scraped.
+function extractCfpDeadline(text, eventDate) {
+  if (!text) return null;
+  const clean = String(text).replace(/<[^>]{0,500}>/g, ' ').replace(/\s+/g, ' ');
+  const keyword = /(?:deadline|clos(?:es?|ed|ing)|open until|open through|submission|appl(?:y|ications?)|due)/gi;
+  const datePattern = /(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\.?\s+(\d{1,2})(?:st|nd|rd|th)?,?\s*(20\d\d)/i;
+  const FULL = ['january','february','march','april','may','june','july','august','september','october','november','december'];
+  const dateKey = d => `${String(d[1]).toLowerCase().slice(0, 3)}|${parseInt(d[2], 10)}|${d[3]}`;
+  // event key parsed from the table's own date formats (single / same-month
+  // range / cross-month) so an event-date lookalike candidate gets rejected
+  const em = eventDate && eventDate !== 'TBD'
+    ? String(eventDate).match(/^([A-Za-z]+)\s+(\d{1,2})(?:-(\d{1,2}))?(?:\s+-\s+([A-Za-z]+)\s+(\d{1,2}))?, (\d{4})$/)
+    : null;
+  const eventKey = em ? `${em[1].toLowerCase().slice(0, 3)}|${parseInt(em[2], 10)}|${em[6]}` : null;
+  let m;
+  while ((m = keyword.exec(clean)) !== null) {
+    const d = clean.slice(m.index, m.index + 120).match(datePattern);
+    if (!d) continue;
+    if (eventKey && dateKey(d) === eventKey) continue;
+    const full = FULL.find(f => f.startsWith(String(d[1]).toLowerCase()));
+    const month = full ? full[0].toUpperCase() + full.slice(1) : d[1];
+    return `${month} ${parseInt(d[2], 10)}, ${d[3]}`;
+  }
+  return null;
 }
 
 // Apply overrides to event before checking
@@ -751,11 +784,28 @@ async function checkEvent(event) {
       overallStatus = 'cfp-open';
     }
 
+    // Auto-find the CFP deadline: homepage text first, then the CFP page itself
+    // (often the only place the deadline is stated — e.g. True North publishes
+    // it solely on /call-for-speakers-tnd27). A pinned event.cfpDeadline
+    // override (applied via applyOverrides and spread through by {...event})
+    // always wins over anything scraped here.
+    let cfpDeadline = extractCfpDeadline(result.body, event.date);
+    if (cfpLink && cfpLink !== event.url) {
+      try {
+        const cf = await fetchUrl(cfpLink);
+        if (cf.statusCode === 200) {
+          const pageDeadline = extractCfpDeadline(cf.body, event.date);
+          if (pageDeadline) cfpDeadline = pageDeadline;
+        }
+      } catch (e) { /* homepage-derived value, if any, stands */ }
+    }
+
     return {
       ...event,
       status: overallStatus,
       cfpStatus,
       cfpLink,
+      cfpDeadline: event.cfpDeadline || cfpDeadline || undefined,
       ticketStatus,
       sponsorStatus
     };
