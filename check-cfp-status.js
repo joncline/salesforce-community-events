@@ -456,6 +456,9 @@ function extractCfpDeadline(text, eventDate) {
   const clean = String(text).replace(/<[^>]{0,500}>/g, ' ').replace(/\s+/g, ' ');
   const keyword = /(?:deadline|clos(?:es?|ed|ing)|open until|open through|submission|appl(?:y|ications?)|due)/gi;
   const datePattern = /(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\.?\s+(\d{1,2})(?:st|nd|rd|th)?,?\s*(20\d\d)/i;
+  // Day-first deadline dates ("6th february 2027", "6 feb 2027") — the standard
+  // format on India/South-Asia community sites; captures are (day, month, year).
+  const dayFirstPattern = /(\d{1,2})(?:st|nd|rd|th)?\s+(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\.?,?\s*(20\d\d)/i;
   const FULL = ['january','february','march','april','may','june','july','august','september','october','november','december'];
   const dateKey = d => `${String(d[1]).toLowerCase().slice(0, 3)}|${parseInt(d[2], 10)}|${d[3]}`;
   // event key parsed from the table's own date formats (single / same-month
@@ -466,8 +469,15 @@ function extractCfpDeadline(text, eventDate) {
   const eventKey = em ? `${em[1].toLowerCase().slice(0, 3)}|${parseInt(em[2], 10)}|${em[6]}` : null;
   let m;
   while ((m = keyword.exec(clean)) !== null) {
-    const d = clean.slice(m.index, m.index + 120).match(datePattern);
-    if (!d) continue;
+    const slice = clean.slice(m.index, m.index + 120);
+    let d = slice.match(datePattern);
+    if (!d) {
+      // Day-first match: rearrange (day, month, year) captures into the
+      // (month, day, year) shape the rest of this function expects.
+      const df = slice.match(dayFirstPattern);
+      if (!df) continue;
+      d = [df[0], df[2], df[1], df[3]];
+    }
     if (eventKey && dateKey(d) === eventKey) continue;
     const full = FULL.find(f => f.startsWith(String(d[1]).toLowerCase()));
     const month = full ? full[0].toUpperCase() + full.slice(1) : d[1];
@@ -538,14 +548,23 @@ async function checkEvent(event) {
         const datePatterns = [
           // Match patterns like "March 15-16, 2027" or "March 2027"
           new RegExp(`(${nextYear})\\s*([A-Za-z]+\\s+\\d+(?:-\\d+)?(?:,\\s*${nextYear})?)`, 'i'),
-          new RegExp(`([A-Za-z]+\\s+\\d+(?:-\\d+)?),?\\s*(${nextYear})`, 'i')
+          new RegExp(`([A-Za-z]+\\s+\\d+(?:-\\d+)?),?\\s*(${nextYear})`, 'i'),
+          // Day-first ("6th february 2027") — the standard format on India/
+          // South-Asia community sites; month-anchored so SVG/coords junk can't match.
+          new RegExp(`(\\d{1,2})(?:st|nd|rd|th)?\\s+(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\\.?,?\\s*${nextYear}`, 'i')
         ];
 
         for (const pattern of datePatterns) {
           const dateMatch = body.match(pattern);
           if (dateMatch) {
             // Clean up the matched date
-            const matchedDate = dateMatch[0].replace(/\s+/g, ' ').trim();
+            let matchedDate = dateMatch[0].replace(/\s+/g, ' ').trim();
+            // Day-first match: rebuild as "february 6, 2027" so ICS date
+            // parsing, sorting and the range logic keep working (a matching
+            // month-first pattern always outranks it — the df regex only
+            // fires on digit-led text, which pattern 3 alone produces).
+            const df = matchedDate.match(/^(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]+)/i);
+            if (df) matchedDate = `${df[2]} ${parseInt(df[1], 10)}, ${nextYear}`;
             if (matchedDate.length > 4) { // Make sure we captured more than just the year
               date = matchedDate;
               break;
