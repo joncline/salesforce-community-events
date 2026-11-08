@@ -79,6 +79,7 @@ const EVENT_OVERRIDES = {
   },
   "MC² 2027": {  // the May 2026 edition rolls forward to this once the date passes
     url: "https://mcsquare.co.in/",
+    date: "February 6, 2027",  // homepage announces "6th February 2027, Saturday"
     sponsorUrl: "https://mcsquare.co.in/sponsors/"
   },
   "Higher Ed Dreamin': Marketing Edition 2026": {
@@ -125,6 +126,11 @@ const EVENT_OVERRIDES = {
     date: "July 29-30, 2026",
     ticketUrl: "https://www.eventbrite.com/e/forcelandia-2026-tickets-1988583489749",
     sponsorUrl: "https://forcelandia.com/2026-sponsors/"
+  },
+  // The 2026-11-08 run lost the site-scraped CFP link (homepage copy changed;
+  // /2027/speakers still live) — pinned per the known-good-link rule above.
+  "Architect Dreamin' Americas 2027": {
+    cfpUrl: "https://architectdreamin.us/2027/speakers"
   },
   "Polish Dreamin' 2027": {
     date: "April 16, 2027",
@@ -562,7 +568,12 @@ async function checkEvent(event) {
 
           for (const pattern of locationPatterns) {
             const locationMatch = context.match(pattern);
-            if (locationMatch && locationMatch[1].trim().length > 3) {
+            // Day-first dates ("6th february 2027") sit directly in front of the
+            // 4-digit-year terminator, so pattern 2 grabs a date fragment
+            // ("th february") as a location. Reject candidates containing a
+            // month or weekday word (city names never do).
+            const garbage = locationMatch[1].match(/\b(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?|monday|tuesday|wednesday|thursday|friday|saturday|sunday)\b/i);
+            if (locationMatch && locationMatch[1].trim().length > 3 && !garbage) {
               location = locationMatch[1].trim();
               break;
             }
@@ -1135,6 +1146,28 @@ const MANUAL_EVENTS = [
     date: "January 28, 2027",
     location: "London, UK",
     url: "https://devopsdreamin.com/"
+  },
+  {
+    // Inaugural free virtual Salesforce security conference ran Oct 23, 2026, hosted by
+    // EzProtect (Matt Meyers, CTA). No next edition announced yet — the site carries only
+    // an "Interested in Security Dreamin' 2027?" interest form. Listed straight as the
+    // 2027 edition TBD: a past-dated 2026 entry would roll forward and the roll's
+    // next-year location scrape grabs garbage off this page.
+    name: "Security Dreamin' 2027",
+    date: "TBD",
+    location: "TBD",
+    url: "https://ezprotect.io/security-dreamin/"
+  },
+  {
+    // Africa/MENA community conference in Casablanca (running since 2019). The 2026
+    // edition ran Oct 24, 2026 => rolls forward to a 2027 row. Kept past-dated rather
+    // than a straight TBD 2027 entry because a live site scan would mislabel the stale
+    // 2026 Eventbrite listing as Buy Tickets and /become-a-speaker/ as an OPEN CFP; the
+    // rolled row renders clean TBDs plus a working /sponsors/ link instead.
+    name: "North Africa Dreamin' 2026",
+    date: "October 24, 2026",
+    location: "Casablanca, Morocco",
+    url: "https://northafricadreamin.com/"
   }
 ];
 
