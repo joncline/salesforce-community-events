@@ -22,7 +22,7 @@ A comprehensive calendar of Salesforce community events, conferences, and Dreami
 
 ## 📅 What's Included
 
-This calendar includes **53 Salesforce community events** for 2026-2027:
+This calendar includes **55 Salesforce community events** for 2026-2027:
 
 ### Events Overview Table
 
@@ -34,6 +34,7 @@ This calendar includes **53 Salesforce community events** for 2026-2027:
 | Mexico Dreamin' 2026 | November 20, 2026 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/mexico-dreamin-2026.ics) | Mexico City, Mexico | [Website](https://mexicodreamin.com/) | TBD | TBD | TBD |
 | West Africa Dreamin' 2026 | November 21, 2026 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/west-africa-dreamin-2026.ics) | Lagos, Nigeria | [Website](https://westafricadreamin.com/) | [OPEN](https://westafricadreamin.my.site.com/s/register-speaker) | TBD | [Become a Sponsor](https://westafricadreamin.my.site.com/s/register-sponsor) |
 | Sri Lanka Dreamin 2026 | November 21, 2026 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/sri-lanka-dreamin-2026.ics) | Colombo, Sri Lanka | [Website](https://srilankadreamin.com/) | TBD | [Buy Tickets](https://www.ticketsministry.com/family/sri-lanka-dreamin-2026/6abd3abad3b05) | [Become a Sponsor](https://srilankadreamin.com/sponsors/) |
+| Consultancy Dreamin' 2026 | December 2, 2026 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/consultancy-dreamin-2026.ics) | Virtual | [Website](https://consultancydreamin.online/) | Closed — deadline October 26, 2026 | [Buy Tickets](https://academy.supermums.org/course/consultancy-dreamin-2nd-dec-2026) | [Become a Sponsor](https://consultancydreamin.online/sponsors) |
 | Higher Ed Dreamin' 2026 | December 9, 2026 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/higher-ed-dreamin-2026.ics) | Virtual | [Website](https://events.ringcentral.com/events/higher-ed-dreamin-2026) | TBD | TBD | [Become a Sponsor](https://events.ringcentral.com#sponsors) |
 | Benelux Dreamin' 2026 | December 10, 2026 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/benelux-dreamin-2026.ics) | Antwerp, Belgium | [Website](https://www.yeurdreamin.eu/) | TBD | TBD | [Become a Sponsor](https://www.yeurdreamin.eu/sponsors/) |
 | Salesforce EOY Benelux 2026 | December 10, 2026 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/salesforce-eoy-benelux-2026.ics) | Kontich, Belgium | [Website](https://www.linkedin.com/feed/update/urn:li:ugcPost:7464689853214044160/) | TBD | TBD | [Become a Sponsor](https://www.linkedin.com/posts/kennyvanbeeck_sponsorship-proposal-eoy-2026-activity-7464929611555008512-qa0m) |

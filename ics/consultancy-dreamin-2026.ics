@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//salesforce-community-events//calendar//EN
+BEGIN:VEVENT
+UID:consultancy-dreamin-2026@salesforce-events
+DTSTAMP:20261202T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:Consultancy Dreamin' 2026
+LOCATION:Virtual
+URL:https://consultancydreamin.online/
+DESCRIPTION:Salesforce community event. Details and updates: https://consultancydreamin.online/
+END:VEVENT
+END:VCALENDAR

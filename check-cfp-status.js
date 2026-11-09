@@ -1187,6 +1187,24 @@ const MANUAL_EVENTS = [
     date: "October 24, 2026",
     location: "Casablanca, Morocco",
     url: "https://northafricadreamin.com/"
+  },
+  {
+    // Supermums-run virtual conference for Salesforce consultancy professionals
+    // (1-5pm GMT, one afternoon; first edition 2021). CFP closed October 26, 2026,
+    // but the homepage still advertises the passed deadline, so the site scan reads
+    // the "Call for speakers" nav as [OPEN]. The pins sit ON this entry, not in
+    // EVENT_OVERRIDES: the post-scan cfpStatus re-apply reads the pre-check event,
+    // which the EVENT_OVERRIDES merge inside checkEvent never lands on (only API
+    // events get pre-merged, in fetchEventsFromAPI). Registration runs through
+    // Supermums Academy; sponsorship goes via the site's sponsors page.
+    name: "Consultancy Dreamin' 2026",
+    date: "December 2, 2026",
+    location: "Virtual",
+    url: "https://consultancydreamin.online/",
+    cfpStatus: "Closed",
+    cfpDeadline: "October 26, 2026",
+    ticketUrl: "https://academy.supermums.org/course/consultancy-dreamin-2nd-dec-2026",
+    sponsorUrl: "https://consultancydreamin.online/sponsors"
   }
 ];
 
