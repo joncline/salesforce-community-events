@@ -28,8 +28,6 @@ This calendar includes **55 Salesforce community events** for 2026-2027:
 
 | Event | Date | Calendar | Location | Website | CFP Status | Ticket Sales | Sponsor |
 |-------|------|----------|----------|---------|------------|--------------|---------|
-| Down Under Dreaming - Brisbane Edition 2026 | November 11, 2026 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/down-under-dreaming-brisbane-edition-2026.ics) | Brisbane, Australia | [Website](https://www.dudbe.com/) | TBD | TBD | TBD |
-| Seoul Dreamin' 2026 | November 11, 2026 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/seoul-dreamin-2026.ics) | Seoul, South Korea | [Website](https://www.seouldreamin.org/) | TBD | TBD | TBD |
 | Brazil Dreamin' 2026 | November 12-13, 2026 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/brazil-dreamin-2026.ics) | São Paulo, Brazil | [Website](https://semananasnuvens.com.br/) | TBD | TBD | TBD |
 | Mexico Dreamin' 2026 | November 20, 2026 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/mexico-dreamin-2026.ics) | Mexico City, Mexico | [Website](https://mexicodreamin.com/) | TBD | TBD | TBD |
 | West Africa Dreamin' 2026 | November 21, 2026 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/west-africa-dreamin-2026.ics) | Lagos, Nigeria | [Website](https://westafricadreamin.com/) | [OPEN](https://westafricadreamin.my.site.com/s/register-speaker) | TBD | [Become a Sponsor](https://westafricadreamin.my.site.com/s/register-sponsor) |
@@ -78,6 +76,8 @@ This calendar includes **55 Salesforce community events** for 2026-2027:
 | True Blue Blazing Melbourne 2027 | TBD | TBD | TBD | [Website](https://trueblueblazing.com/) | [OPEN](https://trueblueblazing.com/speakers-expression-of-interest/) | [Buy Tickets](https://trueblueblazing.com/tickets) | [Become a Sponsor](https://trueblueblazing.com/sponsorship-opportunities/) |
 | North Africa Dreamin' 2027 | TBD | TBD | TBD | [Website](https://northafricadreamin.com/) | TBD | TBD | [Become a Sponsor](https://northafricadreamin.com/sponsors/) |
 | Pakistan Dreamin' 2027 | TBD | TBD | TBD | [Website](https://www.pakdreamin.com) | Closed — deadline August 24, 2026 | TBD | [Become a Sponsor](https://www.pakdreamin.com/sponsors/) |
+| Down Under Dreaming - Brisbane Edition 2027 | TBD | TBD | TBD | [Website](https://www.dudbe.com/) | TBD | TBD | TBD |
+| Seoul Dreamin' 2027 | TBD | TBD | TBD | [Website](https://www.seouldreamin.org/) | TBD | TBD | TBD |
 | Test Dreamin' 2026 | TBD | TBD | TBD | [Website](https://www.testdreamin.com/) | TBD | TBD | TBD |
 | Life Sciences Dreamin' 2026 | TBD | TBD | TBD | [Website](https://lifesciencesdreamin.com/) | TBD | [Buy Tickets](https://cloudadoption.zoom.us/webinar/register/wn_uermhribtu-yntcbiotaza#/registration) | [Become a Sponsor](https://lifesciencesdreamin.com/sponsorship/) |
 | MarDreamin' 2026 | TBD | TBD | TBD | [Website](https://mardreamin.com/) | TBD | [Buy Tickets](https://mardreamin.com/summit-registration/) | [Become a Sponsor](https://mardreamin.com/become-a-sponsor/) |
