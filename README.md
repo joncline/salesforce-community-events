@@ -28,7 +28,6 @@ This calendar includes **55 Salesforce community events** for 2026-2027:
 
 | Event | Date | Calendar | Location | Website | CFP Status | Ticket Sales | Sponsor |
 |-------|------|----------|----------|---------|------------|--------------|---------|
-| Brazil Dreamin' 2026 | November 12-13, 2026 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/brazil-dreamin-2026.ics) | São Paulo, Brazil | [Website](https://semananasnuvens.com.br/) | TBD | TBD | TBD |
 | Mexico Dreamin' 2026 | November 20, 2026 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/mexico-dreamin-2026.ics) | Mexico City, Mexico | [Website](https://mexicodreamin.com/) | TBD | TBD | TBD |
 | West Africa Dreamin' 2026 | November 21, 2026 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/west-africa-dreamin-2026.ics) | Lagos, Nigeria | [Website](https://westafricadreamin.com/) | [OPEN](https://westafricadreamin.my.site.com/s/register-speaker) | TBD | [Become a Sponsor](https://westafricadreamin.my.site.com/s/register-sponsor) |
 | Sri Lanka Dreamin 2026 | November 21, 2026 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/sri-lanka-dreamin-2026.ics) | Colombo, Sri Lanka | [Website](https://srilankadreamin.com/) | TBD | [Buy Tickets](https://www.ticketsministry.com/family/sri-lanka-dreamin-2026/6abd3abad3b05) | [Become a Sponsor](https://srilankadreamin.com/sponsors/) |
@@ -49,7 +48,7 @@ This calendar includes **55 Salesforce community events** for 2026-2027:
 | Polish Dreamin' 2027 | April 16, 2027 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/polish-dreamin-2027.ics) | Wroclaw, Poland | [Website](https://dreamin.coffeeforce.pl/) | TBD | [Buy Tickets](https://dreamin.coffeeforce.pl#tickets) | [Become a Sponsor](https://dreamin.coffeeforce.pl#sponsors) |
 | Wir sind Ohana 2027 | April 23, 2027 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/wir-sind-ohana-2027.ics) | TBD | [Website](https://wirsindohana.wordpress.com/) | TBD | TBD | [Become a Sponsor](https://wirsindohana.de/call-for-sponsors/) |
 | London's Calling 2027 | May 21, 2027 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/london-s-calling-2027.ics) | London, United Kingdom | [Website](https://www.londonscalling.net/) | TBD | TBD | [Become a Sponsor](https://www.londonscalling.net/sponsors/) |
-| Dreamin' in Data 2027 | May 26-27, 2027 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/dreamin-in-data-2027.ics) | Prague, Czech Republic | [Website](https://www.dreaminindata.org/) | TBD | TBD | [Become a Sponsor](https://www.dreaminindata.org/prior-events/did26/sponsors26/) |
+| Dreamin' in Data 2027 | May 26-27, 2027 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/dreamin-in-data-2027.ics) | Prague, Czech Republic | [Website](https://www.dreaminindata.org/) | TBD | TBD | [Become a Sponsor](https://www.dreaminindata.org/home/did26/sponsors26/) |
 | CzechDreamin' 2027 | May 28, 2027 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/czechdreamin-2027.ics) | Prague, Czech Republic | [Website](https://czechdreamin.com) | TBD | TBD | [Become a Sponsor](https://czechdreamin.com/call-for-sponsors/) |
 | Portugal Dreamin' 2027 | June 19, 2027 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/portugal-dreamin-2027.ics) | Coimbra, Portugal | [Website](https://www.portugaldreamin.com/en) | TBD | [Buy Tickets](https://www.portugaldreamin.com/en/register) | [Become a Sponsor](https://www.portugaldreamin.com/en/sponsors) |
 | Florida Dreamin' 2027 | June 23-25, 2027 | [Add 📅](https://github.com/joncline/salesforce-community-events/blob/main/ics/florida-dreamin-2027.ics) | Clearwater Beach, United States | [Website](https://www.fldreamin.com/) | TBD | TBD | [Become a Sponsor](mailto:michelle@fldreamin.com?subject=2027%20Sponsor%20Interest&body=Company%20Name%3A%0ACompany%20Email%3A%0A%0AComments%3A) |
@@ -65,7 +64,7 @@ This calendar includes **55 Salesforce community events** for 2026-2027:
 | Delhi Dreamin' 2027 | TBD | TBD | TBD | [Website](https://delhidreamin.com/) | TBD | TBD | TBD |
 | DREAMin Kosovo 2027 | TBD | TBD | TBD | [Website](https://dreaminkosovo.al/) | TBD | TBD | TBD |
 | Albania Dreamin' 2027 | TBD | TBD | TBD | [Website](https://dreamin.al) | TBD | TBD | TBD |
-| MidAtlantic Dreamin' 2027 | TBD | TBD | TBD | [Website](https://midatlanticdreamin.com/) | TBD | TBD | [Become a Sponsor](https://midatlanticdreamin.com/2026-sponsors.html) |
+| MidAtlantic Dreamin' 2027 | TBD | TBD | TBD | [Website](https://midatlanticdreamin.com/) | TBD | TBD | TBD |
 | Higher Ed Dreamin': Marketing Edition 2027 | TBD | TBD | TBD | [Website](https://highereddreamin.com/) | TBD | [Buy Tickets](https://events.ringcentral.com/events/higher-ed-dreamin-marketing-edition) | TBD |
 | Architect Dreamin' Europe | TBD | TBD | TBD | [Website](https://architectdreamin.org) | TBD | TBD | [Become a Sponsor](https://architectdreamin.com/our-amazing-sponsors/) |
 | Education Trailblazers Summit 2027 | TBD | TBD | TBD | [Website](https://summit.educationtrailblazersassociation.org) | TBD | TBD | TBD |
@@ -78,6 +77,7 @@ This calendar includes **55 Salesforce community events** for 2026-2027:
 | Pakistan Dreamin' 2027 | TBD | TBD | TBD | [Website](https://www.pakdreamin.com) | Closed — deadline August 24, 2026 | TBD | [Become a Sponsor](https://www.pakdreamin.com/sponsors/) |
 | Down Under Dreaming - Brisbane Edition 2027 | TBD | TBD | TBD | [Website](https://www.dudbe.com/) | TBD | TBD | TBD |
 | Seoul Dreamin' 2027 | TBD | TBD | TBD | [Website](https://www.seouldreamin.org/) | TBD | TBD | TBD |
+| Brazil Dreamin' 2027 | TBD | TBD | TBD | [Website](https://semananasnuvens.com.br/) | TBD | TBD | TBD |
 | Test Dreamin' 2026 | TBD | TBD | TBD | [Website](https://www.testdreamin.com/) | TBD | TBD | TBD |
 | Life Sciences Dreamin' 2026 | TBD | TBD | TBD | [Website](https://lifesciencesdreamin.com/) | TBD | [Buy Tickets](https://cloudadoption.zoom.us/webinar/register/wn_uermhribtu-yntcbiotaza#/registration) | [Become a Sponsor](https://lifesciencesdreamin.com/sponsorship/) |
 | MarDreamin' 2026 | TBD | TBD | TBD | [Website](https://mardreamin.com/) | TBD | [Buy Tickets](https://mardreamin.com/summit-registration/) | [Become a Sponsor](https://mardreamin.com/become-a-sponsor/) |

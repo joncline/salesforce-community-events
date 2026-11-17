@@ -171,6 +171,11 @@ const EVENT_OVERRIDES = {
   "Pakistan Dreamin' 2026": {
     cfpStatus: "Closed — deadline August 24, 2026"
   },
+  // yeurdreamin.eu/sponsors/ is live and actively recruiting (Silver spots remain),
+  // but the homepage scan stopped yielding it — pinned per the known-good-link rule.
+  "Benelux Dreamin' 2026": {
+    sponsorUrl: "https://www.yeurdreamin.eu/sponsors/"
+  },
   "Buckeye Dreamin' 2027": {
     date: "July 20-22, 2027"
   },
@@ -1161,10 +1166,13 @@ const MANUAL_EVENTS = [
   },
   {
     // The Salesforce API feed carries no DevOps Dreamin' record; date announced 2026-11-04.
+    // cfpUrl pinned 2026-11-16: the homepage scan stopped yielding it (site copy
+    // changed), but /call-for-speakers/ is live and open (no deadline published).
     name: "DevOps Dreamin' 2027",
     date: "January 28, 2027",
     location: "London, UK",
-    url: "https://devopsdreamin.com/"
+    url: "https://devopsdreamin.com/",
+    cfpUrl: "https://devopsdreamin.com/call-for-speakers/"
   },
   {
     // Inaugural free virtual Salesforce security conference ran Oct 23, 2026, hosted by
